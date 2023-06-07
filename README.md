@@ -5,6 +5,6 @@ This repo does NOT contain the actual documentation itself. The documentation is
 
 ## Updating the site
 
-1. Copy the contents of `H3DIR/h3vr_Data/Managed/` to `reference/`
+1. Update the game assembly at `reference/Assembly-CSharp.dll` (does not need to be stripped, provided you aren't committing it to the repo)
 2. Replace `reference/Assembly-CSharp.xml` with the updated version.
 3. Run `docfx doxfx_project/doxfx.json` (optionally with `--serve` to preview changes)
