@@ -1,0 +1,657 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class HG_ModeManager_TargetRelay
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class HG_ModeManager_TargetRelay
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FistVR.HG_ModeManager_TargetRelay">
+
+
+
+  <h1 id="FistVR_HG_ModeManager_TargetRelay" data-uid="FistVR.HG_ModeManager_TargetRelay" class="text-break">
+    Class HG_ModeManager_TargetRelay
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FistVR.html">FistVR</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HG_ModeManager_TargetRelay : HG_ModeManager</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="FistVR.HG_ModeManager.html">HG_ModeManager</a></div>
+      <div><span class="xref">HG_ModeManager_TargetRelay</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="FistVR.HG_ModeManager.html#FistVR_HG_ModeManager_M">HG_ModeManager.M</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.HG_ModeManager.html#FistVR_HG_ModeManager_IsPlaying">HG_ModeManager.IsPlaying</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.HG_ModeManager.html#FistVR_HG_ModeManager_m_mode">HG_ModeManager.m_mode</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.HG_ModeManager.html#FistVR_HG_ModeManager_InitialRespawnPos">HG_ModeManager.InitialRespawnPos</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.HG_ModeManager.html#FistVR_HG_ModeManager_InitialRespawnRot">HG_ModeManager.InitialRespawnRot</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.HG_ModeManager.html#FistVR_HG_ModeManager_IsModeComplete">HG_ModeManager.IsModeComplete()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.HG_ModeManager.html#FistVR_HG_ModeManager_HandlePlayerDeath">HG_ModeManager.HandlePlayerDeath()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FistVR_HG_ModeManager_TargetRelay__ctor_" data-uid="FistVR.HG_ModeManager_TargetRelay.#ctor*"></a>
+
+  <h3 id="FistVR_HG_ModeManager_TargetRelay__ctor" data-uid="FistVR.HG_ModeManager_TargetRelay.#ctor">
+  HG_ModeManager_TargetRelay()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HG_ModeManager_TargetRelay()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FistVR_HG_ModeManager_TargetRelay_AudEvent_SequenceCompleted" data-uid="FistVR.HG_ModeManager_TargetRelay.AudEvent_SequenceCompleted">
+  AudEvent_SequenceCompleted
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioEvent AudEvent_SequenceCompleted</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.AudioEvent.html">AudioEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_TargetRelay_AudEvent_ZoneCompleted" data-uid="FistVR.HG_ModeManager_TargetRelay.AudEvent_ZoneCompleted">
+  AudEvent_ZoneCompleted
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioEvent AudEvent_ZoneCompleted</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.AudioEvent.html">AudioEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_TargetRelay_CivvieSpawnPoints" data-uid="FistVR.HG_ModeManager_TargetRelay.CivvieSpawnPoints">
+  CivvieSpawnPoints
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Transform&gt; CivvieSpawnPoints</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Transform</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_TargetRelay_Indicator" data-uid="FistVR.HG_ModeManager_TargetRelay.Indicator">
+  Indicator
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject Indicator</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_TargetRelay_Targets" data-uid="FistVR.HG_ModeManager_TargetRelay.Targets">
+  Targets
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;GameObject&gt; Targets</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">GameObject</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_TargetRelay_ZoneSequence_Jog" data-uid="FistVR.HG_ModeManager_TargetRelay.ZoneSequence_Jog">
+  ZoneSequence_Jog
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;int&gt; ZoneSequence_Jog</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_TargetRelay_ZoneSequence_Marathon" data-uid="FistVR.HG_ModeManager_TargetRelay.ZoneSequence_Marathon">
+  ZoneSequence_Marathon
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;int&gt; ZoneSequence_Marathon</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_TargetRelay_ZoneSequence_Sprint" data-uid="FistVR.HG_ModeManager_TargetRelay.ZoneSequence_Sprint">
+  ZoneSequence_Sprint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;int&gt; ZoneSequence_Sprint</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FistVR_HG_ModeManager_TargetRelay_EndMode_" data-uid="FistVR.HG_ModeManager_TargetRelay.EndMode*"></a>
+
+  <h3 id="FistVR_HG_ModeManager_TargetRelay_EndMode_System_Boolean_System_Boolean_" data-uid="FistVR.HG_ModeManager_TargetRelay.EndMode(System.Boolean,System.Boolean)">
+  EndMode(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void EndMode(bool doesInvokeTeleport, bool immediateTeleportBackAndScore)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doesInvokeTeleport</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>immediateTeleportBackAndScore</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_HG_ModeManager_TargetRelay_GetScore_" data-uid="FistVR.HG_ModeManager_TargetRelay.GetScore*"></a>
+
+  <h3 id="FistVR_HG_ModeManager_TargetRelay_GetScore" data-uid="FistVR.HG_ModeManager_TargetRelay.GetScore">
+  GetScore()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetScore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_HG_ModeManager_TargetRelay_GetScoringReadOuts_" data-uid="FistVR.HG_ModeManager_TargetRelay.GetScoringReadOuts*"></a>
+
+  <h3 id="FistVR_HG_ModeManager_TargetRelay_GetScoringReadOuts" data-uid="FistVR.HG_ModeManager_TargetRelay.GetScoringReadOuts">
+  GetScoringReadOuts()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override List&lt;string&gt; GetScoringReadOuts()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_HG_ModeManager_TargetRelay_GunShotFired_" data-uid="FistVR.HG_ModeManager_TargetRelay.GunShotFired*"></a>
+
+  <h3 id="FistVR_HG_ModeManager_TargetRelay_GunShotFired_FistVR_FVRFireArm_" data-uid="FistVR.HG_ModeManager_TargetRelay.GunShotFired(FistVR.FVRFireArm)">
+  GunShotFired(FVRFireArm)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GunShotFired(FVRFireArm firearm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>firearm</code> <a class="xref" href="FistVR.FVRFireArm.html">FVRFireArm</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_HG_ModeManager_TargetRelay_InitMode_" data-uid="FistVR.HG_ModeManager_TargetRelay.InitMode*"></a>
+
+  <h3 id="FistVR_HG_ModeManager_TargetRelay_InitMode_FistVR_HG_ModeManager_HG_Mode_" data-uid="FistVR.HG_ModeManager_TargetRelay.InitMode(FistVR.HG_ModeManager.HG_Mode)">
+  InitMode(HG_Mode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void InitMode(HG_ModeManager.HG_Mode mode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <a class="xref" href="FistVR.HG_ModeManager.html">HG_ModeManager</a>.<a class="xref" href="FistVR.HG_ModeManager.HG_Mode.html">HG_Mode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_HG_ModeManager_TargetRelay_TargetDestroyed_" data-uid="FistVR.HG_ModeManager_TargetRelay.TargetDestroyed*"></a>
+
+  <h3 id="FistVR_HG_ModeManager_TargetRelay_TargetDestroyed_FistVR_HG_Target_" data-uid="FistVR.HG_ModeManager_TargetRelay.TargetDestroyed(FistVR.HG_Target)">
+  TargetDestroyed(HG_Target)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void TargetDestroyed(HG_Target t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="FistVR.HG_Target.html">HG_Target</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_HG_ModeManager_TargetRelay_Update_" data-uid="FistVR.HG_ModeManager_TargetRelay.Update*"></a>
+
+  <h3 id="FistVR_HG_ModeManager_TargetRelay_Update" data-uid="FistVR.HG_ModeManager_TargetRelay.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

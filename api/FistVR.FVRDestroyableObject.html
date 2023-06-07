@@ -1,0 +1,1028 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class FVRDestroyableObject
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FVRDestroyableObject
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FistVR.FVRDestroyableObject">
+
+
+
+  <h1 id="FistVR_FVRDestroyableObject" data-uid="FistVR.FVRDestroyableObject" class="text-break">
+    Class FVRDestroyableObject
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FistVR.html">FistVR</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FVRDestroyableObject : MonoBehaviour, IFVRDamageable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">FVRDestroyableObject</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="FistVR.IFVRDamageable.html">IFVRDamageable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="FistVR.AIBodyPiece.html">AIBodyPiece</a></div>
+      <div><a class="xref" href="FistVR.AIFireArm.html">AIFireArm</a></div>
+      <div><a class="xref" href="FistVR.AIMeleeWeapon.html">AIMeleeWeapon</a></div>
+      <div><a class="xref" href="FistVR.AINavCriticalDestroyable.html">AINavCriticalDestroyable</a></div>
+      <div><a class="xref" href="FistVR.AISensor.html">AISensor</a></div>
+      <div><a class="xref" href="FistVR.AIThruster.html">AIThruster</a></div>
+      <div><a class="xref" href="FistVR.AIThrusterControlBox.html">AIThrusterControlBox</a></div>
+      <div><a class="xref" href="FistVR.MG_DestroyableWithSpawn.html">MG_DestroyableWithSpawn</a></div>
+      <div><a class="xref" href="FistVR.SlicerComputer.html">SlicerComputer</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FistVR_FVRDestroyableObject__ctor_" data-uid="FistVR.FVRDestroyableObject.#ctor*"></a>
+
+  <h3 id="FistVR_FVRDestroyableObject__ctor" data-uid="FistVR.FVRDestroyableObject.#ctor">
+  FVRDestroyableObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRDestroyableObject()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_DecayRate" data-uid="FistVR.FVRDestroyableObject.DecayRate">
+  DecayRate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DecayRate</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_DestroyEventTimeRange" data-uid="FistVR.FVRDestroyableObject.DestroyEventTimeRange">
+  DestroyEventTimeRange
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 DestroyEventTimeRange</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_DestroyThisObjectOnDestruction" data-uid="FistVR.FVRDestroyableObject.DestroyThisObjectOnDestruction">
+  DestroyThisObjectOnDestruction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DestroyThisObjectOnDestruction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_DestructionRenderers" data-uid="FistVR.FVRDestroyableObject.DestructionRenderers">
+  DestructionRenderers
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Renderer[] DestructionRenderers</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Renderer</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_DetachAddRigidbodyBlowAway" data-uid="FistVR.FVRDestroyableObject.DetachAddRigidbodyBlowAway">
+  DetachAddRigidbodyBlowAway
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject[] DetachAddRigidbodyBlowAway</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_DetachRigidbodyParams" data-uid="FistVR.FVRDestroyableObject.DetachRigidbodyParams">
+  DetachRigidbodyParams
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRDestroyableObject.DetachRBParams DetachRigidbodyParams</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRDestroyableObject.html">FVRDestroyableObject</a>.<a class="xref" href="FistVR.FVRDestroyableObject.DetachRBParams.html">DetachRBParams</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_DoesDecayWhenDamaged" data-uid="FistVR.FVRDestroyableObject.DoesDecayWhenDamaged">
+  DoesDecayWhenDamaged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DoesDecayWhenDamaged</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_ExplosiveForceToDetach" data-uid="FistVR.FVRDestroyableObject.ExplosiveForceToDetach">
+  ExplosiveForceToDetach
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 ExplosiveForceToDetach</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_PercentThresholdForDecay" data-uid="FistVR.FVRDestroyableObject.PercentThresholdForDecay">
+  PercentThresholdForDecay
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PercentThresholdForDecay</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_ProgressiveDamageEffects" data-uid="FistVR.FVRDestroyableObject.ProgressiveDamageEffects">
+  ProgressiveDamageEffects
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRDestroyableObject.ProgressiveDamageFX[] ProgressiveDamageEffects</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRDestroyableObject.ProgressiveDamageFX.html">ProgressiveDamageFX</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_Rb" data-uid="FistVR.FVRDestroyableObject.Rb">
+  Rb
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rigidbody Rb</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Rigidbody</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_ReceivesCollisionDamage" data-uid="FistVR.FVRDestroyableObject.ReceivesCollisionDamage">
+  ReceivesCollisionDamage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReceivesCollisionDamage</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_ResistMult_Blunt" data-uid="FistVR.FVRDestroyableObject.ResistMult_Blunt">
+  ResistMult_Blunt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 ResistMult_Blunt</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_ResistMult_Cutting" data-uid="FistVR.FVRDestroyableObject.ResistMult_Cutting">
+  ResistMult_Cutting
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 ResistMult_Cutting</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_ResistMult_Piercing" data-uid="FistVR.FVRDestroyableObject.ResistMult_Piercing">
+  ResistMult_Piercing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 ResistMult_Piercing</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_SendDestroyEventOnDestruction" data-uid="FistVR.FVRDestroyableObject.SendDestroyEventOnDestruction">
+  SendDestroyEventOnDestruction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRDestroyableObject[] SendDestroyEventOnDestruction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRDestroyableObject.html">FVRDestroyableObject</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_SpawnOnDestruction" data-uid="FistVR.FVRDestroyableObject.SpawnOnDestruction">
+  SpawnOnDestruction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject[] SpawnOnDestruction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_StartingToughness" data-uid="FistVR.FVRDestroyableObject.StartingToughness">
+  StartingToughness
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float StartingToughness</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_UsesDestructionStageRenderers" data-uid="FistVR.FVRDestroyableObject.UsesDestructionStageRenderers">
+  UsesDestructionStageRenderers
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UsesDestructionStageRenderers</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_UsesParams" data-uid="FistVR.FVRDestroyableObject.UsesParams">
+  UsesParams
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UsesParams</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_m_currentToughness" data-uid="FistVR.FVRDestroyableObject.m_currentToughness">
+  m_currentToughness
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float m_currentToughness</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRDestroyableObject_m_isDestroyed" data-uid="FistVR.FVRDestroyableObject.m_isDestroyed">
+  m_isDestroyed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool m_isDestroyed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FistVR_FVRDestroyableObject_Awake_" data-uid="FistVR.FVRDestroyableObject.Awake*"></a>
+
+  <h3 id="FistVR_FVRDestroyableObject_Awake" data-uid="FistVR.FVRDestroyableObject.Awake">
+  Awake()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRDestroyableObject_Damage_" data-uid="FistVR.FVRDestroyableObject.Damage*"></a>
+
+  <h3 id="FistVR_FVRDestroyableObject_Damage_FistVR_Damage_" data-uid="FistVR.FVRDestroyableObject.Damage(FistVR.Damage)">
+  Damage(Damage)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Damage(Damage dam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dam</code> <a class="xref" href="FistVR.Damage.html">Damage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRDestroyableObject_DestroyEvent_" data-uid="FistVR.FVRDestroyableObject.DestroyEvent*"></a>
+
+  <h3 id="FistVR_FVRDestroyableObject_DestroyEvent" data-uid="FistVR.FVRDestroyableObject.DestroyEvent">
+  DestroyEvent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DestroyEvent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRDestroyableObject_OnCollisionEnter_" data-uid="FistVR.FVRDestroyableObject.OnCollisionEnter*"></a>
+
+  <h3 id="FistVR_FVRDestroyableObject_OnCollisionEnter_UnityEngine_Collision_" data-uid="FistVR.FVRDestroyableObject.OnCollisionEnter(UnityEngine.Collision)">
+  OnCollisionEnter(Collision)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCollisionEnter(Collision col)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <span class="xref">Collision</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRDestroyableObject_SetToughnessPercentageIfHigher_" data-uid="FistVR.FVRDestroyableObject.SetToughnessPercentageIfHigher*"></a>
+
+  <h3 id="FistVR_FVRDestroyableObject_SetToughnessPercentageIfHigher_System_Single_" data-uid="FistVR.FVRDestroyableObject.SetToughnessPercentageIfHigher(System.Single)">
+  SetToughnessPercentageIfHigher(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetToughnessPercentageIfHigher(float f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRDestroyableObject_Update_" data-uid="FistVR.FVRDestroyableObject.Update*"></a>
+
+  <h3 id="FistVR_FVRDestroyableObject_Update" data-uid="FistVR.FVRDestroyableObject.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

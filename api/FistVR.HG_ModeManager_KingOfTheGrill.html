@@ -1,0 +1,1167 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class HG_ModeManager_KingOfTheGrill
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class HG_ModeManager_KingOfTheGrill
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FistVR.HG_ModeManager_KingOfTheGrill">
+
+
+
+  <h1 id="FistVR_HG_ModeManager_KingOfTheGrill" data-uid="FistVR.HG_ModeManager_KingOfTheGrill" class="text-break">
+    Class HG_ModeManager_KingOfTheGrill
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FistVR.html">FistVR</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HG_ModeManager_KingOfTheGrill : HG_ModeManager</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="FistVR.HG_ModeManager.html">HG_ModeManager</a></div>
+      <div><span class="xref">HG_ModeManager_KingOfTheGrill</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="FistVR.HG_ModeManager.html#FistVR_HG_ModeManager_M">HG_ModeManager.M</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.HG_ModeManager.html#FistVR_HG_ModeManager_IsPlaying">HG_ModeManager.IsPlaying</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.HG_ModeManager.html#FistVR_HG_ModeManager_m_mode">HG_ModeManager.m_mode</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.HG_ModeManager.html#FistVR_HG_ModeManager_InitialRespawnPos">HG_ModeManager.InitialRespawnPos</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.HG_ModeManager.html#FistVR_HG_ModeManager_InitialRespawnRot">HG_ModeManager.InitialRespawnRot</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.HG_ModeManager.html#FistVR_HG_ModeManager_IsModeComplete">HG_ModeManager.IsModeComplete()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.HG_ModeManager.html#FistVR_HG_ModeManager_TargetDestroyed_FistVR_HG_Target_">HG_ModeManager.TargetDestroyed(HG_Target)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FistVR_HG_ModeManager_KingOfTheGrill__ctor_" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.#ctor*"></a>
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill__ctor" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.#ctor">
+  HG_ModeManager_KingOfTheGrill()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HG_ModeManager_KingOfTheGrill()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_AudEvent_SequenceCompleted" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.AudEvent_SequenceCompleted">
+  AudEvent_SequenceCompleted
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioEvent AudEvent_SequenceCompleted</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.AudioEvent.html">AudioEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_AudEvent_ZoneCompleted" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.AudEvent_ZoneCompleted">
+  AudEvent_ZoneCompleted
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioEvent AudEvent_ZoneCompleted</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.AudioEvent.html">AudioEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_EnemyEndPoints" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.EnemyEndPoints">
+  EnemyEndPoints
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Transform&gt; EnemyEndPoints</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Transform</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_GrillSpawnZones" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.GrillSpawnZones">
+  GrillSpawnZones
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;HG_SpawnPointGroup&gt; GrillSpawnZones</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FistVR.HG_SpawnPointGroup.html">HG_SpawnPointGroup</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_Labels_Time" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.Labels_Time">
+  Labels_Time
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Text&gt; Labels_Time</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Text</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_Labels_Wave" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.Labels_Wave">
+  Labels_Wave
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Text&gt; Labels_Wave</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Text</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_LootCrate" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.LootCrate">
+  LootCrate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject LootCrate</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_LootCrateSpawns" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.LootCrateSpawns">
+  LootCrateSpawns
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Transform&gt; LootCrateSpawns</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Transform</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_LootTables" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.LootTables">
+  LootTables
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ZosigItemSpawnTable&gt; LootTables</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FistVR.ZosigItemSpawnTable.html">ZosigItemSpawnTable</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_PlayerSpawnPoint" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.PlayerSpawnPoint">
+  PlayerSpawnPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform PlayerSpawnPoint</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_SearchLM" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.SearchLM">
+  SearchLM
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayerMask SearchLM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">LayerMask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_SosigEnemyTemplates_Anachronism" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.SosigEnemyTemplates_Anachronism">
+  SosigEnemyTemplates_Anachronism
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SosigEnemyTemplate&gt; SosigEnemyTemplates_Anachronism</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FistVR.SosigEnemyTemplate.html">SosigEnemyTemplate</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_SosigEnemyTemplates_Invasion" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.SosigEnemyTemplates_Invasion">
+  SosigEnemyTemplates_Invasion
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SosigEnemyTemplate&gt; SosigEnemyTemplates_Invasion</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FistVR.SosigEnemyTemplate.html">SosigEnemyTemplate</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_SosigEnemyTemplates_Ressurection" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.SosigEnemyTemplates_Ressurection">
+  SosigEnemyTemplates_Ressurection
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SosigEnemyTemplate&gt; SosigEnemyTemplates_Ressurection</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FistVR.SosigEnemyTemplate.html">SosigEnemyTemplate</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_StartingMeleeSpot" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.StartingMeleeSpot">
+  StartingMeleeSpot
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform StartingMeleeSpot</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_StartingMeleeWeapon" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.StartingMeleeWeapon">
+  StartingMeleeWeapon
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZosigItemSpawnTable StartingMeleeWeapon</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.ZosigItemSpawnTable.html">ZosigItemSpawnTable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_StartingSpawnPoints" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.StartingSpawnPoints">
+  StartingSpawnPoints
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Transform&gt; StartingSpawnPoints</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Transform</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_StartingSpawns" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.StartingSpawns">
+  StartingSpawns
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FVRObject&gt; StartingSpawns</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FistVR.FVRObject.html">FVRObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_StripSearch_Center" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.StripSearch_Center">
+  StripSearch_Center
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 StripSearch_Center</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_StripSearch_HalfExtents" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.StripSearch_HalfExtents">
+  StripSearch_HalfExtents
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 StripSearch_HalfExtents</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_Table" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.Table">
+  Table
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject Table</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_UnCookedPowerup" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.UnCookedPowerup">
+  UnCookedPowerup
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRObject UnCookedPowerup</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRObject.html">FVRObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FistVR_HG_ModeManager_KingOfTheGrill_CheckIfDeadSosigWasMine_" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.CheckIfDeadSosigWasMine*"></a>
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_CheckIfDeadSosigWasMine_FistVR_Sosig_" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.CheckIfDeadSosigWasMine(FistVR.Sosig)">
+  CheckIfDeadSosigWasMine(Sosig)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CheckIfDeadSosigWasMine(Sosig s)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <a class="xref" href="FistVR.Sosig.html">Sosig</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_HG_ModeManager_KingOfTheGrill_CleanUpScene_" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.CleanUpScene*"></a>
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_CleanUpScene" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.CleanUpScene">
+  CleanUpScene()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CleanUpScene()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_HG_ModeManager_KingOfTheGrill_DepositPowerUp_" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.DepositPowerUp*"></a>
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_DepositPowerUp_FistVR_PowerupType_" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.DepositPowerUp(FistVR.PowerupType)">
+  DepositPowerUp(PowerupType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DepositPowerUp(PowerupType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="FistVR.PowerupType.html">PowerupType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_HG_ModeManager_KingOfTheGrill_EndMode_" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.EndMode*"></a>
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_EndMode_System_Boolean_System_Boolean_" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.EndMode(System.Boolean,System.Boolean)">
+  EndMode(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void EndMode(bool doesInvokeTeleport, bool immediateTeleportBackAndScore)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doesInvokeTeleport</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>immediateTeleportBackAndScore</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_HG_ModeManager_KingOfTheGrill_FloatToTime_" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.FloatToTime*"></a>
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_FloatToTime_System_Single_System_String_" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.FloatToTime(System.Single,System.String)">
+  FloatToTime(float, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FloatToTime(float toConvert, string format)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>toConvert</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_HG_ModeManager_KingOfTheGrill_GetScore_" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.GetScore*"></a>
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_GetScore" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.GetScore">
+  GetScore()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetScore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_HG_ModeManager_KingOfTheGrill_GetScoringReadOuts_" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.GetScoringReadOuts*"></a>
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_GetScoringReadOuts" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.GetScoringReadOuts">
+  GetScoringReadOuts()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override List&lt;string&gt; GetScoringReadOuts()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_HG_ModeManager_KingOfTheGrill_HandlePlayerDeath_" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.HandlePlayerDeath*"></a>
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_HandlePlayerDeath" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.HandlePlayerDeath">
+  HandlePlayerDeath()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void HandlePlayerDeath()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_HG_ModeManager_KingOfTheGrill_InitMode_" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.InitMode*"></a>
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_InitMode_FistVR_HG_ModeManager_HG_Mode_" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.InitMode(FistVR.HG_ModeManager.HG_Mode)">
+  InitMode(HG_Mode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void InitMode(HG_ModeManager.HG_Mode mode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <a class="xref" href="FistVR.HG_ModeManager.html">HG_ModeManager</a>.<a class="xref" href="FistVR.HG_ModeManager.HG_Mode.html">HG_Mode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_HG_ModeManager_KingOfTheGrill_Update_" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.Update*"></a>
+
+  <h3 id="FistVR_HG_ModeManager_KingOfTheGrill_Update" data-uid="FistVR.HG_ModeManager_KingOfTheGrill.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

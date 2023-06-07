@@ -1,0 +1,708 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class wwTargetShatterable
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class wwTargetShatterable
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FistVR.wwTargetShatterable">
+
+
+
+  <h1 id="FistVR_wwTargetShatterable" data-uid="FistVR.wwTargetShatterable" class="text-break">
+    Class wwTargetShatterable
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FistVR.html">FistVR</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class wwTargetShatterable : wwTarget, IFVRDamageable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="FistVR.wwTarget.html">wwTarget</a></div>
+      <div><span class="xref">wwTargetShatterable</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="FistVR.IFVRDamageable.html">IFVRDamageable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_Ident">wwTarget.Ident</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_TargetSprite">wwTarget.TargetSprite</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_TargetStruckRefire">wwTarget.TargetStruckRefire</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_SoundRefire">wwTarget.SoundRefire</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_HasAudioHitSound">wwTarget.HasAudioHitSound</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_AudioEvent">wwTarget.AudioEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_AudioType">wwTarget.AudioType</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_Manager">wwTarget.Manager</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_m_originalPos">wwTarget.m_originalPos</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_m_originalRot">wwTarget.m_originalRot</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_m_originalScale">wwTarget.m_originalScale</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_RespawnTime">wwTarget.RespawnTime</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_DoesRescale">wwTarget.DoesRescale</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_hasManager">wwTarget.hasManager</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_Awake">wwTarget.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_Start">wwTarget.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_SetManager_FistVR_wwTargetManager_">wwTarget.SetManager(wwTargetManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_SetupAfterSpawn_FistVR_wwTargetManager_UnityEngine_Vector3_UnityEngine_Quaternion_System_Single_System_Boolean_">wwTarget.SetupAfterSpawn(wwTargetManager, Vector3, Quaternion, float, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_Damage_FistVR_Damage_">wwTarget.Damage(Damage)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_Update">wwTarget.Update()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_PlaySoundEvent">wwTarget.PlaySoundEvent()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.wwTarget.html#FistVR_wwTarget_SendStruckEvent">wwTarget.SendStruckEvent()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FistVR_wwTargetShatterable__ctor_" data-uid="FistVR.wwTargetShatterable.#ctor*"></a>
+
+  <h3 id="FistVR_wwTargetShatterable__ctor" data-uid="FistVR.wwTargetShatterable.#ctor">
+  wwTargetShatterable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public wwTargetShatterable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FistVR_wwTargetShatterable_DistTrigger" data-uid="FistVR.wwTargetShatterable.DistTrigger">
+  DistTrigger
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DistTrigger</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_wwTargetShatterable_DoSpawnsAlignWithStrikerDir" data-uid="FistVR.wwTargetShatterable.DoSpawnsAlignWithStrikerDir">
+  DoSpawnsAlignWithStrikerDir
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DoSpawnsAlignWithStrikerDir</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_wwTargetShatterable_DoSpawnsRotateRandom" data-uid="FistVR.wwTargetShatterable.DoSpawnsRotateRandom">
+  DoSpawnsRotateRandom
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DoSpawnsRotateRandom</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_wwTargetShatterable_IgnoresCollisionDamage" data-uid="FistVR.wwTargetShatterable.IgnoresCollisionDamage">
+  IgnoresCollisionDamage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IgnoresCollisionDamage</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_wwTargetShatterable_IsTNT" data-uid="FistVR.wwTargetShatterable.IsTNT">
+  IsTNT
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTNT</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_wwTargetShatterable_ObjectWrapper" data-uid="FistVR.wwTargetShatterable.ObjectWrapper">
+  ObjectWrapper
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRObject ObjectWrapper</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRObject.html">FVRObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_wwTargetShatterable_PointsLife" data-uid="FistVR.wwTargetShatterable.PointsLife">
+  PointsLife
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PointsLife</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_wwTargetShatterable_RB" data-uid="FistVR.wwTargetShatterable.RB">
+  RB
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rigidbody RB</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Rigidbody</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_wwTargetShatterable_Shards" data-uid="FistVR.wwTargetShatterable.Shards">
+  Shards
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rigidbody[] Shards</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Rigidbody</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_wwTargetShatterable_Spawns" data-uid="FistVR.wwTargetShatterable.Spawns">
+  Spawns
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject[] Spawns</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_wwTargetShatterable_UsesPoints" data-uid="FistVR.wwTargetShatterable.UsesPoints">
+  UsesPoints
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UsesPoints</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_wwTargetShatterable_compareTo" data-uid="FistVR.wwTargetShatterable.compareTo">
+  compareTo
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 compareTo</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_wwTargetShatterable_explosionMultiplier" data-uid="FistVR.wwTargetShatterable.explosionMultiplier">
+  explosionMultiplier
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float explosionMultiplier</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FistVR_wwTargetShatterable_OnCollisionEnter_" data-uid="FistVR.wwTargetShatterable.OnCollisionEnter*"></a>
+
+  <h3 id="FistVR_wwTargetShatterable_OnCollisionEnter_UnityEngine_Collision_" data-uid="FistVR.wwTargetShatterable.OnCollisionEnter(UnityEngine.Collision)">
+  OnCollisionEnter(Collision)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCollisionEnter(Collision col)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <span class="xref">Collision</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_wwTargetShatterable_TargetStruck_" data-uid="FistVR.wwTargetShatterable.TargetStruck*"></a>
+
+  <h3 id="FistVR_wwTargetShatterable_TargetStruck_FistVR_Damage_System_Boolean_" data-uid="FistVR.wwTargetShatterable.TargetStruck(FistVR.Damage,System.Boolean)">
+  TargetStruck(Damage, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void TargetStruck(Damage dam, bool sendStruckEvent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dam</code> <a class="xref" href="FistVR.Damage.html">Damage</a></dt>
+    <dd></dd>
+    <dt><code>sendStruckEvent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

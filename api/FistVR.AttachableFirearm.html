@@ -1,0 +1,2387 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AttachableFirearm
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AttachableFirearm
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FistVR.AttachableFirearm">
+
+
+
+  <h1 id="FistVR_AttachableFirearm" data-uid="FistVR.AttachableFirearm" class="text-break">
+    Class AttachableFirearm
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FistVR.html">FistVR</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AttachableFirearm : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AttachableFirearm</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="FistVR.AttachableBreakActions.html">AttachableBreakActions</a></div>
+      <div><a class="xref" href="FistVR.AttachableClosedBoltWeapon.html">AttachableClosedBoltWeapon</a></div>
+      <div><a class="xref" href="FistVR.AttachableTubeFed.html">AttachableTubeFed</a></div>
+      <div><a class="xref" href="FistVR.GP25.html">GP25</a></div>
+      <div><a class="xref" href="FistVR.M203.html">M203</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FistVR_AttachableFirearm__ctor_" data-uid="FistVR.AttachableFirearm.#ctor*"></a>
+
+  <h3 id="FistVR_AttachableFirearm__ctor" data-uid="FistVR.AttachableFirearm.#ctor">
+  AttachableFirearm()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttachableFirearm()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FistVR_AttachableFirearm_AccuracyClass" data-uid="FistVR.AttachableFirearm.AccuracyClass">
+  AccuracyClass
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRFireArmMechanicalAccuracyClass AccuracyClass</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRFireArmMechanicalAccuracyClass.html">FVRFireArmMechanicalAccuracyClass</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_Attachment" data-uid="FistVR.AttachableFirearm.Attachment">
+  Attachment
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttachableFirearmPhysicalObject Attachment</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.AttachableFirearmPhysicalObject.html">AttachableFirearmPhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_AudioClipSet" data-uid="FistVR.AttachableFirearm.AudioClipSet">
+  AudioClipSet
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRFirearmAudioSet AudioClipSet</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRFirearmAudioSet.html">FVRFirearmAudioSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_Clip" data-uid="FistVR.AttachableFirearm.Clip">
+  Clip
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRFireArmClip Clip</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRFireArmClip.html">FVRFireArmClip</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_ClipEjectPos" data-uid="FistVR.AttachableFirearm.ClipEjectPos">
+  ClipEjectPos
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform ClipEjectPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_ClipMountPos" data-uid="FistVR.AttachableFirearm.ClipMountPos">
+  ClipMountPos
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform ClipMountPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_ClipTrigger" data-uid="FistVR.AttachableFirearm.ClipTrigger">
+  ClipTrigger
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject ClipTrigger</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_CurrentMuzzle" data-uid="FistVR.AttachableFirearm.CurrentMuzzle">
+  CurrentMuzzle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform CurrentMuzzle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_CurrentMuzzleBrake" data-uid="FistVR.AttachableFirearm.CurrentMuzzleBrake">
+  CurrentMuzzleBrake
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MuzzleBrake CurrentMuzzleBrake</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.MuzzleBrake.html">MuzzleBrake</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_CurrentSuppressor" data-uid="FistVR.AttachableFirearm.CurrentSuppressor">
+  CurrentSuppressor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Suppressor CurrentSuppressor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.Suppressor.html">Suppressor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_DefaultMuzzleDamping" data-uid="FistVR.AttachableFirearm.DefaultMuzzleDamping">
+  DefaultMuzzleDamping
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRFireArmMechanicalAccuracyClass DefaultMuzzleDamping</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRFireArmMechanicalAccuracyClass.html">FVRFireArmMechanicalAccuracyClass</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_DefaultMuzzleEffectSize" data-uid="FistVR.AttachableFirearm.DefaultMuzzleEffectSize">
+  DefaultMuzzleEffectSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MuzzleEffectSize DefaultMuzzleEffectSize</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.MuzzleEffectSize.html">MuzzleEffectSize</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_DefaultMuzzleState" data-uid="FistVR.AttachableFirearm.DefaultMuzzleState">
+  DefaultMuzzleState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttachableFirearm.MuzzleState DefaultMuzzleState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.AttachableFirearm.html">AttachableFirearm</a>.<a class="xref" href="FistVR.AttachableFirearm.MuzzleState.html">MuzzleState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_HasActiveShoulderStock" data-uid="FistVR.AttachableFirearm.HasActiveShoulderStock">
+  HasActiveShoulderStock
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasActiveShoulderStock</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_Interface" data-uid="FistVR.AttachableFirearm.Interface">
+  Interface
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttachableFirearmInterface Interface</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.AttachableFirearmInterface.html">AttachableFirearmInterface</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_Magazine" data-uid="FistVR.AttachableFirearm.Magazine">
+  Magazine
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRFireArmMagazine Magazine</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRFireArmMagazine.html">FVRFireArmMagazine</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_MagazineEjectPos" data-uid="FistVR.AttachableFirearm.MagazineEjectPos">
+  MagazineEjectPos
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform MagazineEjectPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_MagazineMountPos" data-uid="FistVR.AttachableFirearm.MagazineMountPos">
+  MagazineMountPos
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform MagazineMountPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_MagazineType" data-uid="FistVR.AttachableFirearm.MagazineType">
+  MagazineType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SearchableEnum]
+public FireArmMagazineType MagazineType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FireArmMagazineType.html">FireArmMagazineType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_MuzzleDevices" data-uid="FistVR.AttachableFirearm.MuzzleDevices">
+  MuzzleDevices
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;MuzzleDevice&gt; MuzzleDevices</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FistVR.MuzzleDevice.html">MuzzleDevice</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_MuzzleEffects" data-uid="FistVR.AttachableFirearm.MuzzleEffects">
+  MuzzleEffects
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MuzzleEffect[] MuzzleEffects</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.MuzzleEffect.html">MuzzleEffect</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_MuzzlePos" data-uid="FistVR.AttachableFirearm.MuzzlePos">
+  MuzzlePos
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform MuzzlePos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_OverrideFA" data-uid="FistVR.AttachableFirearm.OverrideFA">
+  OverrideFA
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRFireArm OverrideFA</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRFireArm.html">FVRFireArm</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_RecoilProfile" data-uid="FistVR.AttachableFirearm.RecoilProfile">
+  RecoilProfile
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRFireArmRecoilProfile RecoilProfile</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRFireArmRecoilProfile.html">FVRFireArmRecoilProfile</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_RecoilProfileStocked" data-uid="FistVR.AttachableFirearm.RecoilProfileStocked">
+  RecoilProfileStocked
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRFireArmRecoilProfile RecoilProfileStocked</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRFireArmRecoilProfile.html">FVRFireArmRecoilProfile</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_RecoilingPoseHolder" data-uid="FistVR.AttachableFirearm.RecoilingPoseHolder">
+  RecoilingPoseHolder
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform RecoilingPoseHolder</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_RoundType" data-uid="FistVR.AttachableFirearm.RoundType">
+  RoundType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SearchableEnum]
+public FireArmRoundType RoundType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FireArmRoundType.html">FireArmRoundType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_SecondaryMagazineSlots" data-uid="FistVR.AttachableFirearm.SecondaryMagazineSlots">
+  SecondaryMagazineSlots
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttachableFirearm.SecondaryMagazineSlot[] SecondaryMagazineSlots</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.AttachableFirearm.SecondaryMagazineSlot.html">SecondaryMagazineSlot</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_StockPos" data-uid="FistVR.AttachableFirearm.StockPos">
+  StockPos
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform StockPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_UsesBeltBoxes" data-uid="FistVR.AttachableFirearm.UsesBeltBoxes">
+  UsesBeltBoxes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UsesBeltBoxes</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_UsesClips" data-uid="FistVR.AttachableFirearm.UsesClips">
+  UsesClips
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UsesClips</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_UsesMagazines" data-uid="FistVR.AttachableFirearm.UsesMagazines">
+  UsesMagazines
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UsesMagazines</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_UsesStockedRecoilProfile" data-uid="FistVR.AttachableFirearm.UsesStockedRecoilProfile">
+  UsesStockedRecoilProfile
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UsesStockedRecoilProfile</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_m_ejectDelay" data-uid="FistVR.AttachableFirearm.m_ejectDelay">
+  m_ejectDelay
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float m_ejectDelay</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_m_isBraked" data-uid="FistVR.AttachableFirearm.m_isBraked">
+  m_isBraked
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool m_isBraked</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_m_isSuppressed" data-uid="FistVR.AttachableFirearm.m_isSuppressed">
+  m_isSuppressed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool m_isSuppressed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_m_pool_handling" data-uid="FistVR.AttachableFirearm.m_pool_handling">
+  m_pool_handling
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SM.AudioSourcePool m_pool_handling</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.SM.html">SM</a>.<a class="xref" href="FistVR.SM.AudioSourcePool.html">AudioSourcePool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_m_pool_mechanics" data-uid="FistVR.AttachableFirearm.m_pool_mechanics">
+  m_pool_mechanics
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SM.AudioSourcePool m_pool_mechanics</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.SM.html">SM</a>.<a class="xref" href="FistVR.SM.AudioSourcePool.html">AudioSourcePool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_m_pool_shot" data-uid="FistVR.AttachableFirearm.m_pool_shot">
+  m_pool_shot
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SM.AudioSourcePool m_pool_shot</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.SM.html">SM</a>.<a class="xref" href="FistVR.SM.AudioSourcePool.html">AudioSourcePool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableFirearm_m_pool_tail" data-uid="FistVR.AttachableFirearm.m_pool_tail">
+  m_pool_tail
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SM.AudioSourcePool m_pool_tail</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.SM.html">SM</a>.<a class="xref" href="FistVR.SM.AudioSourcePool.html">AudioSourcePool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="FistVR_AttachableFirearm_ClipEjectDelay_" data-uid="FistVR.AttachableFirearm.ClipEjectDelay*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_ClipEjectDelay" data-uid="FistVR.AttachableFirearm.ClipEjectDelay">
+  ClipEjectDelay
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ClipEjectDelay { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_EjectDelay_" data-uid="FistVR.AttachableFirearm.EjectDelay*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_EjectDelay" data-uid="FistVR.AttachableFirearm.EjectDelay">
+  EjectDelay
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float EjectDelay { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_LastEjectedMag_" data-uid="FistVR.AttachableFirearm.LastEjectedMag*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_LastEjectedMag" data-uid="FistVR.AttachableFirearm.LastEjectedMag">
+  LastEjectedMag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRFireArmMagazine LastEjectedMag { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRFireArmMagazine.html">FVRFireArmMagazine</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_SceneSettings_" data-uid="FistVR.AttachableFirearm.SceneSettings*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_SceneSettings" data-uid="FistVR.AttachableFirearm.SceneSettings">
+  SceneSettings
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRSceneSettings SceneSettings { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRSceneSettings.html">FVRSceneSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FistVR_AttachableFirearm_Awake_" data-uid="FistVR.AttachableFirearm.Awake*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_Awake" data-uid="FistVR.AttachableFirearm.Awake">
+  Awake()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_DeRegisterMuzzleDevice_" data-uid="FistVR.AttachableFirearm.DeRegisterMuzzleDevice*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_DeRegisterMuzzleDevice_FistVR_MuzzleDevice_" data-uid="FistVR.AttachableFirearm.DeRegisterMuzzleDevice(FistVR.MuzzleDevice)">
+  DeRegisterMuzzleDevice(MuzzleDevice)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeRegisterMuzzleDevice(MuzzleDevice m)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m</code> <a class="xref" href="FistVR.MuzzleDevice.html">MuzzleDevice</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_EjectMag_" data-uid="FistVR.AttachableFirearm.EjectMag*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_EjectMag_System_Boolean_" data-uid="FistVR.AttachableFirearm.EjectMag(System.Boolean)">
+  EjectMag(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void EjectMag(bool PhysicalRelease = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>PhysicalRelease</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_Fire_" data-uid="FistVR.AttachableFirearm.Fire*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_Fire_FistVR_FVRFireArmChamber_UnityEngine_Transform_System_Boolean_FistVR_FVRFireArm_System_Single_" data-uid="FistVR.AttachableFirearm.Fire(FistVR.FVRFireArmChamber,UnityEngine.Transform,System.Boolean,FistVR.FVRFireArm,System.Single)">
+  Fire(FVRFireArmChamber, Transform, bool, FVRFireArm, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Fire(FVRFireArmChamber chamber, Transform muzzle, bool doBuzz, FVRFireArm fa, float velMult = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chamber</code> <a class="xref" href="FistVR.FVRFireArmChamber.html">FVRFireArmChamber</a></dt>
+    <dd></dd>
+    <dt><code>muzzle</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>doBuzz</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>fa</code> <a class="xref" href="FistVR.FVRFireArm.html">FVRFireArm</a></dt>
+    <dd></dd>
+    <dt><code>velMult</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_FireMuzzleSmoke_" data-uid="FistVR.AttachableFirearm.FireMuzzleSmoke*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_FireMuzzleSmoke" data-uid="FistVR.AttachableFirearm.FireMuzzleSmoke">
+  FireMuzzleSmoke()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void FireMuzzleSmoke()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_GetClosestValidPoint_" data-uid="FistVR.AttachableFirearm.GetClosestValidPoint*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_GetClosestValidPoint_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Vector3_" data-uid="FistVR.AttachableFirearm.GetClosestValidPoint(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)">
+  GetClosestValidPoint(Vector3, Vector3, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetClosestValidPoint(Vector3 vA, Vector3 vB, Vector3 vPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vA</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>vB</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>vPoint</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_GetMuzzle_" data-uid="FistVR.AttachableFirearm.GetMuzzle*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_GetMuzzle" data-uid="FistVR.AttachableFirearm.GetMuzzle">
+  GetMuzzle()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Transform GetMuzzle()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_GetRecoilProfile_" data-uid="FistVR.AttachableFirearm.GetRecoilProfile*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_GetRecoilProfile" data-uid="FistVR.AttachableFirearm.GetRecoilProfile">
+  GetRecoilProfile()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRFireArmRecoilProfile GetRecoilProfile()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRFireArmRecoilProfile.html">FVRFireArmRecoilProfile</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_GetRecoilZ_" data-uid="FistVR.AttachableFirearm.GetRecoilZ*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_GetRecoilZ" data-uid="FistVR.AttachableFirearm.GetRecoilZ">
+  GetRecoilZ()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetRecoilZ()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_IsBraked_" data-uid="FistVR.AttachableFirearm.IsBraked*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_IsBraked" data-uid="FistVR.AttachableFirearm.IsBraked">
+  IsBraked()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBraked()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_IsSuppressed_" data-uid="FistVR.AttachableFirearm.IsSuppressed*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_IsSuppressed" data-uid="FistVR.AttachableFirearm.IsSuppressed">
+  IsSuppressed()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSuppressed()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_IsTwoHandStabilized_" data-uid="FistVR.AttachableFirearm.IsTwoHandStabilized*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_IsTwoHandStabilized_FistVR_FVRViveHand_" data-uid="FistVR.AttachableFirearm.IsTwoHandStabilized(FistVR.FVRViveHand)">
+  IsTwoHandStabilized(FVRViveHand)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsTwoHandStabilized(FVRViveHand m_hand)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m_hand</code> <a class="xref" href="FistVR.FVRViveHand.html">FVRViveHand</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_LoadMag_" data-uid="FistVR.AttachableFirearm.LoadMag*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_LoadMag_FistVR_FVRFireArmMagazine_" data-uid="FistVR.AttachableFirearm.LoadMag(FistVR.FVRFireArmMagazine)">
+  LoadMag(FVRFireArmMagazine)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LoadMag(FVRFireArmMagazine mag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mag</code> <a class="xref" href="FistVR.FVRFireArmMagazine.html">FVRFireArmMagazine</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_PlayAudioAsHandling_" data-uid="FistVR.AttachableFirearm.PlayAudioAsHandling*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_PlayAudioAsHandling_FistVR_AudioEvent_UnityEngine_Vector3_" data-uid="FistVR.AttachableFirearm.PlayAudioAsHandling(FistVR.AudioEvent,UnityEngine.Vector3)">
+  PlayAudioAsHandling(AudioEvent, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRPooledAudioSource PlayAudioAsHandling(AudioEvent ev, Vector3 pos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ev</code> <a class="xref" href="FistVR.AudioEvent.html">AudioEvent</a></dt>
+    <dd></dd>
+    <dt><code>pos</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRPooledAudioSource.html">FVRPooledAudioSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_PlayAudioEvent_" data-uid="FistVR.AttachableFirearm.PlayAudioEvent*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_PlayAudioEvent_FistVR_FirearmAudioEventType_System_Single_" data-uid="FistVR.AttachableFirearm.PlayAudioEvent(FistVR.FirearmAudioEventType,System.Single)">
+  PlayAudioEvent(FirearmAudioEventType, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayAudioEvent(FirearmAudioEventType eType, float pitchmod = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eType</code> <a class="xref" href="FistVR.FirearmAudioEventType.html">FirearmAudioEventType</a></dt>
+    <dd></dd>
+    <dt><code>pitchmod</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_PlayAudioEventHandling_" data-uid="FistVR.AttachableFirearm.PlayAudioEventHandling*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_PlayAudioEventHandling_FistVR_AudioEvent_" data-uid="FistVR.AttachableFirearm.PlayAudioEventHandling(FistVR.AudioEvent)">
+  PlayAudioEventHandling(AudioEvent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayAudioEventHandling(AudioEvent e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="FistVR.AudioEvent.html">AudioEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_PlayAudioGunShot_" data-uid="FistVR.AttachableFirearm.PlayAudioGunShot*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_PlayAudioGunShot_FistVR_FVRFireArmRound_FistVR_FVRSoundEnvironment_System_Single_" data-uid="FistVR.AttachableFirearm.PlayAudioGunShot(FistVR.FVRFireArmRound,FistVR.FVRSoundEnvironment,System.Single)">
+  PlayAudioGunShot(FVRFireArmRound, FVRSoundEnvironment, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayAudioGunShot(FVRFireArmRound round, FVRSoundEnvironment TailEnvironment, float globalLoudnessMultiplier = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>round</code> <a class="xref" href="FistVR.FVRFireArmRound.html">FVRFireArmRound</a></dt>
+    <dd></dd>
+    <dt><code>TailEnvironment</code> <a class="xref" href="FistVR.FVRSoundEnvironment.html">FVRSoundEnvironment</a></dt>
+    <dd></dd>
+    <dt><code>globalLoudnessMultiplier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_PlayAudioGunShot_" data-uid="FistVR.AttachableFirearm.PlayAudioGunShot*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_PlayAudioGunShot_System_Boolean_FistVR_FVRTailSoundClass_FistVR_FVRTailSoundClass_FistVR_FVRSoundEnvironment_" data-uid="FistVR.AttachableFirearm.PlayAudioGunShot(System.Boolean,FistVR.FVRTailSoundClass,FistVR.FVRTailSoundClass,FistVR.FVRSoundEnvironment)">
+  PlayAudioGunShot(bool, FVRTailSoundClass, FVRTailSoundClass, FVRSoundEnvironment)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayAudioGunShot(bool IsHighPressure, FVRTailSoundClass TailClass, FVRTailSoundClass TailClassSuppressed, FVRSoundEnvironment TailEnvironment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>IsHighPressure</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>TailClass</code> <a class="xref" href="FistVR.FVRTailSoundClass.html">FVRTailSoundClass</a></dt>
+    <dd></dd>
+    <dt><code>TailClassSuppressed</code> <a class="xref" href="FistVR.FVRTailSoundClass.html">FVRTailSoundClass</a></dt>
+    <dd></dd>
+    <dt><code>TailEnvironment</code> <a class="xref" href="FistVR.FVRSoundEnvironment.html">FVRSoundEnvironment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_PlayShotTail_" data-uid="FistVR.AttachableFirearm.PlayShotTail*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_PlayShotTail_FistVR_FVRTailSoundClass_FistVR_FVRSoundEnvironment_System_Single_" data-uid="FistVR.AttachableFirearm.PlayShotTail(FistVR.FVRTailSoundClass,FistVR.FVRSoundEnvironment,System.Single)">
+  PlayShotTail(FVRTailSoundClass, FVRSoundEnvironment, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayShotTail(FVRTailSoundClass tailClass, FVRSoundEnvironment TailEnvironment, float globalLoudnessMultiplier = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tailClass</code> <a class="xref" href="FistVR.FVRTailSoundClass.html">FVRTailSoundClass</a></dt>
+    <dd></dd>
+    <dt><code>TailEnvironment</code> <a class="xref" href="FistVR.FVRSoundEnvironment.html">FVRSoundEnvironment</a></dt>
+    <dd></dd>
+    <dt><code>globalLoudnessMultiplier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_ProcessInput_" data-uid="FistVR.AttachableFirearm.ProcessInput*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_ProcessInput_FistVR_FVRViveHand_System_Boolean_FistVR_FVRInteractiveObject_" data-uid="FistVR.AttachableFirearm.ProcessInput(FistVR.FVRViveHand,System.Boolean,FistVR.FVRInteractiveObject)">
+  ProcessInput(FVRViveHand, bool, FVRInteractiveObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ProcessInput(FVRViveHand hand, bool fromInterface, FVRInteractiveObject o)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hand</code> <a class="xref" href="FistVR.FVRViveHand.html">FVRViveHand</a></dt>
+    <dd></dd>
+    <dt><code>fromInterface</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>o</code> <a class="xref" href="FistVR.FVRInteractiveObject.html">FVRInteractiveObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_RattleSuppresor_" data-uid="FistVR.AttachableFirearm.RattleSuppresor*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_RattleSuppresor" data-uid="FistVR.AttachableFirearm.RattleSuppresor">
+  RattleSuppresor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RattleSuppresor()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_Recoil_" data-uid="FistVR.AttachableFirearm.Recoil*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_Recoil_System_Boolean_FistVR_FVRFireArm_" data-uid="FistVR.AttachableFirearm.Recoil(System.Boolean,FistVR.FVRFireArm)">
+  Recoil(bool, FVRFireArm)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Recoil(bool firedFromInterface, FVRFireArm f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>firedFromInterface</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>f</code> <a class="xref" href="FistVR.FVRFireArm.html">FVRFireArm</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_RegisterMuzzleBrake_" data-uid="FistVR.AttachableFirearm.RegisterMuzzleBrake*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_RegisterMuzzleBrake_FistVR_MuzzleBrake_" data-uid="FistVR.AttachableFirearm.RegisterMuzzleBrake(FistVR.MuzzleBrake)">
+  RegisterMuzzleBrake(MuzzleBrake)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterMuzzleBrake(MuzzleBrake m)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m</code> <a class="xref" href="FistVR.MuzzleBrake.html">MuzzleBrake</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_RegisterMuzzleDevice_" data-uid="FistVR.AttachableFirearm.RegisterMuzzleDevice*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_RegisterMuzzleDevice_FistVR_MuzzleDevice_" data-uid="FistVR.AttachableFirearm.RegisterMuzzleDevice(FistVR.MuzzleDevice)">
+  RegisterMuzzleDevice(MuzzleDevice)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterMuzzleDevice(MuzzleDevice m)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m</code> <a class="xref" href="FistVR.MuzzleDevice.html">MuzzleDevice</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_RegisterSuppressor_" data-uid="FistVR.AttachableFirearm.RegisterSuppressor*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_RegisterSuppressor_FistVR_Suppressor_" data-uid="FistVR.AttachableFirearm.RegisterSuppressor(FistVR.Suppressor)">
+  RegisterSuppressor(Suppressor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterSuppressor(Suppressor s)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <a class="xref" href="FistVR.Suppressor.html">Suppressor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_Tick_" data-uid="FistVR.AttachableFirearm.Tick*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_Tick_System_Single_FistVR_FVRViveHand_" data-uid="FistVR.AttachableFirearm.Tick(System.Single,FistVR.FVRViveHand)">
+  Tick(float, FVRViveHand)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Tick(float t, FVRViveHand m_hand)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>m_hand</code> <a class="xref" href="FistVR.FVRViveHand.html">FVRViveHand</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableFirearm_Update_" data-uid="FistVR.AttachableFirearm.Update*"></a>
+
+  <h3 id="FistVR_AttachableFirearm_Update" data-uid="FistVR.AttachableFirearm.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

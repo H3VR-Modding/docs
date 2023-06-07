@@ -1,0 +1,642 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class HandCrankFrankCrank
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class HandCrankFrankCrank
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FistVR.HandCrankFrankCrank">
+
+
+
+  <h1 id="FistVR_HandCrankFrankCrank" data-uid="FistVR.HandCrankFrankCrank" class="text-break">
+    Class HandCrankFrankCrank
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FistVR.html">FistVR</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HandCrankFrankCrank : FVRInteractiveObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="FistVR.FVRInteractiveObject.html">FVRInteractiveObject</a></div>
+      <div><span class="xref">HandCrankFrankCrank</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GameObject">FVRInteractiveObject.GameObject</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_Transform">FVRInteractiveObject.Transform</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_All">FVRInteractiveObject.All</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_ControlType">FVRInteractiveObject.ControlType</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_IsSimpleInteract">FVRInteractiveObject.IsSimpleInteract</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_HandlingGrabSound">FVRInteractiveObject.HandlingGrabSound</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_HandlingReleaseSound">FVRInteractiveObject.HandlingReleaseSound</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_PoseOverride">FVRInteractiveObject.PoseOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_QBPoseOverride">FVRInteractiveObject.QBPoseOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_PoseOverride_Touch">FVRInteractiveObject.PoseOverride_Touch</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UseGrabPointChild">FVRInteractiveObject.UseGrabPointChild</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UseGripRotInterp">FVRInteractiveObject.UseGripRotInterp</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_PositionInterpSpeed">FVRInteractiveObject.PositionInterpSpeed</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_RotationInterpSpeed">FVRInteractiveObject.RotationInterpSpeed</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_grabPointTransform">FVRInteractiveObject.m_grabPointTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_pos_interp_tick">FVRInteractiveObject.m_pos_interp_tick</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_rot_interp_tick">FVRInteractiveObject.m_rot_interp_tick</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_EndInteractionIfDistant">FVRInteractiveObject.EndInteractionIfDistant</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_EndInteractionDistance">FVRInteractiveObject.EndInteractionDistance</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_hasTriggeredUpSinceBegin">FVRInteractiveObject.m_hasTriggeredUpSinceBegin</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_triggerCooldown">FVRInteractiveObject.triggerCooldown</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_hand">FVRInteractiveObject.m_hand</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UXGeo_Hover">FVRInteractiveObject.UXGeo_Hover</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UXGeo_Held">FVRInteractiveObject.UXGeo_Held</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UseFilteredHandTransform">FVRInteractiveObject.UseFilteredHandTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UseFilteredHandPosition">FVRInteractiveObject.UseFilteredHandPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UseFilteredHandRotation">FVRInteractiveObject.UseFilteredHandRotation</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UseSecondStepRotationFiltering">FVRInteractiveObject.UseSecondStepRotationFiltering</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SecondStepFilteredRotation">FVRInteractiveObject.SecondStepFilteredRotation</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_colliders">FVRInteractiveObject.m_colliders</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_DoesFunctionAsGrabPoint">FVRInteractiveObject.DoesFunctionAsGrabPoint()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GetLastGrabHandPos">FVRInteractiveObject.GetLastGrabHandPos()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SetLastGrabHandPos_UnityEngine_Vector3_">FVRInteractiveObject.SetLastGrabHandPos(Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GetGrabMoveDelta">FVRInteractiveObject.GetGrabMoveDelta()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_IsSelectionRestricted">FVRInteractiveObject.IsSelectionRestricted()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_IsInteractable">FVRInteractiveObject.IsInteractable()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_IsDistantGrabbable">FVRInteractiveObject.IsDistantGrabbable()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_OnHoverStart">FVRInteractiveObject.OnHoverStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_OnHoverEnd">FVRInteractiveObject.OnHoverEnd()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_OnHoverStay">FVRInteractiveObject.OnHoverStay()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SetUXHoverGeoViz_System_Boolean_">FVRInteractiveObject.SetUXHoverGeoViz(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SetUXHeldGeoViz_System_Boolean_">FVRInteractiveObject.SetUXHeldGeoViz(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UpdateGrabPointTransform">FVRInteractiveObject.UpdateGrabPointTransform()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_PlayGrabSound_System_Boolean_FistVR_FVRViveHand_">FVRInteractiveObject.PlayGrabSound(bool, FVRViveHand)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_PlayReleaseSound_FistVR_FVRViveHand_">FVRInteractiveObject.PlayReleaseSound(FVRViveHand)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_EndInteraction_FistVR_FVRViveHand_">FVRInteractiveObject.EndInteraction(FVRViveHand)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SimpleInteraction_FistVR_FVRViveHand_">FVRInteractiveObject.SimpleInteraction(FVRViveHand)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_Poke_FistVR_FVRViveHand_">FVRInteractiveObject.Poke(FVRViveHand)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_ForceBreakInteraction">FVRInteractiveObject.ForceBreakInteraction()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_Start">FVRInteractiveObject.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GlobalUpdate">FVRInteractiveObject.GlobalUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GlobalFixedUpdate">FVRInteractiveObject.GlobalFixedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_FVRFixedUpdate">FVRInteractiveObject.FVRFixedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_OnDestroy">FVRInteractiveObject.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_TestHandDistance">FVRInteractiveObject.TestHandDistance()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SetCollidersToLayer_System_Collections_Generic_List_UnityEngine_Collider__System_Boolean_System_String_">FVRInteractiveObject.SetCollidersToLayer(List&lt;Collider&gt;, bool, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SetAllCollidersToLayer_System_Boolean_System_String_">FVRInteractiveObject.SetAllCollidersToLayer(bool, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GetClosestValidPoint_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Vector3_">FVRInteractiveObject.GetClosestValidPoint(Vector3, Vector3, Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GrabPointTransform">FVRInteractiveObject.GrabPointTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_handPos">FVRInteractiveObject.m_handPos</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_handRot">FVRInteractiveObject.m_handRot</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_palmPos">FVRInteractiveObject.m_palmPos</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_palmRot">FVRInteractiveObject.m_palmRot</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_IsHovered">FVRInteractiveObject.IsHovered</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_IsHeld">FVRInteractiveObject.IsHeld</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FistVR_HandCrankFrankCrank__ctor_" data-uid="FistVR.HandCrankFrankCrank.#ctor*"></a>
+
+  <h3 id="FistVR_HandCrankFrankCrank__ctor" data-uid="FistVR.HandCrankFrankCrank.#ctor">
+  HandCrankFrankCrank()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HandCrankFrankCrank()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FistVR_HandCrankFrankCrank_Gun" data-uid="FistVR.HandCrankFrankCrank.Gun">
+  Gun
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OpenBoltReceiver Gun</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.OpenBoltReceiver.html">OpenBoltReceiver</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HandCrankFrankCrank_GunBarrels" data-uid="FistVR.HandCrankFrankCrank.GunBarrels">
+  GunBarrels
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform GunBarrels</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HandCrankFrankCrank_YUpTarget" data-uid="FistVR.HandCrankFrankCrank.YUpTarget">
+  YUpTarget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform YUpTarget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_HandCrankFrankCrank_m_isCrankHeld" data-uid="FistVR.HandCrankFrankCrank.m_isCrankHeld">
+  m_isCrankHeld
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool m_isCrankHeld</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FistVR_HandCrankFrankCrank_Awake_" data-uid="FistVR.HandCrankFrankCrank.Awake*"></a>
+
+  <h3 id="FistVR_HandCrankFrankCrank_Awake" data-uid="FistVR.HandCrankFrankCrank.Awake">
+  Awake()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_HandCrankFrankCrank_BeginInteraction_" data-uid="FistVR.HandCrankFrankCrank.BeginInteraction*"></a>
+
+  <h3 id="FistVR_HandCrankFrankCrank_BeginInteraction_FistVR_FVRViveHand_" data-uid="FistVR.HandCrankFrankCrank.BeginInteraction(FistVR.FVRViveHand)">
+  BeginInteraction(FVRViveHand)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void BeginInteraction(FVRViveHand hand)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hand</code> <a class="xref" href="FistVR.FVRViveHand.html">FVRViveHand</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_HandCrankFrankCrank_CrankGun_" data-uid="FistVR.HandCrankFrankCrank.CrankGun*"></a>
+
+  <h3 id="FistVR_HandCrankFrankCrank_CrankGun_System_Single_" data-uid="FistVR.HandCrankFrankCrank.CrankGun(System.Single)">
+  CrankGun(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CrankGun(float crank)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>crank</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_HandCrankFrankCrank_FVRUpdate_" data-uid="FistVR.HandCrankFrankCrank.FVRUpdate*"></a>
+
+  <h3 id="FistVR_HandCrankFrankCrank_FVRUpdate" data-uid="FistVR.HandCrankFrankCrank.FVRUpdate">
+  FVRUpdate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void FVRUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_HandCrankFrankCrank_UpdateInteraction_" data-uid="FistVR.HandCrankFrankCrank.UpdateInteraction*"></a>
+
+  <h3 id="FistVR_HandCrankFrankCrank_UpdateInteraction_FistVR_FVRViveHand_" data-uid="FistVR.HandCrankFrankCrank.UpdateInteraction(FistVR.FVRViveHand)">
+  UpdateInteraction(FVRViveHand)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UpdateInteraction(FVRViveHand hand)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hand</code> <a class="xref" href="FistVR.FVRViveHand.html">FVRViveHand</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1783 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class FVRObject
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FVRObject
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FistVR.FVRObject">
+
+
+
+  <h1 id="FistVR_FVRObject" data-uid="FistVR.FVRObject" class="text-break">
+    Class FVRObject
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FistVR.html">FistVR</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>FVRObject is the object that stores the required data for the game to spawn in objects</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FVRObject : AnvilAsset</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.AnvilAsset.html">AnvilAsset</a></div>
+      <div><span class="xref">FVRObject</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.AnvilAsset.html#Global_AnvilAsset_GetGameObject">AnvilAsset.GetGameObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AnvilAsset.html#Global_AnvilAsset_RefreshCache">AnvilAsset.RefreshCache()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AnvilAsset.html#Global_AnvilAsset_GetGameObjectAsync">AnvilAsset.GetGameObjectAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AnvilAsset.html#Global_AnvilAsset_UpgradeFrom_UnityEngine_GameObject_">AnvilAsset.UpgradeFrom(GameObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AnvilAsset.html#Global_AnvilAsset_Guid">AnvilAsset.Guid</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FistVR_FVRObject__ctor_" data-uid="FistVR.FVRObject.#ctor*"></a>
+
+  <h3 id="FistVR_FVRObject__ctor" data-uid="FistVR.FVRObject.#ctor">
+  FVRObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRObject()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FistVR_FVRObject_BespokeAttachments" data-uid="FistVR.FVRObject.BespokeAttachments">
+  BespokeAttachments
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FVRObject&gt; BespokeAttachments</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FistVR.FVRObject.html">FVRObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_Category" data-uid="FistVR.FVRObject.Category">
+  Category
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRObject.ObjectCategory Category</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRObject.html">FVRObject</a>.<a class="xref" href="FistVR.FVRObject.ObjectCategory.html">ObjectCategory</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_ClipType" data-uid="FistVR.FVRObject.ClipType">
+  ClipType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FireArmClipType ClipType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FireArmClipType.html">FireArmClipType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_CompatibleClips" data-uid="FistVR.FVRObject.CompatibleClips">
+  CompatibleClips
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FVRObject&gt; CompatibleClips</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FistVR.FVRObject.html">FVRObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_CompatibleMagazines" data-uid="FistVR.FVRObject.CompatibleMagazines">
+  CompatibleMagazines
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FVRObject&gt; CompatibleMagazines</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FistVR.FVRObject.html">FVRObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_CompatibleSingleRounds" data-uid="FistVR.FVRObject.CompatibleSingleRounds">
+  CompatibleSingleRounds
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FVRObject&gt; CompatibleSingleRounds</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FistVR.FVRObject.html">FVRObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_CompatibleSpeedLoaders" data-uid="FistVR.FVRObject.CompatibleSpeedLoaders">
+  CompatibleSpeedLoaders
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FVRObject&gt; CompatibleSpeedLoaders</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FistVR.FVRObject.html">FVRObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_CreditCost" data-uid="FistVR.FVRObject.CreditCost">
+  CreditCost
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CreditCost</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_DisplayName" data-uid="FistVR.FVRObject.DisplayName">
+  DisplayName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DisplayName</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_Family" data-uid="FistVR.FVRObject.Family">
+  Family
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Family</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_IsModContent" data-uid="FistVR.FVRObject.IsModContent">
+  IsModContent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsModContent</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_ItemID" data-uid="FistVR.FVRObject.ItemID">
+  ItemID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ItemID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_MagazineCapacity" data-uid="FistVR.FVRObject.MagazineCapacity">
+  MagazineCapacity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MagazineCapacity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_MagazineType" data-uid="FistVR.FVRObject.MagazineType">
+  MagazineType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SearchableEnum]
+public FireArmMagazineType MagazineType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FireArmMagazineType.html">FireArmMagazineType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_Mass" data-uid="FistVR.FVRObject.Mass">
+  Mass
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Mass</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_MaxCapacityRelated" data-uid="FistVR.FVRObject.MaxCapacityRelated">
+  MaxCapacityRelated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxCapacityRelated</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_MinCapacityRelated" data-uid="FistVR.FVRObject.MinCapacityRelated">
+  MinCapacityRelated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MinCapacityRelated</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_OSple" data-uid="FistVR.FVRObject.OSple">
+  OSple
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OSple</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_RequiredSecondaryPieces" data-uid="FistVR.FVRObject.RequiredSecondaryPieces">
+  RequiredSecondaryPieces
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FVRObject&gt; RequiredSecondaryPieces</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FistVR.FVRObject.html">FVRObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_RequiresPicatinnySight" data-uid="FistVR.FVRObject.RequiresPicatinnySight">
+  RequiresPicatinnySight
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RequiresPicatinnySight</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_RoundType" data-uid="FistVR.FVRObject.RoundType">
+  RoundType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SearchableEnum]
+public FireArmRoundType RoundType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FireArmRoundType.html">FireArmRoundType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_SpawnedFromId" data-uid="FistVR.FVRObject.SpawnedFromId">
+  SpawnedFromId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SpawnedFromId</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_TagAttachmentFeature" data-uid="FistVR.FVRObject.TagAttachmentFeature">
+  TagAttachmentFeature
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRObject.OTagAttachmentFeature TagAttachmentFeature</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRObject.html">FVRObject</a>.<a class="xref" href="FistVR.FVRObject.OTagAttachmentFeature.html">OTagAttachmentFeature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_TagAttachmentMount" data-uid="FistVR.FVRObject.TagAttachmentMount">
+  TagAttachmentMount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRObject.OTagFirearmMount TagAttachmentMount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRObject.html">FVRObject</a>.<a class="xref" href="FistVR.FVRObject.OTagFirearmMount.html">OTagFirearmMount</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_TagEra" data-uid="FistVR.FVRObject.TagEra">
+  TagEra
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRObject.OTagEra TagEra</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRObject.html">FVRObject</a>.<a class="xref" href="FistVR.FVRObject.OTagEra.html">OTagEra</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_TagFirearmAction" data-uid="FistVR.FVRObject.TagFirearmAction">
+  TagFirearmAction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRObject.OTagFirearmAction TagFirearmAction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRObject.html">FVRObject</a>.<a class="xref" href="FistVR.FVRObject.OTagFirearmAction.html">OTagFirearmAction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_TagFirearmCountryOfOrigin" data-uid="FistVR.FVRObject.TagFirearmCountryOfOrigin">
+  TagFirearmCountryOfOrigin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SearchableEnum]
+public FVRObject.OTagFirearmCountryOfOrigin TagFirearmCountryOfOrigin</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRObject.html">FVRObject</a>.<a class="xref" href="FistVR.FVRObject.OTagFirearmCountryOfOrigin.html">OTagFirearmCountryOfOrigin</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_TagFirearmFeedOption" data-uid="FistVR.FVRObject.TagFirearmFeedOption">
+  TagFirearmFeedOption
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FVRObject.OTagFirearmFeedOption&gt; TagFirearmFeedOption</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FistVR.FVRObject.html">FVRObject</a>.<a class="xref" href="FistVR.FVRObject.OTagFirearmFeedOption.html">OTagFirearmFeedOption</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_TagFirearmFiringModes" data-uid="FistVR.FVRObject.TagFirearmFiringModes">
+  TagFirearmFiringModes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FVRObject.OTagFirearmFiringMode&gt; TagFirearmFiringModes</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FistVR.FVRObject.html">FVRObject</a>.<a class="xref" href="FistVR.FVRObject.OTagFirearmFiringMode.html">OTagFirearmFiringMode</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_TagFirearmFirstYear" data-uid="FistVR.FVRObject.TagFirearmFirstYear">
+  TagFirearmFirstYear
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TagFirearmFirstYear</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_TagFirearmMounts" data-uid="FistVR.FVRObject.TagFirearmMounts">
+  TagFirearmMounts
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FVRObject.OTagFirearmMount&gt; TagFirearmMounts</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FistVR.FVRObject.html">FVRObject</a>.<a class="xref" href="FistVR.FVRObject.OTagFirearmMount.html">OTagFirearmMount</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_TagFirearmRoundPower" data-uid="FistVR.FVRObject.TagFirearmRoundPower">
+  TagFirearmRoundPower
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRObject.OTagFirearmRoundPower TagFirearmRoundPower</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRObject.html">FVRObject</a>.<a class="xref" href="FistVR.FVRObject.OTagFirearmRoundPower.html">OTagFirearmRoundPower</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_TagFirearmSize" data-uid="FistVR.FVRObject.TagFirearmSize">
+  TagFirearmSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRObject.OTagFirearmSize TagFirearmSize</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRObject.html">FVRObject</a>.<a class="xref" href="FistVR.FVRObject.OTagFirearmSize.html">OTagFirearmSize</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_TagMeleeHandedness" data-uid="FistVR.FVRObject.TagMeleeHandedness">
+  TagMeleeHandedness
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRObject.OTagMeleeHandedness TagMeleeHandedness</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRObject.html">FVRObject</a>.<a class="xref" href="FistVR.FVRObject.OTagMeleeHandedness.html">OTagMeleeHandedness</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_TagMeleeStyle" data-uid="FistVR.FVRObject.TagMeleeStyle">
+  TagMeleeStyle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRObject.OTagMeleeStyle TagMeleeStyle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRObject.html">FVRObject</a>.<a class="xref" href="FistVR.FVRObject.OTagMeleeStyle.html">OTagMeleeStyle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_TagPowerupType" data-uid="FistVR.FVRObject.TagPowerupType">
+  TagPowerupType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRObject.OTagPowerupType TagPowerupType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRObject.html">FVRObject</a>.<a class="xref" href="FistVR.FVRObject.OTagPowerupType.html">OTagPowerupType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_TagSet" data-uid="FistVR.FVRObject.TagSet">
+  TagSet
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRObject.OTagSet TagSet</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRObject.html">FVRObject</a>.<a class="xref" href="FistVR.FVRObject.OTagSet.html">OTagSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_TagThrownDamageType" data-uid="FistVR.FVRObject.TagThrownDamageType">
+  TagThrownDamageType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRObject.OTagThrownDamageType TagThrownDamageType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRObject.html">FVRObject</a>.<a class="xref" href="FistVR.FVRObject.OTagThrownDamageType.html">OTagThrownDamageType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_TagThrownType" data-uid="FistVR.FVRObject.TagThrownType">
+  TagThrownType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRObject.OTagThrownType TagThrownType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRObject.html">FVRObject</a>.<a class="xref" href="FistVR.FVRObject.OTagThrownType.html">OTagThrownType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRObject_UsesRoundTypeFlag" data-uid="FistVR.FVRObject.UsesRoundTypeFlag">
+  UsesRoundTypeFlag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UsesRoundTypeFlag</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FistVR_FVRObject_CalcCreditCost_" data-uid="FistVR.FVRObject.CalcCreditCost*"></a>
+
+  <h3 id="FistVR_FVRObject_CalcCreditCost" data-uid="FistVR.FVRObject.CalcCreditCost">
+  CalcCreditCost()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CalcCreditCost()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRObject_CheckMagType_" data-uid="FistVR.FVRObject.CheckMagType*"></a>
+
+  <h3 id="FistVR_FVRObject_CheckMagType" data-uid="FistVR.FVRObject.CheckMagType">
+  CheckMagType()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CheckMagType()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRObject_ConfigureClipMagSpeedLoader_" data-uid="FistVR.FVRObject.ConfigureClipMagSpeedLoader*"></a>
+
+  <h3 id="FistVR_FVRObject_ConfigureClipMagSpeedLoader" data-uid="FistVR.FVRObject.ConfigureClipMagSpeedLoader">
+  ConfigureClipMagSpeedLoader()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConfigureClipMagSpeedLoader()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRObject_GenerateItemIDFromDisplayName_" data-uid="FistVR.FVRObject.GenerateItemIDFromDisplayName*"></a>
+
+  <h3 id="FistVR_FVRObject_GenerateItemIDFromDisplayName" data-uid="FistVR.FVRObject.GenerateItemIDFromDisplayName">
+  GenerateItemIDFromDisplayName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GenerateItemIDFromDisplayName()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRObject_GetRandomAmmoObject_" data-uid="FistVR.FVRObject.GetRandomAmmoObject*"></a>
+
+  <h3 id="FistVR_FVRObject_GetRandomAmmoObject_FistVR_FVRObject_System_Collections_Generic_List_FistVR_FVRObject_OTagEra__System_Int32_System_Int32_System_Collections_Generic_List_FistVR_FVRObject_OTagSet__" data-uid="FistVR.FVRObject.GetRandomAmmoObject(FistVR.FVRObject,System.Collections.Generic.List{FistVR.FVRObject.OTagEra},System.Int32,System.Int32,System.Collections.Generic.List{FistVR.FVRObject.OTagSet})">
+  GetRandomAmmoObject(FVRObject, List&lt;OTagEra&gt;, int, int, List&lt;OTagSet&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRObject GetRandomAmmoObject(FVRObject o, List&lt;FVRObject.OTagEra&gt; eras = null, int Min = -1, int Max = -1, List&lt;FVRObject.OTagSet&gt; sets = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="FistVR.FVRObject.html">FVRObject</a></dt>
+    <dd></dd>
+    <dt><code>eras</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FistVR.FVRObject.html">FVRObject</a>.<a class="xref" href="FistVR.FVRObject.OTagEra.html">OTagEra</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>Min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>Max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>sets</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FistVR.FVRObject.html">FVRObject</a>.<a class="xref" href="FistVR.FVRObject.OTagSet.html">OTagSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRObject.html">FVRObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRObject_MigrateFirearmDataToMagazine_" data-uid="FistVR.FVRObject.MigrateFirearmDataToMagazine*"></a>
+
+  <h3 id="FistVR_FVRObject_MigrateFirearmDataToMagazine" data-uid="FistVR.FVRObject.MigrateFirearmDataToMagazine">
+  MigrateFirearmDataToMagazine()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MigrateFirearmDataToMagazine()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRObject_PopulateAttachments_" data-uid="FistVR.FVRObject.PopulateAttachments*"></a>
+
+  <h3 id="FistVR_FVRObject_PopulateAttachments" data-uid="FistVR.FVRObject.PopulateAttachments">
+  PopulateAttachments()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PopulateAttachments()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRObject_PopulateFirearmMagClipAmmoData_" data-uid="FistVR.FVRObject.PopulateFirearmMagClipAmmoData*"></a>
+
+  <h3 id="FistVR_FVRObject_PopulateFirearmMagClipAmmoData" data-uid="FistVR.FVRObject.PopulateFirearmMagClipAmmoData">
+  PopulateFirearmMagClipAmmoData()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PopulateFirearmMagClipAmmoData()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRObject_PopulateMagazineType_" data-uid="FistVR.FVRObject.PopulateMagazineType*"></a>
+
+  <h3 id="FistVR_FVRObject_PopulateMagazineType" data-uid="FistVR.FVRObject.PopulateMagazineType">
+  PopulateMagazineType()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PopulateMagazineType()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRObject_PopulateMinMaxCapacity_" data-uid="FistVR.FVRObject.PopulateMinMaxCapacity*"></a>
+
+  <h3 id="FistVR_FVRObject_PopulateMinMaxCapacity" data-uid="FistVR.FVRObject.PopulateMinMaxCapacity">
+  PopulateMinMaxCapacity()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PopulateMinMaxCapacity()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRObject_PopulateRoundPower_" data-uid="FistVR.FVRObject.PopulateRoundPower*"></a>
+
+  <h3 id="FistVR_FVRObject_PopulateRoundPower" data-uid="FistVR.FVRObject.PopulateRoundPower">
+  PopulateRoundPower()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PopulateRoundPower()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRObject_PrintBespoke_" data-uid="FistVR.FVRObject.PrintBespoke*"></a>
+
+  <h3 id="FistVR_FVRObject_PrintBespoke" data-uid="FistVR.FVRObject.PrintBespoke">
+  PrintBespoke()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PrintBespoke()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRObject_PrintIfStanag_" data-uid="FistVR.FVRObject.PrintIfStanag*"></a>
+
+  <h3 id="FistVR_FVRObject_PrintIfStanag" data-uid="FistVR.FVRObject.PrintIfStanag">
+  PrintIfStanag()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PrintIfStanag()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRObject_SetNamesFromFileName_" data-uid="FistVR.FVRObject.SetNamesFromFileName*"></a>
+
+  <h3 id="FistVR_FVRObject_SetNamesFromFileName" data-uid="FistVR.FVRObject.SetNamesFromFileName">
+  SetNamesFromFileName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNamesFromFileName()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

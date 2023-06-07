@@ -1,0 +1,985 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AIBallJointTurret
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AIBallJointTurret
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FistVR.AIBallJointTurret">
+
+
+
+  <h1 id="FistVR_AIBallJointTurret" data-uid="FistVR.AIBallJointTurret" class="text-break">
+    Class AIBallJointTurret
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FistVR.html">FistVR</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AIBallJointTurret : AIBodyPiece, IFVRDamageable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="FistVR.FVRDestroyableObject.html">FVRDestroyableObject</a></div>
+      <div><a class="xref" href="FistVR.AIBodyPiece.html">AIBodyPiece</a></div>
+      <div><span class="xref">AIBallJointTurret</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="FistVR.IFVRDamageable.html">IFVRDamageable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="FistVR.AIBodyPiece.html#FistVR_AIBodyPiece_DamagePlates">AIBodyPiece.DamagePlates</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.AIBodyPiece.html#FistVR_AIBodyPiece_UsesPlateSystem">AIBodyPiece.UsesPlateSystem</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.AIBodyPiece.html#FistVR_AIBodyPiece_IsPlateDamaged">AIBodyPiece.IsPlateDamaged</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.AIBodyPiece.html#FistVR_AIBodyPiece_IsPlateDisabled">AIBodyPiece.IsPlateDisabled</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.AIBodyPiece.html#FistVR_AIBodyPiece_CheckPlateDamage">AIBodyPiece.CheckPlateDamage()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.AIBodyPiece.html#FistVR_AIBodyPiece_ResetAllPlates">AIBodyPiece.ResetAllPlates()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_StartingToughness">FVRDestroyableObject.StartingToughness</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_ResistMult_Blunt">FVRDestroyableObject.ResistMult_Blunt</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_ResistMult_Piercing">FVRDestroyableObject.ResistMult_Piercing</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_ResistMult_Cutting">FVRDestroyableObject.ResistMult_Cutting</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_m_currentToughness">FVRDestroyableObject.m_currentToughness</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_m_isDestroyed">FVRDestroyableObject.m_isDestroyed</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_ReceivesCollisionDamage">FVRDestroyableObject.ReceivesCollisionDamage</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_DestroyThisObjectOnDestruction">FVRDestroyableObject.DestroyThisObjectOnDestruction</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_SpawnOnDestruction">FVRDestroyableObject.SpawnOnDestruction</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_DetachAddRigidbodyBlowAway">FVRDestroyableObject.DetachAddRigidbodyBlowAway</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_UsesParams">FVRDestroyableObject.UsesParams</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_DetachRigidbodyParams">FVRDestroyableObject.DetachRigidbodyParams</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_ExplosiveForceToDetach">FVRDestroyableObject.ExplosiveForceToDetach</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_SendDestroyEventOnDestruction">FVRDestroyableObject.SendDestroyEventOnDestruction</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_DestroyEventTimeRange">FVRDestroyableObject.DestroyEventTimeRange</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_ProgressiveDamageEffects">FVRDestroyableObject.ProgressiveDamageEffects</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_DoesDecayWhenDamaged">FVRDestroyableObject.DoesDecayWhenDamaged</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_PercentThresholdForDecay">FVRDestroyableObject.PercentThresholdForDecay</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_DecayRate">FVRDestroyableObject.DecayRate</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_Rb">FVRDestroyableObject.Rb</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_UsesDestructionStageRenderers">FVRDestroyableObject.UsesDestructionStageRenderers</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_DestructionRenderers">FVRDestroyableObject.DestructionRenderers</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_SetToughnessPercentageIfHigher_System_Single_">FVRDestroyableObject.SetToughnessPercentageIfHigher(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_Damage_FistVR_Damage_">FVRDestroyableObject.Damage(Damage)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRDestroyableObject.html#FistVR_FVRDestroyableObject_OnCollisionEnter_UnityEngine_Collision_">FVRDestroyableObject.OnCollisionEnter(Collision)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FistVR_AIBallJointTurret__ctor_" data-uid="FistVR.AIBallJointTurret.#ctor*"></a>
+
+  <h3 id="FistVR_AIBallJointTurret__ctor" data-uid="FistVR.AIBallJointTurret.#ctor">
+  AIBallJointTurret()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AIBallJointTurret()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FistVR_AIBallJointTurret_AimingTransform" data-uid="FistVR.AIBallJointTurret.AimingTransform">
+  AimingTransform
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform AimingTransform</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AIBallJointTurret_Clunk" data-uid="FistVR.AIBallJointTurret.Clunk">
+  Clunk
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AIClunk Clunk</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.AIClunk.html">AIClunk</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AIBallJointTurret_DoesRotate" data-uid="FistVR.AIBallJointTurret.DoesRotate">
+  DoesRotate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DoesRotate</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AIBallJointTurret_FireArms" data-uid="FistVR.AIBallJointTurret.FireArms">
+  FireArms
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AIFireArmMount[] FireArms</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.AIFireArmMount.html">AIFireArmMount</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AIBallJointTurret_FireAtWill" data-uid="FistVR.AIBallJointTurret.FireAtWill">
+  FireAtWill
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FireAtWill</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AIBallJointTurret_FiringAngularCutoff" data-uid="FistVR.AIBallJointTurret.FiringAngularCutoff">
+  FiringAngularCutoff
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FiringAngularCutoff</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AIBallJointTurret_MaxRotAngle" data-uid="FistVR.AIBallJointTurret.MaxRotAngle">
+  MaxRotAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxRotAngle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AIBallJointTurret_RB" data-uid="FistVR.AIBallJointTurret.RB">
+  RB
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rigidbody RB</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Rigidbody</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AIBallJointTurret_Root" data-uid="FistVR.AIBallJointTurret.Root">
+  Root
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform Root</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AIBallJointTurret_RotSpeed" data-uid="FistVR.AIBallJointTurret.RotSpeed">
+  RotSpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RotSpeed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AIBallJointTurret_SensorSystem" data-uid="FistVR.AIBallJointTurret.SensorSystem">
+  SensorSystem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AISensorSystem SensorSystem</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.AISensorSystem.html">AISensorSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AIBallJointTurret_TimeTilPlatesReset" data-uid="FistVR.AIBallJointTurret.TimeTilPlatesReset">
+  TimeTilPlatesReset
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TimeTilPlatesReset</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FistVR_AIBallJointTurret_Awake_" data-uid="FistVR.AIBallJointTurret.Awake*"></a>
+
+  <h3 id="FistVR_AIBallJointTurret_Awake" data-uid="FistVR.AIBallJointTurret.Awake">
+  Awake()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AIBallJointTurret_DestroyEvent_" data-uid="FistVR.AIBallJointTurret.DestroyEvent*"></a>
+
+  <h3 id="FistVR_AIBallJointTurret_DestroyEvent" data-uid="FistVR.AIBallJointTurret.DestroyEvent">
+  DestroyEvent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DestroyEvent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AIBallJointTurret_FixedUpdate_" data-uid="FistVR.AIBallJointTurret.FixedUpdate*"></a>
+
+  <h3 id="FistVR_AIBallJointTurret_FixedUpdate" data-uid="FistVR.AIBallJointTurret.FixedUpdate">
+  FixedUpdate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void FixedUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AIBallJointTurret_GetDirectionToPoint_" data-uid="FistVR.AIBallJointTurret.GetDirectionToPoint*"></a>
+
+  <h3 id="FistVR_AIBallJointTurret_GetDirectionToPoint_UnityEngine_Vector3_" data-uid="FistVR.AIBallJointTurret.GetDirectionToPoint(UnityEngine.Vector3)">
+  GetDirectionToPoint(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetDirectionToPoint(Vector3 point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AIBallJointTurret_GetDirectionToPoint_" data-uid="FistVR.AIBallJointTurret.GetDirectionToPoint*"></a>
+
+  <h3 id="FistVR_AIBallJointTurret_GetDirectionToPoint_UnityEngine_Vector3_UnityEngine_Vector3_" data-uid="FistVR.AIBallJointTurret.GetDirectionToPoint(UnityEngine.Vector3,UnityEngine.Vector3)">
+  GetDirectionToPoint(Vector3, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetDirectionToPoint(Vector3 point, Vector3 origin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>origin</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AIBallJointTurret_SetFireAtWill_" data-uid="FistVR.AIBallJointTurret.SetFireAtWill*"></a>
+
+  <h3 id="FistVR_AIBallJointTurret_SetFireAtWill_System_Boolean_" data-uid="FistVR.AIBallJointTurret.SetFireAtWill(System.Boolean)">
+  SetFireAtWill(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFireAtWill(bool b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AIBallJointTurret_SetFiringAngleCutoff_" data-uid="FistVR.AIBallJointTurret.SetFiringAngleCutoff*"></a>
+
+  <h3 id="FistVR_AIBallJointTurret_SetFiringAngleCutoff_System_Single_" data-uid="FistVR.AIBallJointTurret.SetFiringAngleCutoff(System.Single)">
+  SetFiringAngleCutoff(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFiringAngleCutoff(float f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AIBallJointTurret_SetPlateDamaged_" data-uid="FistVR.AIBallJointTurret.SetPlateDamaged*"></a>
+
+  <h3 id="FistVR_AIBallJointTurret_SetPlateDamaged_System_Boolean_" data-uid="FistVR.AIBallJointTurret.SetPlateDamaged(System.Boolean)">
+  SetPlateDamaged(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool SetPlateDamaged(bool b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AIBallJointTurret_SetPlateDisabled_" data-uid="FistVR.AIBallJointTurret.SetPlateDisabled*"></a>
+
+  <h3 id="FistVR_AIBallJointTurret_SetPlateDisabled_System_Boolean_" data-uid="FistVR.AIBallJointTurret.SetPlateDisabled(System.Boolean)">
+  SetPlateDisabled(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool SetPlateDisabled(bool b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AIBallJointTurret_SetTargetPoint_" data-uid="FistVR.AIBallJointTurret.SetTargetPoint*"></a>
+
+  <h3 id="FistVR_AIBallJointTurret_SetTargetPoint_UnityEngine_Vector3_" data-uid="FistVR.AIBallJointTurret.SetTargetPoint(UnityEngine.Vector3)">
+  SetTargetPoint(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTargetPoint(Vector3 v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AIBallJointTurret_Update_" data-uid="FistVR.AIBallJointTurret.Update*"></a>
+
+  <h3 id="FistVR_AIBallJointTurret_Update" data-uid="FistVR.AIBallJointTurret.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

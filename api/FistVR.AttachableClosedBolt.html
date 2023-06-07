@@ -1,0 +1,1899 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AttachableClosedBolt
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AttachableClosedBolt
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FistVR.AttachableClosedBolt">
+
+
+
+  <h1 id="FistVR_AttachableClosedBolt" data-uid="FistVR.AttachableClosedBolt" class="text-break">
+    Class AttachableClosedBolt
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FistVR.html">FistVR</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AttachableClosedBolt : FVRInteractiveObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="FistVR.FVRInteractiveObject.html">FVRInteractiveObject</a></div>
+      <div><span class="xref">AttachableClosedBolt</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GameObject">FVRInteractiveObject.GameObject</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_Transform">FVRInteractiveObject.Transform</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_All">FVRInteractiveObject.All</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_ControlType">FVRInteractiveObject.ControlType</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_IsSimpleInteract">FVRInteractiveObject.IsSimpleInteract</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_HandlingGrabSound">FVRInteractiveObject.HandlingGrabSound</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_HandlingReleaseSound">FVRInteractiveObject.HandlingReleaseSound</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_PoseOverride">FVRInteractiveObject.PoseOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_QBPoseOverride">FVRInteractiveObject.QBPoseOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_PoseOverride_Touch">FVRInteractiveObject.PoseOverride_Touch</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UseGrabPointChild">FVRInteractiveObject.UseGrabPointChild</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UseGripRotInterp">FVRInteractiveObject.UseGripRotInterp</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_PositionInterpSpeed">FVRInteractiveObject.PositionInterpSpeed</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_RotationInterpSpeed">FVRInteractiveObject.RotationInterpSpeed</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_grabPointTransform">FVRInteractiveObject.m_grabPointTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_pos_interp_tick">FVRInteractiveObject.m_pos_interp_tick</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_rot_interp_tick">FVRInteractiveObject.m_rot_interp_tick</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_EndInteractionIfDistant">FVRInteractiveObject.EndInteractionIfDistant</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_EndInteractionDistance">FVRInteractiveObject.EndInteractionDistance</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_hasTriggeredUpSinceBegin">FVRInteractiveObject.m_hasTriggeredUpSinceBegin</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_triggerCooldown">FVRInteractiveObject.triggerCooldown</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_hand">FVRInteractiveObject.m_hand</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UXGeo_Hover">FVRInteractiveObject.UXGeo_Hover</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UXGeo_Held">FVRInteractiveObject.UXGeo_Held</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UseFilteredHandTransform">FVRInteractiveObject.UseFilteredHandTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UseFilteredHandPosition">FVRInteractiveObject.UseFilteredHandPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UseFilteredHandRotation">FVRInteractiveObject.UseFilteredHandRotation</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UseSecondStepRotationFiltering">FVRInteractiveObject.UseSecondStepRotationFiltering</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SecondStepFilteredRotation">FVRInteractiveObject.SecondStepFilteredRotation</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_colliders">FVRInteractiveObject.m_colliders</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_DoesFunctionAsGrabPoint">FVRInteractiveObject.DoesFunctionAsGrabPoint()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GetLastGrabHandPos">FVRInteractiveObject.GetLastGrabHandPos()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SetLastGrabHandPos_UnityEngine_Vector3_">FVRInteractiveObject.SetLastGrabHandPos(Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GetGrabMoveDelta">FVRInteractiveObject.GetGrabMoveDelta()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_IsSelectionRestricted">FVRInteractiveObject.IsSelectionRestricted()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_IsInteractable">FVRInteractiveObject.IsInteractable()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_IsDistantGrabbable">FVRInteractiveObject.IsDistantGrabbable()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_OnHoverStart">FVRInteractiveObject.OnHoverStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_OnHoverEnd">FVRInteractiveObject.OnHoverEnd()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_OnHoverStay">FVRInteractiveObject.OnHoverStay()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SetUXHoverGeoViz_System_Boolean_">FVRInteractiveObject.SetUXHoverGeoViz(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SetUXHeldGeoViz_System_Boolean_">FVRInteractiveObject.SetUXHeldGeoViz(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UpdateGrabPointTransform">FVRInteractiveObject.UpdateGrabPointTransform()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_PlayGrabSound_System_Boolean_FistVR_FVRViveHand_">FVRInteractiveObject.PlayGrabSound(bool, FVRViveHand)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_PlayReleaseSound_FistVR_FVRViveHand_">FVRInteractiveObject.PlayReleaseSound(FVRViveHand)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_BeginInteraction_FistVR_FVRViveHand_">FVRInteractiveObject.BeginInteraction(FVRViveHand)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SimpleInteraction_FistVR_FVRViveHand_">FVRInteractiveObject.SimpleInteraction(FVRViveHand)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_Poke_FistVR_FVRViveHand_">FVRInteractiveObject.Poke(FVRViveHand)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_ForceBreakInteraction">FVRInteractiveObject.ForceBreakInteraction()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_Start">FVRInteractiveObject.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GlobalUpdate">FVRInteractiveObject.GlobalUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_FVRUpdate">FVRInteractiveObject.FVRUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GlobalFixedUpdate">FVRInteractiveObject.GlobalFixedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_FVRFixedUpdate">FVRInteractiveObject.FVRFixedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_OnDestroy">FVRInteractiveObject.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_TestHandDistance">FVRInteractiveObject.TestHandDistance()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SetCollidersToLayer_System_Collections_Generic_List_UnityEngine_Collider__System_Boolean_System_String_">FVRInteractiveObject.SetCollidersToLayer(List&lt;Collider&gt;, bool, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SetAllCollidersToLayer_System_Boolean_System_String_">FVRInteractiveObject.SetAllCollidersToLayer(bool, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GetClosestValidPoint_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Vector3_">FVRInteractiveObject.GetClosestValidPoint(Vector3, Vector3, Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GrabPointTransform">FVRInteractiveObject.GrabPointTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_handPos">FVRInteractiveObject.m_handPos</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_handRot">FVRInteractiveObject.m_handRot</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_palmPos">FVRInteractiveObject.m_palmPos</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_palmRot">FVRInteractiveObject.m_palmRot</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_IsHovered">FVRInteractiveObject.IsHovered</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_IsHeld">FVRInteractiveObject.IsHeld</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FistVR_AttachableClosedBolt__ctor_" data-uid="FistVR.AttachableClosedBolt.#ctor*"></a>
+
+  <h3 id="FistVR_AttachableClosedBolt__ctor" data-uid="FistVR.AttachableClosedBolt.#ctor">
+  AttachableClosedBolt()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttachableClosedBolt()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_Barrel" data-uid="FistVR.AttachableClosedBolt.Barrel">
+  Barrel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform Barrel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_BarrelForward" data-uid="FistVR.AttachableClosedBolt.BarrelForward">
+  BarrelForward
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 BarrelForward</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_BarrelRearward" data-uid="FistVR.AttachableClosedBolt.BarrelRearward">
+  BarrelRearward
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 BarrelRearward</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_CurPos" data-uid="FistVR.AttachableClosedBolt.CurPos">
+  CurPos
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttachableClosedBolt.BoltPos CurPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.AttachableClosedBolt.html">AttachableClosedBolt</a>.<a class="xref" href="FistVR.AttachableClosedBolt.BoltPos.html">BoltPos</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_DipMagnitude" data-uid="FistVR.AttachableClosedBolt.DipMagnitude">
+  DipMagnitude
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DipMagnitude</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_DoesClipHoldBoltOpen" data-uid="FistVR.AttachableClosedBolt.DoesClipHoldBoltOpen">
+  DoesClipHoldBoltOpen
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DoesClipHoldBoltOpen</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_Hammer" data-uid="FistVR.AttachableClosedBolt.Hammer">
+  Hammer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform Hammer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_HammerForward" data-uid="FistVR.AttachableClosedBolt.HammerForward">
+  HammerForward
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 HammerForward</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_HammerRearward" data-uid="FistVR.AttachableClosedBolt.HammerRearward">
+  HammerRearward
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 HammerRearward</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_HasBoltCatchReleaseButton" data-uid="FistVR.AttachableClosedBolt.HasBoltCatchReleaseButton">
+  HasBoltCatchReleaseButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasBoltCatchReleaseButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_HasHammer" data-uid="FistVR.AttachableClosedBolt.HasHammer">
+  HasHammer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasHammer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_HasLastRoundBoltHoldOpen" data-uid="FistVR.AttachableClosedBolt.HasLastRoundBoltHoldOpen">
+  HasLastRoundBoltHoldOpen
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasLastRoundBoltHoldOpen</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_HasReciprocatingBarrel" data-uid="FistVR.AttachableClosedBolt.HasReciprocatingBarrel">
+  HasReciprocatingBarrel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasReciprocatingBarrel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_HasRotatingPart" data-uid="FistVR.AttachableClosedBolt.HasRotatingPart">
+  HasRotatingPart
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasRotatingPart</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_HasZRotPart" data-uid="FistVR.AttachableClosedBolt.HasZRotPart">
+  HasZRotPart
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasZRotPart</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_HasZScalePart" data-uid="FistVR.AttachableClosedBolt.HasZScalePart">
+  HasZScalePart
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasZScalePart</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_LagMagnitude" data-uid="FistVR.AttachableClosedBolt.LagMagnitude">
+  LagMagnitude
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LagMagnitude</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_LastPos" data-uid="FistVR.AttachableClosedBolt.LastPos">
+  LastPos
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttachableClosedBolt.BoltPos LastPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.AttachableClosedBolt.html">AttachableClosedBolt</a>.<a class="xref" href="FistVR.AttachableClosedBolt.BoltPos.html">BoltPos</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_Point_Bolt_Forward" data-uid="FistVR.AttachableClosedBolt.Point_Bolt_Forward">
+  Point_Bolt_Forward
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform Point_Bolt_Forward</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_Point_Bolt_LockPoint" data-uid="FistVR.AttachableClosedBolt.Point_Bolt_LockPoint">
+  Point_Bolt_LockPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform Point_Bolt_LockPoint</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_Point_Bolt_Rear" data-uid="FistVR.AttachableClosedBolt.Point_Bolt_Rear">
+  Point_Bolt_Rear
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform Point_Bolt_Rear</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_Point_Bolt_SafetyLock" data-uid="FistVR.AttachableClosedBolt.Point_Bolt_SafetyLock">
+  Point_Bolt_SafetyLock
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform Point_Bolt_SafetyLock</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_RotatingPart" data-uid="FistVR.AttachableClosedBolt.RotatingPart">
+  RotatingPart
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform RotatingPart</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_RotatingPartLeftEulers" data-uid="FistVR.AttachableClosedBolt.RotatingPartLeftEulers">
+  RotatingPartLeftEulers
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 RotatingPartLeftEulers</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_RotatingPartNeutralEulers" data-uid="FistVR.AttachableClosedBolt.RotatingPartNeutralEulers">
+  RotatingPartNeutralEulers
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 RotatingPartNeutralEulers</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_RotatingPartRightEulers" data-uid="FistVR.AttachableClosedBolt.RotatingPartRightEulers">
+  RotatingPartRightEulers
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 RotatingPartRightEulers</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_Speed_Forward" data-uid="FistVR.AttachableClosedBolt.Speed_Forward">
+  Speed_Forward
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Speed_Forward</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_Speed_Held" data-uid="FistVR.AttachableClosedBolt.Speed_Held">
+  Speed_Held
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Speed_Held</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_Speed_Rearward" data-uid="FistVR.AttachableClosedBolt.Speed_Rearward">
+  Speed_Rearward
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Speed_Rearward</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_SpringStiffness" data-uid="FistVR.AttachableClosedBolt.SpringStiffness">
+  SpringStiffness
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SpringStiffness</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_UsesAKSafetyLock" data-uid="FistVR.AttachableClosedBolt.UsesAKSafetyLock">
+  UsesAKSafetyLock
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UsesAKSafetyLock</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_Weapon" data-uid="FistVR.AttachableClosedBolt.Weapon">
+  Weapon
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttachableClosedBoltWeapon Weapon</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.AttachableClosedBoltWeapon.html">AttachableClosedBoltWeapon</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_ZAngles" data-uid="FistVR.AttachableClosedBolt.ZAngles">
+  ZAngles
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 ZAngles</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_ZRotCurve" data-uid="FistVR.AttachableClosedBolt.ZRotCurve">
+  ZRotCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimationCurve ZRotCurve</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_ZRotPiece" data-uid="FistVR.AttachableClosedBolt.ZRotPiece">
+  ZRotPiece
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform ZRotPiece</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_ZRotPieceDips" data-uid="FistVR.AttachableClosedBolt.ZRotPieceDips">
+  ZRotPieceDips
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ZRotPieceDips</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_ZRotPieceLags" data-uid="FistVR.AttachableClosedBolt.ZRotPieceLags">
+  ZRotPieceLags
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ZRotPieceLags</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_ZScaleCurve" data-uid="FistVR.AttachableClosedBolt.ZScaleCurve">
+  ZScaleCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimationCurve ZScaleCurve</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_AttachableClosedBolt_ZScalePiece" data-uid="FistVR.AttachableClosedBolt.ZScalePiece">
+  ZScalePiece
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform ZScalePiece</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FistVR_AttachableClosedBolt_Awake_" data-uid="FistVR.AttachableClosedBolt.Awake*"></a>
+
+  <h3 id="FistVR_AttachableClosedBolt_Awake" data-uid="FistVR.AttachableClosedBolt.Awake">
+  Awake()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableClosedBolt_EndInteraction_" data-uid="FistVR.AttachableClosedBolt.EndInteraction*"></a>
+
+  <h3 id="FistVR_AttachableClosedBolt_EndInteraction_FistVR_FVRViveHand_" data-uid="FistVR.AttachableClosedBolt.EndInteraction(FistVR.FVRViveHand)">
+  EndInteraction(FVRViveHand)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void EndInteraction(FVRViveHand hand)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hand</code> <a class="xref" href="FistVR.FVRViveHand.html">FVRViveHand</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableClosedBolt_GetBoltLerpBetweenLockAndFore_" data-uid="FistVR.AttachableClosedBolt.GetBoltLerpBetweenLockAndFore*"></a>
+
+  <h3 id="FistVR_AttachableClosedBolt_GetBoltLerpBetweenLockAndFore" data-uid="FistVR.AttachableClosedBolt.GetBoltLerpBetweenLockAndFore">
+  GetBoltLerpBetweenLockAndFore()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetBoltLerpBetweenLockAndFore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableClosedBolt_GetBoltLerpBetweenRearAndFore_" data-uid="FistVR.AttachableClosedBolt.GetBoltLerpBetweenRearAndFore*"></a>
+
+  <h3 id="FistVR_AttachableClosedBolt_GetBoltLerpBetweenRearAndFore" data-uid="FistVR.AttachableClosedBolt.GetBoltLerpBetweenRearAndFore">
+  GetBoltLerpBetweenRearAndFore()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetBoltLerpBetweenRearAndFore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableClosedBolt_ImpartFiringImpulse_" data-uid="FistVR.AttachableClosedBolt.ImpartFiringImpulse*"></a>
+
+  <h3 id="FistVR_AttachableClosedBolt_ImpartFiringImpulse" data-uid="FistVR.AttachableClosedBolt.ImpartFiringImpulse">
+  ImpartFiringImpulse()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ImpartFiringImpulse()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableClosedBolt_IsBoltForwardOfSafetyLock_" data-uid="FistVR.AttachableClosedBolt.IsBoltForwardOfSafetyLock*"></a>
+
+  <h3 id="FistVR_AttachableClosedBolt_IsBoltForwardOfSafetyLock" data-uid="FistVR.AttachableClosedBolt.IsBoltForwardOfSafetyLock">
+  IsBoltForwardOfSafetyLock()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBoltForwardOfSafetyLock()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableClosedBolt_IsBoltLocked_" data-uid="FistVR.AttachableClosedBolt.IsBoltLocked*"></a>
+
+  <h3 id="FistVR_AttachableClosedBolt_IsBoltLocked" data-uid="FistVR.AttachableClosedBolt.IsBoltLocked">
+  IsBoltLocked()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBoltLocked()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableClosedBolt_LockBolt_" data-uid="FistVR.AttachableClosedBolt.LockBolt*"></a>
+
+  <h3 id="FistVR_AttachableClosedBolt_LockBolt" data-uid="FistVR.AttachableClosedBolt.LockBolt">
+  LockBolt()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LockBolt()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableClosedBolt_ReleaseBolt_" data-uid="FistVR.AttachableClosedBolt.ReleaseBolt*"></a>
+
+  <h3 id="FistVR_AttachableClosedBolt_ReleaseBolt" data-uid="FistVR.AttachableClosedBolt.ReleaseBolt">
+  ReleaseBolt()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReleaseBolt()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableClosedBolt_UpdateBolt_" data-uid="FistVR.AttachableClosedBolt.UpdateBolt*"></a>
+
+  <h3 id="FistVR_AttachableClosedBolt_UpdateBolt" data-uid="FistVR.AttachableClosedBolt.UpdateBolt">
+  UpdateBolt()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateBolt()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableClosedBolt_UpdateHandleHeldState_" data-uid="FistVR.AttachableClosedBolt.UpdateHandleHeldState*"></a>
+
+  <h3 id="FistVR_AttachableClosedBolt_UpdateHandleHeldState_System_Boolean_System_Single_" data-uid="FistVR.AttachableClosedBolt.UpdateHandleHeldState(System.Boolean,System.Single)">
+  UpdateHandleHeldState(bool, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateHandleHeldState(bool state, float lerp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>lerp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_AttachableClosedBolt_UpdateInteraction_" data-uid="FistVR.AttachableClosedBolt.UpdateInteraction*"></a>
+
+  <h3 id="FistVR_AttachableClosedBolt_UpdateInteraction_FistVR_FVRViveHand_" data-uid="FistVR.AttachableClosedBolt.UpdateInteraction(FistVR.FVRViveHand)">
+  UpdateInteraction(FVRViveHand)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UpdateInteraction(FVRViveHand hand)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hand</code> <a class="xref" href="FistVR.FVRViveHand.html">FVRViveHand</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

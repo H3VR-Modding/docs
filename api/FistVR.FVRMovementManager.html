@@ -1,0 +1,1983 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class FVRMovementManager
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FVRMovementManager
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FistVR.FVRMovementManager">
+
+
+
+  <h1 id="FistVR_FVRMovementManager" data-uid="FistVR.FVRMovementManager" class="text-break">
+    Class FVRMovementManager
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FistVR.html">FistVR</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FVRMovementManager : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">FVRMovementManager</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FistVR_FVRMovementManager__ctor_" data-uid="FistVR.FVRMovementManager.#ctor*"></a>
+
+  <h3 id="FistVR_FVRMovementManager__ctor" data-uid="FistVR.FVRMovementManager.#ctor">
+  FVRMovementManager()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRMovementManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FistVR_FVRMovementManager_AirSound" data-uid="FistVR.FVRMovementManager.AirSound">
+  AirSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioSource AirSound</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AudioSource</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRMovementManager_Body" data-uid="FistVR.FVRMovementManager.Body">
+  Body
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRPlayerBody Body</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRPlayerBody.html">FVRPlayerBody</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRMovementManager_Cylinders" data-uid="FistVR.FVRMovementManager.Cylinders">
+  Cylinders
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform[] Cylinders</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRMovementManager_DashSpeed" data-uid="FistVR.FVRMovementManager.DashSpeed">
+  DashSpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DashSpeed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRMovementManager_FloorHelperPrefab" data-uid="FistVR.FVRMovementManager.FloorHelperPrefab">
+  FloorHelperPrefab
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject FloorHelperPrefab</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRMovementManager_Hands" data-uid="FistVR.FVRMovementManager.Hands">
+  Hands
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRViveHand[] Hands</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRViveHand.html">FVRViveHand</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRMovementManager_Head" data-uid="FistVR.FVRMovementManager.Head">
+  Head
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform Head</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRMovementManager_JoyStickTeleportArrowPrefab" data-uid="FistVR.FVRMovementManager.JoyStickTeleportArrowPrefab">
+  JoyStickTeleportArrowPrefab
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject JoyStickTeleportArrowPrefab</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRMovementManager_LBL_firstDIst" data-uid="FistVR.FVRMovementManager.LBL_firstDIst">
+  LBL_firstDIst
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Text LBL_firstDIst</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Text</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRMovementManager_LBL_secondDIst" data-uid="FistVR.FVRMovementManager.LBL_secondDIst">
+  LBL_secondDIst
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Text LBL_secondDIst</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Text</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRMovementManager_LM_PointSearch" data-uid="FistVR.FVRMovementManager.LM_PointSearch">
+  LM_PointSearch
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayerMask LM_PointSearch</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">LayerMask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRMovementManager_LM_TeleCast" data-uid="FistVR.FVRMovementManager.LM_TeleCast">
+  LM_TeleCast
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayerMask LM_TeleCast</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">LayerMask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRMovementManager_LeftHand" data-uid="FistVR.FVRMovementManager.LeftHand">
+  LeftHand
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform LeftHand</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRMovementManager_Mode" data-uid="FistVR.FVRMovementManager.Mode">
+  Mode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRMovementManager.MovementMode Mode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRMovementManager.html">FVRMovementManager</a>.<a class="xref" href="FistVR.FVRMovementManager.MovementMode.html">MovementMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRMovementManager_MovementRig" data-uid="FistVR.FVRMovementManager.MovementRig">
+  MovementRig
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRMovementRig MovementRig</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FVRMovementRig.html">FVRMovementRig</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRMovementManager_MovementRigPrefab" data-uid="FistVR.FVRMovementManager.MovementRigPrefab">
+  MovementRigPrefab
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject MovementRigPrefab</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRMovementManager_RightHand" data-uid="FistVR.FVRMovementManager.RightHand">
+  RightHand
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform RightHand</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRMovementManager_SlidingSpeed" data-uid="FistVR.FVRMovementManager.SlidingSpeed">
+  SlidingSpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SlidingSpeed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRMovementManager_TouchpadIndicationArrowPrefab" data-uid="FistVR.FVRMovementManager.TouchpadIndicationArrowPrefab">
+  TouchpadIndicationArrowPrefab
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject TouchpadIndicationArrowPrefab</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRMovementManager_TouchpadIndicationArrowPrefab_HorizontalOnly" data-uid="FistVR.FVRMovementManager.TouchpadIndicationArrowPrefab_HorizontalOnly">
+  TouchpadIndicationArrowPrefab_HorizontalOnly
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject TouchpadIndicationArrowPrefab_HorizontalOnly</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_FVRMovementManager_m_teleportUsesRotation" data-uid="FistVR.FVRMovementManager.m_teleportUsesRotation">
+  m_teleportUsesRotation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool m_teleportUsesRotation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FistVR_FVRMovementManager_Awake_" data-uid="FistVR.FVRMovementManager.Awake*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_Awake" data-uid="FistVR.FVRMovementManager.Awake">
+  Awake()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_Blast_" data-uid="FistVR.FVRMovementManager.Blast*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_Blast_UnityEngine_Vector3_System_Single_System_Boolean_" data-uid="FistVR.FVRMovementManager.Blast(UnityEngine.Vector3,System.Single,System.Boolean)">
+  Blast(Vector3, float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Blast(Vector3 dir, float vel, bool DampInAir = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dir</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>vel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>DampInAir</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_CleanupFlagsForModeSwitch_" data-uid="FistVR.FVRMovementManager.CleanupFlagsForModeSwitch*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_CleanupFlagsForModeSwitch" data-uid="FistVR.FVRMovementManager.CleanupFlagsForModeSwitch">
+  CleanupFlagsForModeSwitch()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CleanupFlagsForModeSwitch()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_ClearAllGrabPoseInteractions_" data-uid="FistVR.FVRMovementManager.ClearAllGrabPoseInteractions*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_ClearAllGrabPoseInteractions" data-uid="FistVR.FVRMovementManager.ClearAllGrabPoseInteractions">
+  ClearAllGrabPoseInteractions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearAllGrabPoseInteractions()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_ClearInProgressTeleportAction_" data-uid="FistVR.FVRMovementManager.ClearInProgressTeleportAction*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_ClearInProgressTeleportAction" data-uid="FistVR.FVRMovementManager.ClearInProgressTeleportAction">
+  ClearInProgressTeleportAction()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearInProgressTeleportAction()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_CycleMode_" data-uid="FistVR.FVRMovementManager.CycleMode*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_CycleMode" data-uid="FistVR.FVRMovementManager.CycleMode">
+  CycleMode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CycleMode()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_DelayGround_" data-uid="FistVR.FVRMovementManager.DelayGround*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_DelayGround_System_Single_" data-uid="FistVR.FVRMovementManager.DelayGround(System.Single)">
+  DelayGround(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DelayGround(float f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_DeregisterSmoothLocoAdder_" data-uid="FistVR.FVRMovementManager.DeregisterSmoothLocoAdder*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_DeregisterSmoothLocoAdder_FistVR_FVRMovementManager_TransformVelocity_" data-uid="FistVR.FVRMovementManager.DeregisterSmoothLocoAdder(FistVR.FVRMovementManager.TransformVelocity)">
+  DeregisterSmoothLocoAdder(TransformVelocity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeregisterSmoothLocoAdder(FVRMovementManager.TransformVelocity velocityDelegate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>velocityDelegate</code> <a class="xref" href="FistVR.FVRMovementManager.html">FVRMovementManager</a>.<a class="xref" href="FistVR.FVRMovementManager.TransformVelocity.html">TransformVelocity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_DeregisterSmoothLocoRestrictor_" data-uid="FistVR.FVRMovementManager.DeregisterSmoothLocoRestrictor*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_DeregisterSmoothLocoRestrictor_FistVR_FVRMovementManager_TransformVelocity_" data-uid="FistVR.FVRMovementManager.DeregisterSmoothLocoRestrictor(FistVR.FVRMovementManager.TransformVelocity)">
+  DeregisterSmoothLocoRestrictor(TransformVelocity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeregisterSmoothLocoRestrictor(FVRMovementManager.TransformVelocity velocityDelegate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>velocityDelegate</code> <a class="xref" href="FistVR.FVRMovementManager.html">FVRMovementManager</a>.<a class="xref" href="FistVR.FVRMovementManager.TransformVelocity.html">TransformVelocity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_DisableForceControl_" data-uid="FistVR.FVRMovementManager.DisableForceControl*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_DisableForceControl" data-uid="FistVR.FVRMovementManager.DisableForceControl">
+  DisableForceControl()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableForceControl()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_EndGrabPointMove_" data-uid="FistVR.FVRMovementManager.EndGrabPointMove*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_EndGrabPointMove_FistVR_FVRViveHand_UnityEngine_Vector3_" data-uid="FistVR.FVRMovementManager.EndGrabPointMove(FistVR.FVRViveHand,UnityEngine.Vector3)">
+  EndGrabPointMove(FVRViveHand, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndGrabPointMove(FVRViveHand hand, Vector3 extraVel = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hand</code> <a class="xref" href="FistVR.FVRViveHand.html">FVRViveHand</a></dt>
+    <dd></dd>
+    <dt><code>extraVel</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_FU_" data-uid="FistVR.FVRMovementManager.FU*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_FU" data-uid="FistVR.FVRMovementManager.FU">
+  FU()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FU()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_FindValidPointCurved_" data-uid="FistVR.FVRMovementManager.FindValidPointCurved*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_FindValidPointCurved_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_" data-uid="FistVR.FVRMovementManager.FindValidPointCurved(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+  FindValidPointCurved(Vector3, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 FindValidPointCurved(Vector3 castOrigin, Vector3 castDir, float initialVel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>castOrigin</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>castDir</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>initialVel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_FindValidPointCurvedForRotatedTeleport_" data-uid="FistVR.FVRMovementManager.FindValidPointCurvedForRotatedTeleport*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_FindValidPointCurvedForRotatedTeleport_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_" data-uid="FistVR.FVRMovementManager.FindValidPointCurvedForRotatedTeleport(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+  FindValidPointCurvedForRotatedTeleport(Vector3, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 FindValidPointCurvedForRotatedTeleport(Vector3 castOrigin, Vector3 castDir, float initialVel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>castOrigin</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>castDir</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>initialVel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_FixedUpdate_" data-uid="FistVR.FVRMovementManager.FixedUpdate*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_FixedUpdate" data-uid="FistVR.FVRMovementManager.FixedUpdate">
+  FixedUpdate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FixedUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_ForceControlTick_" data-uid="FistVR.FVRMovementManager.ForceControlTick*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_ForceControlTick_FistVR_TestLocoController_" data-uid="FistVR.FVRMovementManager.ForceControlTick(FistVR.TestLocoController)">
+  ForceControlTick(TestLocoController)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceControlTick(TestLocoController tc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tc</code> <a class="xref" href="FistVR.TestLocoController.html">TestLocoController</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_GetFilteredVel_" data-uid="FistVR.FVRMovementManager.GetFilteredVel*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_GetFilteredVel" data-uid="FistVR.FVRMovementManager.GetFilteredVel">
+  GetFilteredVel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetFilteredVel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_GetLastWorldDir_" data-uid="FistVR.FVRMovementManager.GetLastWorldDir*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_GetLastWorldDir" data-uid="FistVR.FVRMovementManager.GetLastWorldDir">
+  GetLastWorldDir()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetLastWorldDir()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_GetTC_" data-uid="FistVR.FVRMovementManager.GetTC*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_GetTC" data-uid="FistVR.FVRMovementManager.GetTC">
+  GetTC()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TestLocoController GetTC()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.TestLocoController.html">TestLocoController</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_GetTopSpeedInLastSecond_" data-uid="FistVR.FVRMovementManager.GetTopSpeedInLastSecond*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_GetTopSpeedInLastSecond" data-uid="FistVR.FVRMovementManager.GetTopSpeedInLastSecond">
+  GetTopSpeedInLastSecond()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetTopSpeedInLastSecond()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_Init_" data-uid="FistVR.FVRMovementManager.Init*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_Init_FistVR_FVRSceneSettings_" data-uid="FistVR.FVRMovementManager.Init(FistVR.FVRSceneSettings)">
+  Init(FVRSceneSettings)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Init(FVRSceneSettings SceneSettings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>SceneSettings</code> <a class="xref" href="FistVR.FVRSceneSettings.html">FVRSceneSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_IsSmoothLoco_" data-uid="FistVR.FVRMovementManager.IsSmoothLoco*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_IsSmoothLoco" data-uid="FistVR.FVRMovementManager.IsSmoothLoco">
+  IsSmoothLoco()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSmoothLoco()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_RegisterSmoothLocoAdder_" data-uid="FistVR.FVRMovementManager.RegisterSmoothLocoAdder*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_RegisterSmoothLocoAdder_FistVR_FVRMovementManager_TransformVelocity_" data-uid="FistVR.FVRMovementManager.RegisterSmoothLocoAdder(FistVR.FVRMovementManager.TransformVelocity)">
+  RegisterSmoothLocoAdder(TransformVelocity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterSmoothLocoAdder(FVRMovementManager.TransformVelocity velocityDelegate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>velocityDelegate</code> <a class="xref" href="FistVR.FVRMovementManager.html">FVRMovementManager</a>.<a class="xref" href="FistVR.FVRMovementManager.TransformVelocity.html">TransformVelocity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_RegisterSmoothLocoRestrictor_" data-uid="FistVR.FVRMovementManager.RegisterSmoothLocoRestrictor*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_RegisterSmoothLocoRestrictor_FistVR_FVRMovementManager_TransformVelocity_" data-uid="FistVR.FVRMovementManager.RegisterSmoothLocoRestrictor(FistVR.FVRMovementManager.TransformVelocity)">
+  RegisterSmoothLocoRestrictor(TransformVelocity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterSmoothLocoRestrictor(FVRMovementManager.TransformVelocity velocityDelegate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>velocityDelegate</code> <a class="xref" href="FistVR.FVRMovementManager.html">FVRMovementManager</a>.<a class="xref" href="FistVR.FVRMovementManager.TransformVelocity.html">TransformVelocity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_ResetNeckPoses_" data-uid="FistVR.FVRMovementManager.ResetNeckPoses*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_ResetNeckPoses" data-uid="FistVR.FVRMovementManager.ResetNeckPoses">
+  ResetNeckPoses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetNeckPoses()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_RocketJump_" data-uid="FistVR.FVRMovementManager.RocketJump*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_RocketJump_UnityEngine_Vector3_UnityEngine_Vector2_System_Single_" data-uid="FistVR.FVRMovementManager.RocketJump(UnityEngine.Vector3,UnityEngine.Vector2,System.Single)">
+  RocketJump(Vector3, Vector2, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RocketJump(Vector3 pos, Vector2 range, float vel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>range</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>vel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_RotatePointAroundPivotWithEuler_" data-uid="FistVR.FVRMovementManager.RotatePointAroundPivotWithEuler*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_RotatePointAroundPivotWithEuler_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Vector3_" data-uid="FistVR.FVRMovementManager.RotatePointAroundPivotWithEuler(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)">
+  RotatePointAroundPivotWithEuler(Vector3, Vector3, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 RotatePointAroundPivotWithEuler(Vector3 point, Vector3 pivot, Vector3 angles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>pivot</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>angles</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_SetDashDestination_" data-uid="FistVR.FVRMovementManager.SetDashDestination*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_SetDashDestination_UnityEngine_Vector3_" data-uid="FistVR.FVRMovementManager.SetDashDestination(UnityEngine.Vector3)">
+  SetDashDestination(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SetDashDestination(Vector3 point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_SetForceControl_" data-uid="FistVR.FVRMovementManager.SetForceControl*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_SetForceControl_FistVR_TestLocoController_" data-uid="FistVR.FVRMovementManager.SetForceControl(FistVR.TestLocoController)">
+  SetForceControl(TestLocoController)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetForceControl(TestLocoController tc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tc</code> <a class="xref" href="FistVR.TestLocoController.html">TestLocoController</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_SetSlidingDestination_" data-uid="FistVR.FVRMovementManager.SetSlidingDestination*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_SetSlidingDestination_UnityEngine_Vector3_" data-uid="FistVR.FVRMovementManager.SetSlidingDestination(UnityEngine.Vector3)">
+  SetSlidingDestination(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSlidingDestination(Vector3 point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_ShouldFlushTouchpad_" data-uid="FistVR.FVRMovementManager.ShouldFlushTouchpad*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_ShouldFlushTouchpad_FistVR_FVRViveHand_" data-uid="FistVR.FVRMovementManager.ShouldFlushTouchpad(FistVR.FVRViveHand)">
+  ShouldFlushTouchpad(FVRViveHand)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShouldFlushTouchpad(FVRViveHand hand)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hand</code> <a class="xref" href="FistVR.FVRViveHand.html">FVRViveHand</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_TeleportToPoint_" data-uid="FistVR.FVRMovementManager.TeleportToPoint*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_TeleportToPoint_UnityEngine_Vector3_System_Boolean_" data-uid="FistVR.FVRMovementManager.TeleportToPoint(UnityEngine.Vector3,System.Boolean)">
+  TeleportToPoint(Vector3, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TeleportToPoint(Vector3 point, bool isAbsolute)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>isAbsolute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_TeleportToPoint_" data-uid="FistVR.FVRMovementManager.TeleportToPoint*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_TeleportToPoint_UnityEngine_Vector3_System_Boolean_UnityEngine_Vector3_" data-uid="FistVR.FVRMovementManager.TeleportToPoint(UnityEngine.Vector3,System.Boolean,UnityEngine.Vector3)">
+  TeleportToPoint(Vector3, bool, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TeleportToPoint(Vector3 point, bool isAbsolute, Vector3 lookDir)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>isAbsolute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>lookDir</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_TurnClockWise_" data-uid="FistVR.FVRMovementManager.TurnClockWise*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_TurnClockWise" data-uid="FistVR.FVRMovementManager.TurnClockWise">
+  TurnClockWise()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TurnClockWise()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_TurnCounterClockWise_" data-uid="FistVR.FVRMovementManager.TurnCounterClockWise*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_TurnCounterClockWise" data-uid="FistVR.FVRMovementManager.TurnCounterClockWise">
+  TurnCounterClockWise()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TurnCounterClockWise()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_Update_" data-uid="FistVR.FVRMovementManager.Update*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_Update" data-uid="FistVR.FVRMovementManager.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_UpdateGrabPointMove_" data-uid="FistVR.FVRMovementManager.UpdateGrabPointMove*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_UpdateGrabPointMove" data-uid="FistVR.FVRMovementManager.UpdateGrabPointMove">
+  UpdateGrabPointMove()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateGrabPointMove()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_FVRMovementManager_UpdateMovementWithHand_" data-uid="FistVR.FVRMovementManager.UpdateMovementWithHand*"></a>
+
+  <h3 id="FistVR_FVRMovementManager_UpdateMovementWithHand_FistVR_FVRViveHand_" data-uid="FistVR.FVRMovementManager.UpdateMovementWithHand(FistVR.FVRViveHand)">
+  UpdateMovementWithHand(FVRViveHand)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateMovementWithHand(FVRViveHand hand)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hand</code> <a class="xref" href="FistVR.FVRViveHand.html">FVRViveHand</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

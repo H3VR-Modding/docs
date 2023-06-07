@@ -1,0 +1,1278 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SideHingedDestructibleDoor
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SideHingedDestructibleDoor
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FistVR.SideHingedDestructibleDoor">
+
+
+
+  <h1 id="FistVR_SideHingedDestructibleDoor" data-uid="FistVR.SideHingedDestructibleDoor" class="text-break">
+    Class SideHingedDestructibleDoor
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FistVR.html">FistVR</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SideHingedDestructibleDoor : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SideHingedDestructibleDoor</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FistVR_SideHingedDestructibleDoor__ctor_" data-uid="FistVR.SideHingedDestructibleDoor.#ctor*"></a>
+
+  <h3 id="FistVR_SideHingedDestructibleDoor__ctor" data-uid="FistVR.SideHingedDestructibleDoor.#ctor">
+  SideHingedDestructibleDoor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SideHingedDestructibleDoor()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_AudEvent_DoorClose" data-uid="FistVR.SideHingedDestructibleDoor.AudEvent_DoorClose">
+  AudEvent_DoorClose
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioEvent AudEvent_DoorClose</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.AudioEvent.html">AudioEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_AudEvent_DoorHitEnd" data-uid="FistVR.SideHingedDestructibleDoor.AudEvent_DoorHitEnd">
+  AudEvent_DoorHitEnd
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioEvent AudEvent_DoorHitEnd</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.AudioEvent.html">AudioEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_AudEvent_DoorOpen" data-uid="FistVR.SideHingedDestructibleDoor.AudEvent_DoorOpen">
+  AudEvent_DoorOpen
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioEvent AudEvent_DoorOpen</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.AudioEvent.html">AudioEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_AudEvent_DoorSlam" data-uid="FistVR.SideHingedDestructibleDoor.AudEvent_DoorSlam">
+  AudEvent_DoorSlam
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioEvent AudEvent_DoorSlam</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.AudioEvent.html">AudioEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_AudEvent_SqueakClose" data-uid="FistVR.SideHingedDestructibleDoor.AudEvent_SqueakClose">
+  AudEvent_SqueakClose
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioEvent AudEvent_SqueakClose</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.AudioEvent.html">AudioEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_AudEvent_SqueakOpen" data-uid="FistVR.SideHingedDestructibleDoor.AudEvent_SqueakOpen">
+  AudEvent_SqueakOpen
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioEvent AudEvent_SqueakOpen</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.AudioEvent.html">AudioEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_Blocker_Nav" data-uid="FistVR.SideHingedDestructibleDoor.Blocker_Nav">
+  Blocker_Nav
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject Blocker_Nav</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_Blocker_Viz" data-uid="FistVR.SideHingedDestructibleDoor.Blocker_Viz">
+  Blocker_Viz
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject Blocker_Viz</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_ClosedMinRange" data-uid="FistVR.SideHingedDestructibleDoor.ClosedMinRange">
+  ClosedMinRange
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ClosedMinRange</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_Comps" data-uid="FistVR.SideHingedDestructibleDoor.Comps">
+  Comps
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SideHingedDestructibleDoor.SpawnableComponent&gt; Comps</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FistVR.SideHingedDestructibleDoor.html">SideHingedDestructibleDoor</a>.<a class="xref" href="FistVR.SideHingedDestructibleDoor.SpawnableComponent.html">SpawnableComponent</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_Frame" data-uid="FistVR.SideHingedDestructibleDoor.Frame">
+  Frame
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform Frame</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_HingeHitBoxLower" data-uid="FistVR.SideHingedDestructibleDoor.HingeHitBoxLower">
+  HingeHitBoxLower
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform HingeHitBoxLower</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_HingeHitBoxUpper" data-uid="FistVR.SideHingedDestructibleDoor.HingeHitBoxUpper">
+  HingeHitBoxUpper
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform HingeHitBoxUpper</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_HingeLower" data-uid="FistVR.SideHingedDestructibleDoor.HingeLower">
+  HingeLower
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HingeJoint HingeLower</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">HingeJoint</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_HingePoint" data-uid="FistVR.SideHingedDestructibleDoor.HingePoint">
+  HingePoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform HingePoint</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_HingeUpper" data-uid="FistVR.SideHingedDestructibleDoor.HingeUpper">
+  HingeUpper
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HingeJoint HingeUpper</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">HingeJoint</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_LastState" data-uid="FistVR.SideHingedDestructibleDoor.LastState">
+  LastState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SideHingedDestructibleDoor.DoorState LastState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.SideHingedDestructibleDoor.html">SideHingedDestructibleDoor</a>.<a class="xref" href="FistVR.SideHingedDestructibleDoor.DoorState.html">DoorState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_OpenMaxRange" data-uid="FistVR.SideHingedDestructibleDoor.OpenMaxRange">
+  OpenMaxRange
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float OpenMaxRange</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_RB" data-uid="FistVR.SideHingedDestructibleDoor.RB">
+  RB
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rigidbody RB</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Rigidbody</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_State" data-uid="FistVR.SideHingedDestructibleDoor.State">
+  State
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SideHingedDestructibleDoor.DoorState State</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.SideHingedDestructibleDoor.html">SideHingedDestructibleDoor</a>.<a class="xref" href="FistVR.SideHingedDestructibleDoor.DoorState.html">DoorState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_UsesDisplayHandles" data-uid="FistVR.SideHingedDestructibleDoor.UsesDisplayHandles">
+  UsesDisplayHandles
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UsesDisplayHandles</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_WholeDoor" data-uid="FistVR.SideHingedDestructibleDoor.WholeDoor">
+  WholeDoor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject WholeDoor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FistVR_SideHingedDestructibleDoor_ContinuousPullClosed_" data-uid="FistVR.SideHingedDestructibleDoor.ContinuousPullClosed*"></a>
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_ContinuousPullClosed" data-uid="FistVR.SideHingedDestructibleDoor.ContinuousPullClosed">
+  ContinuousPullClosed()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ContinuousPullClosed()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_SideHingedDestructibleDoor_ContinuousPullOpen_" data-uid="FistVR.SideHingedDestructibleDoor.ContinuousPullOpen*"></a>
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_ContinuousPullOpen" data-uid="FistVR.SideHingedDestructibleDoor.ContinuousPullOpen">
+  ContinuousPullOpen()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ContinuousPullOpen()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_SideHingedDestructibleDoor_ForceUnlock_" data-uid="FistVR.SideHingedDestructibleDoor.ForceUnlock*"></a>
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_ForceUnlock" data-uid="FistVR.SideHingedDestructibleDoor.ForceUnlock">
+  ForceUnlock()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceUnlock()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_SideHingedDestructibleDoor_GetBreachTarget_" data-uid="FistVR.SideHingedDestructibleDoor.GetBreachTarget*"></a>
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_GetBreachTarget" data-uid="FistVR.SideHingedDestructibleDoor.GetBreachTarget">
+  GetBreachTarget()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform GetBreachTarget()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_SideHingedDestructibleDoor_GetCurrentHingeTarget_" data-uid="FistVR.SideHingedDestructibleDoor.GetCurrentHingeTarget*"></a>
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_GetCurrentHingeTarget" data-uid="FistVR.SideHingedDestructibleDoor.GetCurrentHingeTarget">
+  GetCurrentHingeTarget()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform GetCurrentHingeTarget()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_SideHingedDestructibleDoor_GetLockableKeyType_" data-uid="FistVR.SideHingedDestructibleDoor.GetLockableKeyType*"></a>
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_GetLockableKeyType" data-uid="FistVR.SideHingedDestructibleDoor.GetLockableKeyType">
+  GetLockableKeyType()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLockableKeyType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_SideHingedDestructibleDoor_Init_" data-uid="FistVR.SideHingedDestructibleDoor.Init*"></a>
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_Init" data-uid="FistVR.SideHingedDestructibleDoor.Init">
+  Init()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Init()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_SideHingedDestructibleDoor_IsAtLeastHalfOpen_" data-uid="FistVR.SideHingedDestructibleDoor.IsAtLeastHalfOpen*"></a>
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_IsAtLeastHalfOpen" data-uid="FistVR.SideHingedDestructibleDoor.IsAtLeastHalfOpen">
+  IsAtLeastHalfOpen()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAtLeastHalfOpen()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_SideHingedDestructibleDoor_IsLocked_" data-uid="FistVR.SideHingedDestructibleDoor.IsLocked*"></a>
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_IsLocked" data-uid="FistVR.SideHingedDestructibleDoor.IsLocked">
+  IsLocked()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLocked()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_SideHingedDestructibleDoor_JiggleHandle_" data-uid="FistVR.SideHingedDestructibleDoor.JiggleHandle*"></a>
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_JiggleHandle" data-uid="FistVR.SideHingedDestructibleDoor.JiggleHandle">
+  JiggleHandle()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void JiggleHandle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_SideHingedDestructibleDoor_PushOpen_" data-uid="FistVR.SideHingedDestructibleDoor.PushOpen*"></a>
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_PushOpen" data-uid="FistVR.SideHingedDestructibleDoor.PushOpen">
+  PushOpen()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PushOpen()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_SideHingedDestructibleDoor_PushShut_" data-uid="FistVR.SideHingedDestructibleDoor.PushShut*"></a>
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_PushShut" data-uid="FistVR.SideHingedDestructibleDoor.PushShut">
+  PushShut()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PushShut()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_SideHingedDestructibleDoor_RemoteCloseDoor_" data-uid="FistVR.SideHingedDestructibleDoor.RemoteCloseDoor*"></a>
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_RemoteCloseDoor" data-uid="FistVR.SideHingedDestructibleDoor.RemoteCloseDoor">
+  RemoteCloseDoor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoteCloseDoor()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_SideHingedDestructibleDoor_RemoteHandleOpenRoutine_" data-uid="FistVR.SideHingedDestructibleDoor.RemoteHandleOpenRoutine*"></a>
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_RemoteHandleOpenRoutine" data-uid="FistVR.SideHingedDestructibleDoor.RemoteHandleOpenRoutine">
+  RemoteHandleOpenRoutine()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoteHandleOpenRoutine()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_SideHingedDestructibleDoor_RemoteOpenDoor_" data-uid="FistVR.SideHingedDestructibleDoor.RemoteOpenDoor*"></a>
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_RemoteOpenDoor" data-uid="FistVR.SideHingedDestructibleDoor.RemoteOpenDoor">
+  RemoteOpenDoor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoteOpenDoor()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_SideHingedDestructibleDoor_Start_" data-uid="FistVR.SideHingedDestructibleDoor.Start*"></a>
+
+  <h3 id="FistVR_SideHingedDestructibleDoor_Start" data-uid="FistVR.SideHingedDestructibleDoor.Start">
+  Start()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

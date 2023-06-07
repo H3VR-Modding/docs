@@ -1,0 +1,1305 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class VaultSystem
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class VaultSystem
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FistVR.VaultSystem">
+
+
+
+  <h1 id="FistVR_VaultSystem" data-uid="FistVR.VaultSystem" class="text-break">
+    Class VaultSystem
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FistVR.html">FistVR</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VaultSystem : ManagerSingleton&lt;VaultSystem&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="FistVR.ManagerSingleton-1.html">ManagerSingleton</a>&lt;<a class="xref" href="FistVR.VaultSystem.html">VaultSystem</a>&gt;</div>
+      <div><span class="xref">VaultSystem</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="FistVR.ManagerSingleton-1.html#FistVR_ManagerSingleton_1_Awake">ManagerSingleton&lt;VaultSystem&gt;.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.ManagerSingleton-1.html#FistVR_ManagerSingleton_1_Instance">ManagerSingleton&lt;VaultSystem&gt;.Instance</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FistVR_VaultSystem__ctor_" data-uid="FistVR.VaultSystem.#ctor*"></a>
+
+  <h3 id="FistVR_VaultSystem__ctor" data-uid="FistVR.VaultSystem.#ctor">
+  VaultSystem()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VaultSystem()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FistVR_VaultSystem_catFolderName_Objects" data-uid="FistVR.VaultSystem.catFolderName_Objects">
+  catFolderName_Objects
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string catFolderName_Objects</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_VaultSystem_catFolderName_SceneConfigs" data-uid="FistVR.VaultSystem.catFolderName_SceneConfigs">
+  catFolderName_SceneConfigs
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string catFolderName_SceneConfigs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_VaultSystem_catFolderName_SceneDefaults" data-uid="FistVR.VaultSystem.catFolderName_SceneDefaults">
+  catFolderName_SceneDefaults
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string catFolderName_SceneDefaults</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_VaultSystem_rootFolderName" data-uid="FistVR.VaultSystem.rootFolderName">
+  rootFolderName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string rootFolderName</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_VaultSystem_subcatFolderName_BareObjects" data-uid="FistVR.VaultSystem.subcatFolderName_BareObjects">
+  subcatFolderName_BareObjects
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string subcatFolderName_BareObjects</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_VaultSystem_subcatFolderName_Loadouts" data-uid="FistVR.VaultSystem.subcatFolderName_Loadouts">
+  subcatFolderName_Loadouts
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string subcatFolderName_Loadouts</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_VaultSystem_suffix_Loadouts" data-uid="FistVR.VaultSystem.suffix_Loadouts">
+  suffix_Loadouts
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string suffix_Loadouts</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_VaultSystem_suffix_Objects" data-uid="FistVR.VaultSystem.suffix_Objects">
+  suffix_Objects
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string suffix_Objects</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_VaultSystem_suffix_SceneConfigs" data-uid="FistVR.VaultSystem.suffix_SceneConfigs">
+  suffix_SceneConfigs
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string suffix_SceneConfigs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_VaultSystem_suffix_SceneDefault" data-uid="FistVR.VaultSystem.suffix_SceneDefault">
+  suffix_SceneDefault
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string suffix_SceneDefault</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FistVR_VaultSystem_CanScanPhysicalObject_" data-uid="FistVR.VaultSystem.CanScanPhysicalObject*"></a>
+
+  <h3 id="FistVR_VaultSystem_CanScanPhysicalObject_FistVR_FVRPhysicalObject_" data-uid="FistVR.VaultSystem.CanScanPhysicalObject(FistVR.FVRPhysicalObject)">
+  CanScanPhysicalObject(FVRPhysicalObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanScanPhysicalObject(FVRPhysicalObject o)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="FistVR.FVRPhysicalObject.html">FVRPhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_ClearExistingSaveableObjects_" data-uid="FistVR.VaultSystem.ClearExistingSaveableObjects*"></a>
+
+  <h3 id="FistVR_VaultSystem_ClearExistingSaveableObjects_System_Boolean_" data-uid="FistVR.VaultSystem.ClearExistingSaveableObjects(System.Boolean)">
+  ClearExistingSaveableObjects(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearExistingSaveableObjects(bool ClearNonSaveLoadable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ClearNonSaveLoadable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_ClearSceneDefault_" data-uid="FistVR.VaultSystem.ClearSceneDefault*"></a>
+
+  <h3 id="FistVR_VaultSystem_ClearSceneDefault" data-uid="FistVR.VaultSystem.ClearSceneDefault">
+  ClearSceneDefault()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ClearSceneDefault()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_DeleteVaultFile_" data-uid="FistVR.VaultSystem.DeleteVaultFile*"></a>
+
+  <h3 id="FistVR_VaultSystem_DeleteVaultFile_System_String_FistVR_ItemSpawnerV2_VaultFileDisplayMode_" data-uid="FistVR.VaultSystem.DeleteVaultFile(System.String,FistVR.ItemSpawnerV2.VaultFileDisplayMode)">
+  DeleteVaultFile(string, VaultFileDisplayMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DeleteVaultFile(string vaultFileName, ItemSpawnerV2.VaultFileDisplayMode mode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vaultFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>mode</code> <a class="xref" href="FistVR.ItemSpawnerV2.html">ItemSpawnerV2</a>.<a class="xref" href="FistVR.ItemSpawnerV2.VaultFileDisplayMode.html">VaultFileDisplayMode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_DoesVaultFileExist_" data-uid="FistVR.VaultSystem.DoesVaultFileExist*"></a>
+
+  <h3 id="FistVR_VaultSystem_DoesVaultFileExist_FistVR_ItemSpawnerV2_VaultFileDisplayMode_System_String_" data-uid="FistVR.VaultSystem.DoesVaultFileExist(FistVR.ItemSpawnerV2.VaultFileDisplayMode,System.String)">
+  DoesVaultFileExist(VaultFileDisplayMode, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DoesVaultFileExist(ItemSpawnerV2.VaultFileDisplayMode mode, string filename)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <a class="xref" href="FistVR.ItemSpawnerV2.html">ItemSpawnerV2</a>.<a class="xref" href="FistVR.ItemSpawnerV2.VaultFileDisplayMode.html">VaultFileDisplayMode</a></dt>
+    <dd></dd>
+    <dt><code>filename</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_FindAndScanObjectsInQuickbelt_" data-uid="FistVR.VaultSystem.FindAndScanObjectsInQuickbelt*"></a>
+
+  <h3 id="FistVR_VaultSystem_FindAndScanObjectsInQuickbelt_FistVR_VaultFile_" data-uid="FistVR.VaultSystem.FindAndScanObjectsInQuickbelt(FistVR.VaultFile)">
+  FindAndScanObjectsInQuickbelt(VaultFile)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FindAndScanObjectsInQuickbelt(VaultFile file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="FistVR.VaultFile.html">VaultFile</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_FindAndScanObjectsInScene_" data-uid="FistVR.VaultSystem.FindAndScanObjectsInScene*"></a>
+
+  <h3 id="FistVR_VaultSystem_FindAndScanObjectsInScene_FistVR_VaultFile_" data-uid="FistVR.VaultSystem.FindAndScanObjectsInScene(FistVR.VaultFile)">
+  FindAndScanObjectsInScene(VaultFile)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FindAndScanObjectsInScene(VaultFile file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="FistVR.VaultFile.html">VaultFile</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_FindAndScanObjectsOnPlinth_" data-uid="FistVR.VaultSystem.FindAndScanObjectsOnPlinth*"></a>
+
+  <h3 id="FistVR_VaultSystem_FindAndScanObjectsOnPlinth_FistVR_VaultFile_UnityEngine_Transform_UnityEngine_Transform_" data-uid="FistVR.VaultSystem.FindAndScanObjectsOnPlinth(FistVR.VaultFile,UnityEngine.Transform,UnityEngine.Transform)">
+  FindAndScanObjectsOnPlinth(VaultFile, Transform, Transform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FindAndScanObjectsOnPlinth(VaultFile file, Transform ScanVolume, Transform ScanRoot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="FistVR.VaultFile.html">VaultFile</a></dt>
+    <dd></dd>
+    <dt><code>ScanVolume</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>ScanRoot</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_GetCurrentSceneNameForDirectoryStructureAndSaveLoading_" data-uid="FistVR.VaultSystem.GetCurrentSceneNameForDirectoryStructureAndSaveLoading*"></a>
+
+  <h3 id="FistVR_VaultSystem_GetCurrentSceneNameForDirectoryStructureAndSaveLoading" data-uid="FistVR.VaultSystem.GetCurrentSceneNameForDirectoryStructureAndSaveLoading">
+  GetCurrentSceneNameForDirectoryStructureAndSaveLoading()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetCurrentSceneNameForDirectoryStructureAndSaveLoading()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_GetFileListForDisplayMode_" data-uid="FistVR.VaultSystem.GetFileListForDisplayMode*"></a>
+
+  <h3 id="FistVR_VaultSystem_GetFileListForDisplayMode_FistVR_ItemSpawnerV2_VaultFileDisplayMode_Global_CynJsonSortingMode_" data-uid="FistVR.VaultSystem.GetFileListForDisplayMode(FistVR.ItemSpawnerV2.VaultFileDisplayMode,Global.CynJsonSortingMode)">
+  GetFileListForDisplayMode(VaultFileDisplayMode, CynJsonSortingMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetFileListForDisplayMode(ItemSpawnerV2.VaultFileDisplayMode mode, CynJsonSortingMode sortMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <a class="xref" href="FistVR.ItemSpawnerV2.html">ItemSpawnerV2</a>.<a class="xref" href="FistVR.ItemSpawnerV2.VaultFileDisplayMode.html">VaultFileDisplayMode</a></dt>
+    <dd></dd>
+    <dt><code>sortMode</code> <a class="xref" href="Global.CynJsonSortingMode.html">CynJsonSortingMode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_GetLastModified_" data-uid="FistVR.VaultSystem.GetLastModified*"></a>
+
+  <h3 id="FistVR_VaultSystem_GetLastModified_FistVR_ItemSpawnerV2_VaultFileDisplayMode_System_String_" data-uid="FistVR.VaultSystem.GetLastModified(FistVR.ItemSpawnerV2.VaultFileDisplayMode,System.String)">
+  GetLastModified(VaultFileDisplayMode, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime GetLastModified(ItemSpawnerV2.VaultFileDisplayMode mode, string filename)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <a class="xref" href="FistVR.ItemSpawnerV2.html">ItemSpawnerV2</a>.<a class="xref" href="FistVR.ItemSpawnerV2.VaultFileDisplayMode.html">VaultFileDisplayMode</a></dt>
+    <dd></dd>
+    <dt><code>filename</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_GetSceneDefault_" data-uid="FistVR.VaultSystem.GetSceneDefault*"></a>
+
+  <h3 id="FistVR_VaultSystem_GetSceneDefault" data-uid="FistVR.VaultSystem.GetSceneDefault">
+  GetSceneDefault()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetSceneDefault()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_GetSpawner_" data-uid="FistVR.VaultSystem.GetSpawner*"></a>
+
+  <h3 id="FistVR_VaultSystem_GetSpawner" data-uid="FistVR.VaultSystem.GetSpawner">
+  GetSpawner()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ItemSpawnerV2 GetSpawner()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.ItemSpawnerV2.html">ItemSpawnerV2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_LoadVaultFile_" data-uid="FistVR.VaultSystem.LoadVaultFile*"></a>
+
+  <h3 id="FistVR_VaultSystem_LoadVaultFile_System_String_FistVR_ItemSpawnerV2_VaultFileDisplayMode_FistVR_VaultFile__" data-uid="FistVR.VaultSystem.LoadVaultFile(System.String,FistVR.ItemSpawnerV2.VaultFileDisplayMode,FistVR.VaultFile@)">
+  LoadVaultFile(string, VaultFileDisplayMode, out VaultFile)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LoadVaultFile(string vaultFileName, ItemSpawnerV2.VaultFileDisplayMode mode, out VaultFile vf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vaultFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>mode</code> <a class="xref" href="FistVR.ItemSpawnerV2.html">ItemSpawnerV2</a>.<a class="xref" href="FistVR.ItemSpawnerV2.VaultFileDisplayMode.html">VaultFileDisplayMode</a></dt>
+    <dd></dd>
+    <dt><code>vf</code> <a class="xref" href="FistVR.VaultFile.html">VaultFile</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_SavePhysicalObjectToVaultObject_" data-uid="FistVR.VaultSystem.SavePhysicalObjectToVaultObject*"></a>
+
+  <h3 id="FistVR_VaultSystem_SavePhysicalObjectToVaultObject_FistVR_FVRPhysicalObject_System_Boolean_System_Boolean_System_Collections_Generic_Dictionary_FistVR_FVRPhysicalObject_System_Int32__System_Collections_Generic_Dictionary_FistVR_FVRPhysicalObject_System_Int32__System_Collections_Generic_Dictionary_FistVR_FVRPhysicalObject_System_Int32__System_Int32_UnityEngine_Transform_" data-uid="FistVR.VaultSystem.SavePhysicalObjectToVaultObject(FistVR.FVRPhysicalObject,System.Boolean,System.Boolean,System.Collections.Generic.Dictionary{FistVR.FVRPhysicalObject,System.Int32},System.Collections.Generic.Dictionary{FistVR.FVRPhysicalObject,System.Int32},System.Collections.Generic.Dictionary{FistVR.FVRPhysicalObject,System.Int32},System.Int32,UnityEngine.Transform)">
+  SavePhysicalObjectToVaultObject(FVRPhysicalObject, bool, bool, Dictionary&lt;FVRPhysicalObject, int&gt;, Dictionary&lt;FVRPhysicalObject, int&gt;, Dictionary&lt;FVRPhysicalObject, int&gt;, int, Transform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VaultObject SavePhysicalObjectToVaultObject(FVRPhysicalObject o, bool saveRelativeToSpawner, bool saveworldPositions, Dictionary&lt;FVRPhysicalObject, int&gt; dicQuickbeltObjectIndex, Dictionary&lt;FVRPhysicalObject, int&gt; dicQuickbeltElementIndex, Dictionary&lt;FVRPhysicalObject, int&gt; dicQuickbeltSlotIndex, int ObjectIndex, Transform ScanRoot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="FistVR.FVRPhysicalObject.html">FVRPhysicalObject</a></dt>
+    <dd></dd>
+    <dt><code>saveRelativeToSpawner</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>saveworldPositions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>dicQuickbeltObjectIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="FistVR.FVRPhysicalObject.html">FVRPhysicalObject</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>dicQuickbeltElementIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="FistVR.FVRPhysicalObject.html">FVRPhysicalObject</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>dicQuickbeltSlotIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="FistVR.FVRPhysicalObject.html">FVRPhysicalObject</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>ObjectIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>ScanRoot</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.VaultObject.html">VaultObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_SaveSceneDefault_" data-uid="FistVR.VaultSystem.SaveSceneDefault*"></a>
+
+  <h3 id="FistVR_VaultSystem_SaveSceneDefault_System_String_" data-uid="FistVR.VaultSystem.SaveSceneDefault(System.String)">
+  SaveSceneDefault(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SaveSceneDefault(string vaultFileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vaultFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_SaveVaultFile_" data-uid="FistVR.VaultSystem.SaveVaultFile*"></a>
+
+  <h3 id="FistVR_VaultSystem_SaveVaultFile_System_String_FistVR_ItemSpawnerV2_VaultFileDisplayMode_FistVR_VaultFile_" data-uid="FistVR.VaultSystem.SaveVaultFile(System.String,FistVR.ItemSpawnerV2.VaultFileDisplayMode,FistVR.VaultFile)">
+  SaveVaultFile(string, VaultFileDisplayMode, VaultFile)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SaveVaultFile(string vaultFileName, ItemSpawnerV2.VaultFileDisplayMode mode, VaultFile file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vaultFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>mode</code> <a class="xref" href="FistVR.ItemSpawnerV2.html">ItemSpawnerV2</a>.<a class="xref" href="FistVR.ItemSpawnerV2.VaultFileDisplayMode.html">VaultFileDisplayMode</a></dt>
+    <dd></dd>
+    <dt><code>file</code> <a class="xref" href="FistVR.VaultFile.html">VaultFile</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_ScanObjectToVaultFile_" data-uid="FistVR.VaultSystem.ScanObjectToVaultFile*"></a>
+
+  <h3 id="FistVR_VaultSystem_ScanObjectToVaultFile_FistVR_VaultFile_FistVR_FVRPhysicalObject_" data-uid="FistVR.VaultSystem.ScanObjectToVaultFile(FistVR.VaultFile,FistVR.FVRPhysicalObject)">
+  ScanObjectToVaultFile(VaultFile, FVRPhysicalObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ScanObjectToVaultFile(VaultFile file, FVRPhysicalObject o)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="FistVR.VaultFile.html">VaultFile</a></dt>
+    <dd></dd>
+    <dt><code>o</code> <a class="xref" href="FistVR.FVRPhysicalObject.html">FVRPhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_SetScenarioToLoadOnSceneLoad_" data-uid="FistVR.VaultSystem.SetScenarioToLoadOnSceneLoad*"></a>
+
+  <h3 id="FistVR_VaultSystem_SetScenarioToLoadOnSceneLoad_System_String_" data-uid="FistVR.VaultSystem.SetScenarioToLoadOnSceneLoad(System.String)">
+  SetScenarioToLoadOnSceneLoad(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetScenarioToLoadOnSceneLoad(string ScenarioName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ScenarioName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_SetSpawner_" data-uid="FistVR.VaultSystem.SetSpawner*"></a>
+
+  <h3 id="FistVR_VaultSystem_SetSpawner_FistVR_ItemSpawnerV2_" data-uid="FistVR.VaultSystem.SetSpawner(FistVR.ItemSpawnerV2)">
+  SetSpawner(ItemSpawnerV2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetSpawner(ItemSpawnerV2 s)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <a class="xref" href="FistVR.ItemSpawnerV2.html">ItemSpawnerV2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_SpawnObjects_" data-uid="FistVR.VaultSystem.SpawnObjects*"></a>
+
+  <h3 id="FistVR_VaultSystem_SpawnObjects_FistVR_ItemSpawnerV2_VaultFileDisplayMode_FistVR_VaultFile_System_String__UnityEngine_Transform_UnityEngine_Vector3_" data-uid="FistVR.VaultSystem.SpawnObjects(FistVR.ItemSpawnerV2.VaultFileDisplayMode,FistVR.VaultFile,System.String@,UnityEngine.Transform,UnityEngine.Vector3)">
+  SpawnObjects(VaultFileDisplayMode, VaultFile, out string, Transform, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SpawnObjects(ItemSpawnerV2.VaultFileDisplayMode mode, VaultFile file, out string errorMessage, Transform SpawnRelativeTo, Vector3 spawnOffset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <a class="xref" href="FistVR.ItemSpawnerV2.html">ItemSpawnerV2</a>.<a class="xref" href="FistVR.ItemSpawnerV2.VaultFileDisplayMode.html">VaultFileDisplayMode</a></dt>
+    <dd></dd>
+    <dt><code>file</code> <a class="xref" href="FistVR.VaultFile.html">VaultFile</a></dt>
+    <dd></dd>
+    <dt><code>errorMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>SpawnRelativeTo</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>spawnOffset</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_VaultSystem_SpawnVaultFile_" data-uid="FistVR.VaultSystem.SpawnVaultFile*"></a>
+
+  <h3 id="FistVR_VaultSystem_SpawnVaultFile_FistVR_VaultFile_UnityEngine_Transform_System_Boolean_System_Boolean_System_Boolean_System_String__UnityEngine_Vector3_FistVR_VaultSystem_ReturnObjectListDelegate_System_Boolean_" data-uid="FistVR.VaultSystem.SpawnVaultFile(FistVR.VaultFile,UnityEngine.Transform,System.Boolean,System.Boolean,System.Boolean,System.String@,UnityEngine.Vector3,FistVR.VaultSystem.ReturnObjectListDelegate,System.Boolean)">
+  SpawnVaultFile(VaultFile, Transform, bool, bool, bool, out string, Vector3, ReturnObjectListDelegate, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SpawnVaultFile(VaultFile f, Transform SpawnRelativeTo, bool spawnRelativeTo, bool decodeAsLoadout, bool clearScene, out string ErrorMessage, Vector3 spawnOffset, VaultSystem.ReturnObjectListDelegate del = null, bool displayFileLoad = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="FistVR.VaultFile.html">VaultFile</a></dt>
+    <dd></dd>
+    <dt><code>SpawnRelativeTo</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>spawnRelativeTo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>decodeAsLoadout</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>clearScene</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>ErrorMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>spawnOffset</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>del</code> <a class="xref" href="FistVR.VaultSystem.html">VaultSystem</a>.<a class="xref" href="FistVR.VaultSystem.ReturnObjectListDelegate.html">ReturnObjectListDelegate</a></dt>
+    <dd></dd>
+    <dt><code>displayFileLoad</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

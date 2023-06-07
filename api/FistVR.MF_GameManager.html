@@ -1,0 +1,981 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MF_GameManager
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MF_GameManager
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FistVR.MF_GameManager">
+
+
+
+  <h1 id="FistVR_MF_GameManager" data-uid="FistVR.MF_GameManager" class="text-break">
+    Class MF_GameManager
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FistVR.html">FistVR</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MF_GameManager : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MF_GameManager</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FistVR_MF_GameManager__ctor_" data-uid="FistVR.MF_GameManager.#ctor*"></a>
+
+  <h3 id="FistVR_MF_GameManager__ctor" data-uid="FistVR.MF_GameManager.#ctor">
+  MF_GameManager()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MF_GameManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FistVR_MF_GameManager_FMODController" data-uid="FistVR.MF_GameManager.FMODController">
+  FMODController
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FVRFMODController FMODController</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.FVRFMODController.html">FVRFMODController</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_MF_GameManager_OP_PlayerSettings_BlastJumpSelfDamage" data-uid="FistVR.MF_GameManager.OP_PlayerSettings_BlastJumpSelfDamage">
+  OP_PlayerSettings_BlastJumpSelfDamage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptionsPanel_ButtonSet OP_PlayerSettings_BlastJumpSelfDamage</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.OptionsPanel_ButtonSet.html">OptionsPanel_ButtonSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_MF_GameManager_OP_PlayerSettings_BlastJumping" data-uid="FistVR.MF_GameManager.OP_PlayerSettings_BlastJumping">
+  OP_PlayerSettings_BlastJumping
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptionsPanel_ButtonSet OP_PlayerSettings_BlastJumping</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.OptionsPanel_ButtonSet.html">OptionsPanel_ButtonSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_MF_GameManager_OP_PlayerSettings_Health" data-uid="FistVR.MF_GameManager.OP_PlayerSettings_Health">
+  OP_PlayerSettings_Health
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptionsPanel_ButtonSet OP_PlayerSettings_Health</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.OptionsPanel_ButtonSet.html">OptionsPanel_ButtonSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_MF_GameManager_OP_TDM_BlueSpawnSpeed" data-uid="FistVR.MF_GameManager.OP_TDM_BlueSpawnSpeed">
+  OP_TDM_BlueSpawnSpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptionsPanel_ButtonSet OP_TDM_BlueSpawnSpeed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.OptionsPanel_ButtonSet.html">OptionsPanel_ButtonSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_MF_GameManager_OP_TDM_BlueTeamSize" data-uid="FistVR.MF_GameManager.OP_TDM_BlueTeamSize">
+  OP_TDM_BlueTeamSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptionsPanel_ButtonSet OP_TDM_BlueTeamSize</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.OptionsPanel_ButtonSet.html">OptionsPanel_ButtonSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_MF_GameManager_OP_TDM_PlayArea" data-uid="FistVR.MF_GameManager.OP_TDM_PlayArea">
+  OP_TDM_PlayArea
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptionsPanel_ButtonSet OP_TDM_PlayArea</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.OptionsPanel_ButtonSet.html">OptionsPanel_ButtonSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_MF_GameManager_OP_TDM_PlayerTeam" data-uid="FistVR.MF_GameManager.OP_TDM_PlayerTeam">
+  OP_TDM_PlayerTeam
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptionsPanel_ButtonSet OP_TDM_PlayerTeam</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.OptionsPanel_ButtonSet.html">OptionsPanel_ButtonSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_MF_GameManager_OP_TDM_RedSpawnSpeed" data-uid="FistVR.MF_GameManager.OP_TDM_RedSpawnSpeed">
+  OP_TDM_RedSpawnSpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptionsPanel_ButtonSet OP_TDM_RedSpawnSpeed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.OptionsPanel_ButtonSet.html">OptionsPanel_ButtonSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_MF_GameManager_OP_TDM_RedTeamSize" data-uid="FistVR.MF_GameManager.OP_TDM_RedTeamSize">
+  OP_TDM_RedTeamSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptionsPanel_ButtonSet OP_TDM_RedTeamSize</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.OptionsPanel_ButtonSet.html">OptionsPanel_ButtonSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_MF_GameManager_Panel_Mode_TDM" data-uid="FistVR.MF_GameManager.Panel_Mode_TDM">
+  Panel_Mode_TDM
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject Panel_Mode_TDM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_MF_GameManager_Panel_RespawnReset" data-uid="FistVR.MF_GameManager.Panel_RespawnReset">
+  Panel_RespawnReset
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject Panel_RespawnReset</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_MF_GameManager_TeamManager" data-uid="FistVR.MF_GameManager.TeamManager">
+  TeamManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MF_TeamManager TeamManager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.MF_TeamManager.html">MF_TeamManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FistVR_MF_GameManager_OnPlayerDeath_" data-uid="FistVR.MF_GameManager.OnPlayerDeath*"></a>
+
+  <h3 id="FistVR_MF_GameManager_OnPlayerDeath" data-uid="FistVR.MF_GameManager.OnPlayerDeath">
+  OnPlayerDeath()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPlayerDeath()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_MF_GameManager_ResetGame_" data-uid="FistVR.MF_GameManager.ResetGame*"></a>
+
+  <h3 id="FistVR_MF_GameManager_ResetGame" data-uid="FistVR.MF_GameManager.ResetGame">
+  ResetGame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetGame()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_MF_GameManager_Respawn_" data-uid="FistVR.MF_GameManager.Respawn*"></a>
+
+  <h3 id="FistVR_MF_GameManager_Respawn" data-uid="FistVR.MF_GameManager.Respawn">
+  Respawn()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Respawn()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_MF_GameManager_SetMusicOnOff_" data-uid="FistVR.MF_GameManager.SetMusicOnOff*"></a>
+
+  <h3 id="FistVR_MF_GameManager_SetMusicOnOff_System_Int32_" data-uid="FistVR.MF_GameManager.SetMusicOnOff(System.Int32)">
+  SetMusicOnOff(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMusicOnOff(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_MF_GameManager_SetOption_Player_BlastJumping_" data-uid="FistVR.MF_GameManager.SetOption_Player_BlastJumping*"></a>
+
+  <h3 id="FistVR_MF_GameManager_SetOption_Player_BlastJumping_System_Int32_" data-uid="FistVR.MF_GameManager.SetOption_Player_BlastJumping(System.Int32)">
+  SetOption_Player_BlastJumping(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOption_Player_BlastJumping(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_MF_GameManager_SetOption_Player_BlastJumpingSelfDamage_" data-uid="FistVR.MF_GameManager.SetOption_Player_BlastJumpingSelfDamage*"></a>
+
+  <h3 id="FistVR_MF_GameManager_SetOption_Player_BlastJumpingSelfDamage_System_Int32_" data-uid="FistVR.MF_GameManager.SetOption_Player_BlastJumpingSelfDamage(System.Int32)">
+  SetOption_Player_BlastJumpingSelfDamage(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOption_Player_BlastJumpingSelfDamage(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_MF_GameManager_SetOption_Player_Health_" data-uid="FistVR.MF_GameManager.SetOption_Player_Health*"></a>
+
+  <h3 id="FistVR_MF_GameManager_SetOption_Player_Health_System_Int32_" data-uid="FistVR.MF_GameManager.SetOption_Player_Health(System.Int32)">
+  SetOption_Player_Health(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOption_Player_Health(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_MF_GameManager_SetOption_TDM_BlueSpawnSpeed_" data-uid="FistVR.MF_GameManager.SetOption_TDM_BlueSpawnSpeed*"></a>
+
+  <h3 id="FistVR_MF_GameManager_SetOption_TDM_BlueSpawnSpeed_System_Int32_" data-uid="FistVR.MF_GameManager.SetOption_TDM_BlueSpawnSpeed(System.Int32)">
+  SetOption_TDM_BlueSpawnSpeed(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOption_TDM_BlueSpawnSpeed(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_MF_GameManager_SetOption_TDM_BlueTeamSize_" data-uid="FistVR.MF_GameManager.SetOption_TDM_BlueTeamSize*"></a>
+
+  <h3 id="FistVR_MF_GameManager_SetOption_TDM_BlueTeamSize_System_Int32_" data-uid="FistVR.MF_GameManager.SetOption_TDM_BlueTeamSize(System.Int32)">
+  SetOption_TDM_BlueTeamSize(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOption_TDM_BlueTeamSize(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_MF_GameManager_SetOption_TDM_PlayArea_" data-uid="FistVR.MF_GameManager.SetOption_TDM_PlayArea*"></a>
+
+  <h3 id="FistVR_MF_GameManager_SetOption_TDM_PlayArea_System_Int32_" data-uid="FistVR.MF_GameManager.SetOption_TDM_PlayArea(System.Int32)">
+  SetOption_TDM_PlayArea(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOption_TDM_PlayArea(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_MF_GameManager_SetOption_TDM_PlayerTeam_" data-uid="FistVR.MF_GameManager.SetOption_TDM_PlayerTeam*"></a>
+
+  <h3 id="FistVR_MF_GameManager_SetOption_TDM_PlayerTeam_System_Int32_" data-uid="FistVR.MF_GameManager.SetOption_TDM_PlayerTeam(System.Int32)">
+  SetOption_TDM_PlayerTeam(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOption_TDM_PlayerTeam(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_MF_GameManager_SetOption_TDM_RedSpawnSpeed_" data-uid="FistVR.MF_GameManager.SetOption_TDM_RedSpawnSpeed*"></a>
+
+  <h3 id="FistVR_MF_GameManager_SetOption_TDM_RedSpawnSpeed_System_Int32_" data-uid="FistVR.MF_GameManager.SetOption_TDM_RedSpawnSpeed(System.Int32)">
+  SetOption_TDM_RedSpawnSpeed(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOption_TDM_RedSpawnSpeed(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_MF_GameManager_SetOption_TDM_RedTeamSize_" data-uid="FistVR.MF_GameManager.SetOption_TDM_RedTeamSize*"></a>
+
+  <h3 id="FistVR_MF_GameManager_SetOption_TDM_RedTeamSize_System_Int32_" data-uid="FistVR.MF_GameManager.SetOption_TDM_RedTeamSize(System.Int32)">
+  SetOption_TDM_RedTeamSize(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOption_TDM_RedTeamSize(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_MF_GameManager_StartGame_" data-uid="FistVR.MF_GameManager.StartGame*"></a>
+
+  <h3 id="FistVR_MF_GameManager_StartGame" data-uid="FistVR.MF_GameManager.StartGame">
+  StartGame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartGame()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

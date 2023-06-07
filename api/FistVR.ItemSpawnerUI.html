@@ -1,0 +1,1534 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ItemSpawnerUI
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ItemSpawnerUI
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FistVR.ItemSpawnerUI">
+
+
+
+  <h1 id="FistVR_ItemSpawnerUI" data-uid="FistVR.ItemSpawnerUI" class="text-break">
+    Class ItemSpawnerUI
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FistVR.html">FistVR</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ItemSpawnerUI : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ItemSpawnerUI</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FistVR_ItemSpawnerUI__ctor_" data-uid="FistVR.ItemSpawnerUI.#ctor*"></a>
+
+  <h3 id="FistVR_ItemSpawnerUI__ctor" data-uid="FistVR.ItemSpawnerUI.#ctor">
+  ItemSpawnerUI()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ItemSpawnerUI()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_AUD" data-uid="FistVR.ItemSpawnerUI.AUD">
+  AUD
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioSource AUD</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AudioSource</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_AudClip_Chirps" data-uid="FistVR.ItemSpawnerUI.AudClip_Chirps">
+  AudClip_Chirps
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioClip[] AudClip_Chirps</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AudioClip</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_B_Back" data-uid="FistVR.ItemSpawnerUI.B_Back">
+  B_Back
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject B_Back</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_B_Next" data-uid="FistVR.ItemSpawnerUI.B_Next">
+  B_Next
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject B_Next</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_B_PageIndicator" data-uid="FistVR.ItemSpawnerUI.B_PageIndicator">
+  B_PageIndicator
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject B_PageIndicator</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_B_Prev" data-uid="FistVR.ItemSpawnerUI.B_Prev">
+  B_Prev
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject B_Prev</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_B_Scan" data-uid="FistVR.ItemSpawnerUI.B_Scan">
+  B_Scan
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject B_Scan</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_B_Spawn" data-uid="FistVR.ItemSpawnerUI.B_Spawn">
+  B_Spawn
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject B_Spawn</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_B_Vault" data-uid="FistVR.ItemSpawnerUI.B_Vault">
+  B_Vault
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject B_Vault</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_ControlPoster" data-uid="FistVR.ItemSpawnerUI.ControlPoster">
+  ControlPoster
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Renderer ControlPoster</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Renderer</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_FirearmSaver" data-uid="FistVR.ItemSpawnerUI.FirearmSaver">
+  FirearmSaver
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FirearmSaver FirearmSaver</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.FirearmSaver.html">FirearmSaver</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_P_Details" data-uid="FistVR.ItemSpawnerUI.P_Details">
+  P_Details
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject P_Details</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_P_Tiles" data-uid="FistVR.ItemSpawnerUI.P_Tiles">
+  P_Tiles
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject P_Tiles</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_P_Vault" data-uid="FistVR.ItemSpawnerUI.P_Vault">
+  P_Vault
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject P_Vault</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_SpawnPos_Huge" data-uid="FistVR.ItemSpawnerUI.SpawnPos_Huge">
+  SpawnPos_Huge
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform SpawnPos_Huge</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_SpawnPos_Main" data-uid="FistVR.ItemSpawnerUI.SpawnPos_Main">
+  SpawnPos_Main
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform SpawnPos_Main</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_SpawnPos_Small" data-uid="FistVR.ItemSpawnerUI.SpawnPos_Small">
+  SpawnPos_Small
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform[] SpawnPos_Small</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_SubCategoriesByButton" data-uid="FistVR.ItemSpawnerUI.SubCategoriesByButton">
+  SubCategoriesByButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ItemSpawnerID.ESubCategory&gt; SubCategoriesByButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FistVR.ItemSpawnerID.html">ItemSpawnerID</a>.<a class="xref" href="FistVR.ItemSpawnerID.ESubCategory.html">ESubCategory</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_SubCategoryButtons" data-uid="FistVR.ItemSpawnerUI.SubCategoryButtons">
+  SubCategoryButtons
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;GameObject&gt; SubCategoryButtons</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">GameObject</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_T_Currency_Readout" data-uid="FistVR.ItemSpawnerUI.T_Currency_Readout">
+  T_Currency_Readout
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Text T_Currency_Readout</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Text</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_T_Details_Info" data-uid="FistVR.ItemSpawnerUI.T_Details_Info">
+  T_Details_Info
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Text T_Details_Info</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Text</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_T_Details_Subheading" data-uid="FistVR.ItemSpawnerUI.T_Details_Subheading">
+  T_Details_Subheading
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Text T_Details_Subheading</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Text</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_T_Details_Title" data-uid="FistVR.ItemSpawnerUI.T_Details_Title">
+  T_Details_Title
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Text T_Details_Title</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Text</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_T_PageIndicator" data-uid="FistVR.ItemSpawnerUI.T_PageIndicator">
+  T_PageIndicator
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Text T_PageIndicator</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Text</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_T_Page_Indicator" data-uid="FistVR.ItemSpawnerUI.T_Page_Indicator">
+  T_Page_Indicator
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Text T_Page_Indicator</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Text</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_T_TopBar" data-uid="FistVR.ItemSpawnerUI.T_TopBar">
+  T_TopBar
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Text T_TopBar</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Text</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_Tiles_Details" data-uid="FistVR.ItemSpawnerUI.Tiles_Details">
+  Tiles_Details
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ItemSpawnerUITile[] Tiles_Details</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.ItemSpawnerUITile.html">ItemSpawnerUITile</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_Tiles_SelectionPage" data-uid="FistVR.ItemSpawnerUI.Tiles_SelectionPage">
+  Tiles_SelectionPage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ItemSpawnerUITile[] Tiles_SelectionPage</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.ItemSpawnerUITile.html">ItemSpawnerUITile</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_ItemSpawnerUI_Tiles_Vault" data-uid="FistVR.ItemSpawnerUI.Tiles_Vault">
+  Tiles_Vault
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ItemSpawnerVaultTile[] Tiles_Vault</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.ItemSpawnerVaultTile.html">ItemSpawnerVaultTile</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FistVR_ItemSpawnerUI_ButtonPress_" data-uid="FistVR.ItemSpawnerUI.ButtonPress*"></a>
+
+  <h3 id="FistVR_ItemSpawnerUI_ButtonPress_System_Int32_" data-uid="FistVR.ItemSpawnerUI.ButtonPress(System.Int32)">
+  ButtonPress(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonPress(int soundIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>soundIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_ItemSpawnerUI_ButtonPress_Back_" data-uid="FistVR.ItemSpawnerUI.ButtonPress_Back*"></a>
+
+  <h3 id="FistVR_ItemSpawnerUI_ButtonPress_Back" data-uid="FistVR.ItemSpawnerUI.ButtonPress_Back">
+  ButtonPress_Back()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonPress_Back()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_ItemSpawnerUI_ButtonPress_ConfirmDeleteVaultGun_" data-uid="FistVR.ItemSpawnerUI.ButtonPress_ConfirmDeleteVaultGun*"></a>
+
+  <h3 id="FistVR_ItemSpawnerUI_ButtonPress_ConfirmDeleteVaultGun_System_Int32_" data-uid="FistVR.ItemSpawnerUI.ButtonPress_ConfirmDeleteVaultGun(System.Int32)">
+  ButtonPress_ConfirmDeleteVaultGun(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonPress_ConfirmDeleteVaultGun(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_ItemSpawnerUI_ButtonPress_DeleteVaultGun_" data-uid="FistVR.ItemSpawnerUI.ButtonPress_DeleteVaultGun*"></a>
+
+  <h3 id="FistVR_ItemSpawnerUI_ButtonPress_DeleteVaultGun_System_Int32_" data-uid="FistVR.ItemSpawnerUI.ButtonPress_DeleteVaultGun(System.Int32)">
+  ButtonPress_DeleteVaultGun(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonPress_DeleteVaultGun(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_ItemSpawnerUI_ButtonPress_DetailTile_" data-uid="FistVR.ItemSpawnerUI.ButtonPress_DetailTile*"></a>
+
+  <h3 id="FistVR_ItemSpawnerUI_ButtonPress_DetailTile_System_Int32_" data-uid="FistVR.ItemSpawnerUI.ButtonPress_DetailTile(System.Int32)">
+  ButtonPress_DetailTile(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonPress_DetailTile(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_ItemSpawnerUI_ButtonPress_GoToVault_" data-uid="FistVR.ItemSpawnerUI.ButtonPress_GoToVault*"></a>
+
+  <h3 id="FistVR_ItemSpawnerUI_ButtonPress_GoToVault" data-uid="FistVR.ItemSpawnerUI.ButtonPress_GoToVault">
+  ButtonPress_GoToVault()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonPress_GoToVault()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_ItemSpawnerUI_ButtonPress_Next_" data-uid="FistVR.ItemSpawnerUI.ButtonPress_Next*"></a>
+
+  <h3 id="FistVR_ItemSpawnerUI_ButtonPress_Next" data-uid="FistVR.ItemSpawnerUI.ButtonPress_Next">
+  ButtonPress_Next()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonPress_Next()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_ItemSpawnerUI_ButtonPress_Prev_" data-uid="FistVR.ItemSpawnerUI.ButtonPress_Prev*"></a>
+
+  <h3 id="FistVR_ItemSpawnerUI_ButtonPress_Prev" data-uid="FistVR.ItemSpawnerUI.ButtonPress_Prev">
+  ButtonPress_Prev()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonPress_Prev()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_ItemSpawnerUI_ButtonPress_Scan_" data-uid="FistVR.ItemSpawnerUI.ButtonPress_Scan*"></a>
+
+  <h3 id="FistVR_ItemSpawnerUI_ButtonPress_Scan" data-uid="FistVR.ItemSpawnerUI.ButtonPress_Scan">
+  ButtonPress_Scan()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonPress_Scan()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_ItemSpawnerUI_ButtonPress_SelectionTile_" data-uid="FistVR.ItemSpawnerUI.ButtonPress_SelectionTile*"></a>
+
+  <h3 id="FistVR_ItemSpawnerUI_ButtonPress_SelectionTile_System_Int32_" data-uid="FistVR.ItemSpawnerUI.ButtonPress_SelectionTile(System.Int32)">
+  ButtonPress_SelectionTile(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonPress_SelectionTile(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_ItemSpawnerUI_ButtonPress_SetVaultFilter_" data-uid="FistVR.ItemSpawnerUI.ButtonPress_SetVaultFilter*"></a>
+
+  <h3 id="FistVR_ItemSpawnerUI_ButtonPress_SetVaultFilter_System_Int32_" data-uid="FistVR.ItemSpawnerUI.ButtonPress_SetVaultFilter(System.Int32)">
+  ButtonPress_SetVaultFilter(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonPress_SetVaultFilter(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_ItemSpawnerUI_ButtonPress_Spawn_" data-uid="FistVR.ItemSpawnerUI.ButtonPress_Spawn*"></a>
+
+  <h3 id="FistVR_ItemSpawnerUI_ButtonPress_Spawn" data-uid="FistVR.ItemSpawnerUI.ButtonPress_Spawn">
+  ButtonPress_Spawn()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonPress_Spawn()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_ItemSpawnerUI_ButtonPress_SpawnVaultGun_" data-uid="FistVR.ItemSpawnerUI.ButtonPress_SpawnVaultGun*"></a>
+
+  <h3 id="FistVR_ItemSpawnerUI_ButtonPress_SpawnVaultGun_System_Int32_" data-uid="FistVR.ItemSpawnerUI.ButtonPress_SpawnVaultGun(System.Int32)">
+  ButtonPress_SpawnVaultGun(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonPress_SpawnVaultGun(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_ItemSpawnerUI_PurchaseItem_" data-uid="FistVR.ItemSpawnerUI.PurchaseItem*"></a>
+
+  <h3 id="FistVR_ItemSpawnerUI_PurchaseItem" data-uid="FistVR.ItemSpawnerUI.PurchaseItem">
+  PurchaseItem()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PurchaseItem()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_ItemSpawnerUI_RemoveVaultGunAtIndex_" data-uid="FistVR.ItemSpawnerUI.RemoveVaultGunAtIndex*"></a>
+
+  <h3 id="FistVR_ItemSpawnerUI_RemoveVaultGunAtIndex_System_Int32_" data-uid="FistVR.ItemSpawnerUI.RemoveVaultGunAtIndex(System.Int32)">
+  RemoveVaultGunAtIndex(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveVaultGunAtIndex(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_ItemSpawnerUI_SaveGunToVault_" data-uid="FistVR.ItemSpawnerUI.SaveGunToVault*"></a>
+
+  <h3 id="FistVR_ItemSpawnerUI_SaveGunToVault_FistVR_SavedGun_" data-uid="FistVR.ItemSpawnerUI.SaveGunToVault(FistVR.SavedGun)">
+  SaveGunToVault(SavedGun)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveGunToVault(SavedGun g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="FistVR.SavedGun.html">SavedGun</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_ItemSpawnerUI_VaultGunAssemblyFinished_" data-uid="FistVR.ItemSpawnerUI.VaultGunAssemblyFinished*"></a>
+
+  <h3 id="FistVR_ItemSpawnerUI_VaultGunAssemblyFinished" data-uid="FistVR.ItemSpawnerUI.VaultGunAssemblyFinished">
+  VaultGunAssemblyFinished()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void VaultGunAssemblyFinished()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

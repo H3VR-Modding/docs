@@ -1,0 +1,928 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LawnDart
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LawnDart
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FistVR.LawnDart">
+
+
+
+  <h1 id="FistVR_LawnDart" data-uid="FistVR.LawnDart" class="text-break">
+    Class LawnDart
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FistVR.html">FistVR</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LawnDart : FVRPhysicalObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="FistVR.FVRInteractiveObject.html">FVRInteractiveObject</a></div>
+      <div><a class="xref" href="FistVR.FVRPhysicalObject.html">FVRPhysicalObject</a></div>
+      <div><span class="xref">LawnDart</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_ObjectWrapper">FVRPhysicalObject.ObjectWrapper</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_SpawnLockable">FVRPhysicalObject.SpawnLockable</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_Harnessable">FVRPhysicalObject.Harnessable</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_HandlingReleaseIntoSlotSound">FVRPhysicalObject.HandlingReleaseIntoSlotSound</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_m_isSpawnLock">FVRPhysicalObject.m_isSpawnLock</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_m_isHardnessed">FVRPhysicalObject.m_isHardnessed</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_Size">FVRPhysicalObject.Size</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_QBSlotType">FVRPhysicalObject.QBSlotType</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_DoesReleaseOverrideVelocity">FVRPhysicalObject.DoesReleaseOverrideVelocity</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_DoesReleaseAddVelocity">FVRPhysicalObject.DoesReleaseAddVelocity</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_ThrowVelMultiplier">FVRPhysicalObject.ThrowVelMultiplier</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_ThrowAngMultiplier">FVRPhysicalObject.ThrowAngMultiplier</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_MoveIntensity">FVRPhysicalObject.MoveIntensity</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_RotIntensity">FVRPhysicalObject.RotIntensity</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_AttachedRotationMultiplier">FVRPhysicalObject.AttachedRotationMultiplier</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_AttachedPositionMultiplier">FVRPhysicalObject.AttachedPositionMultiplier</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_AttachedRotationFudge">FVRPhysicalObject.AttachedRotationFudge</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_AttachedPositionFudge">FVRPhysicalObject.AttachedPositionFudge</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_UsesGravity">FVRPhysicalObject.UsesGravity</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_DependantRBs">FVRPhysicalObject.DependantRBs</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_StoredRBParams">FVRPhysicalObject.StoredRBParams</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_DistantGrabbable">FVRPhysicalObject.DistantGrabbable</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_IsDebug">FVRPhysicalObject.IsDebug</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_IsAltHeld">FVRPhysicalObject.IsAltHeld</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_IsKinematicLocked">FVRPhysicalObject.IsKinematicLocked</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_DoesQuickbeltSlotFollowHead">FVRPhysicalObject.DoesQuickbeltSlotFollowHead</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_IsInWater">FVRPhysicalObject.IsInWater</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_m_timeHeld">FVRPhysicalObject.m_timeHeld</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_AttachmentMounts">FVRPhysicalObject.AttachmentMounts</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_Slots">FVRPhysicalObject.Slots</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_IsAltToAltTransfer">FVRPhysicalObject.IsAltToAltTransfer</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_CollisionSound">FVRPhysicalObject.CollisionSound</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_IsPickUpLocked">FVRPhysicalObject.IsPickUpLocked</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_OverridesObjectToHand">FVRPhysicalObject.OverridesObjectToHand</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_audioImpactController">FVRPhysicalObject.audioImpactController</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_MP">FVRPhysicalObject.MP</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_m_containedObjects">FVRPhysicalObject.m_containedObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_GetTimeHeld">FVRPhysicalObject.GetTimeHeld()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_GetIsSaveLoadable">FVRPhysicalObject.GetIsSaveLoadable()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_SetIsSaveLoadable_System_Boolean_">FVRPhysicalObject.SetIsSaveLoadable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_SetQuickBeltSlot_FistVR_FVRQuickBeltSlot_">FVRPhysicalObject.SetQuickBeltSlot(FVRQuickBeltSlot)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_IsInSaveableQBSlot">FVRPhysicalObject.IsInSaveableQBSlot()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_IsDeepBelted">FVRPhysicalObject.IsDeepBelted()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_SetIFF_System_Int32_">FVRPhysicalObject.SetIFF(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_Awake">FVRPhysicalObject.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_DelayedRegister">FVRPhysicalObject.DelayedRegister()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_RegisterQuickbeltSlots">FVRPhysicalObject.RegisterQuickbeltSlots()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_DeRegisterQuickbeltSlots">FVRPhysicalObject.DeRegisterQuickbeltSlots()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_GetTutorialState">FVRPhysicalObject.GetTutorialState()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_IsInteractable">FVRPhysicalObject.IsInteractable()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_IsSelectionRestricted">FVRPhysicalObject.IsSelectionRestricted()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_IsDistantGrabbable">FVRPhysicalObject.IsDistantGrabbable()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_ToggleKinematicLocked">FVRPhysicalObject.ToggleKinematicLocked()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_SetIsKinematicLocked_System_Boolean_">FVRPhysicalObject.SetIsKinematicLocked(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_BipodActivated">FVRPhysicalObject.BipodActivated()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_BipodDeactivated">FVRPhysicalObject.BipodDeactivated()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_RegisterAttachment_FistVR_FVRFireArmAttachment_">FVRPhysicalObject.RegisterAttachment(FVRFireArmAttachment)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_DeRegisterAttachment_FistVR_FVRFireArmAttachment_">FVRPhysicalObject.DeRegisterAttachment(FVRFireArmAttachment)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_GetGrabPos">FVRPhysicalObject.GetGrabPos()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_GetGrabRot">FVRPhysicalObject.GetGrabRot()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_GetPosTarget">FVRPhysicalObject.GetPosTarget()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_GetRotTarget">FVRPhysicalObject.GetRotTarget()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_GetMinStabilizationAllowanceFactor">FVRPhysicalObject.GetMinStabilizationAllowanceFactor()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_HasStockPos">FVRPhysicalObject.HasStockPos()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_GetStockPos">FVRPhysicalObject.GetStockPos()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_GetRecoilZ">FVRPhysicalObject.GetRecoilZ()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_FVRUpdate">FVRPhysicalObject.FVRUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_DoesFlipUpVector">FVRPhysicalObject.DoesFlipUpVector()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_SetFakeHand_UnityEngine_Vector3_UnityEngine_Vector3_">FVRPhysicalObject.SetFakeHand(Vector3, Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_GettimeSinceFakeVelWorldTransfered">FVRPhysicalObject.GettimeSinceFakeVelWorldTransfered()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_GetHandPosWorld">FVRPhysicalObject.GetHandPosWorld()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_GetHandVelWorld">FVRPhysicalObject.GetHandVelWorld()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_DuplicateFromSpawnLock_FistVR_FVRViveHand_">FVRPhysicalObject.DuplicateFromSpawnLock(FVRViveHand)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_BeginInteractionThroughAltGrip_FistVR_FVRViveHand_FistVR_FVRAlternateGrip_">FVRPhysicalObject.BeginInteractionThroughAltGrip(FVRViveHand, FVRAlternateGrip)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_BeginInteraction_FistVR_FVRViveHand_">FVRPhysicalObject.BeginInteraction(FVRViveHand)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_UpdateInteraction_FistVR_FVRViveHand_">FVRPhysicalObject.UpdateInteraction(FVRViveHand)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_EndInteraction_FistVR_FVRViveHand_">FVRPhysicalObject.EndInteraction(FVRViveHand)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_ForceObjectIntoInventorySlot_FistVR_FVRQuickBeltSlot_">FVRPhysicalObject.ForceObjectIntoInventorySlot(FVRQuickBeltSlot)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_EndInteractionIntoInventorySlot_FistVR_FVRViveHand_FistVR_FVRQuickBeltSlot_">FVRPhysicalObject.EndInteractionIntoInventorySlot(FVRViveHand, FVRQuickBeltSlot)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_ForceBreakInteraction">FVRPhysicalObject.ForceBreakInteraction()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_ClearQuickbeltState">FVRPhysicalObject.ClearQuickbeltState()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_ToggleQuickbeltState">FVRPhysicalObject.ToggleQuickbeltState()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_StoreAndDestroyRigidbody">FVRPhysicalObject.StoreAndDestroyRigidbody()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_RecoverRigidbody">FVRPhysicalObject.RecoverRigidbody()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_CanVisibilityToggle">FVRPhysicalObject.CanVisibilityToggle()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_SetVisibility_System_Boolean_">FVRPhysicalObject.SetVisibility(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_RecoverDrag">FVRPhysicalObject.RecoverDrag()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_SetParentage_UnityEngine_Transform_">FVRPhysicalObject.SetParentage(Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_InitAfterLoad">FVRPhysicalObject.InitAfterLoad()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_SetGenericInts_System_Collections_Generic_List_System_Int32__">FVRPhysicalObject.SetGenericInts(List&lt;int&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_SetGenericStrings_System_Collections_Generic_List_System_String__">FVRPhysicalObject.SetGenericStrings(List&lt;string&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_SetGenericVector3s_System_Collections_Generic_List_UnityEngine_Vector3__">FVRPhysicalObject.SetGenericVector3s(List&lt;Vector3&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_SetGenericRotations_System_Collections_Generic_List_UnityEngine_Quaternion__">FVRPhysicalObject.SetGenericRotations(List&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_GetGenericInts">FVRPhysicalObject.GetGenericInts()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_GetGenericStrings">FVRPhysicalObject.GetGenericStrings()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_GetGenericVector3s">FVRPhysicalObject.GetGenericVector3s()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_GetGenericRotations">FVRPhysicalObject.GetGenericRotations()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_ConfigureFromFlagDic_System_Collections_Generic_Dictionary_System_String_System_String__">FVRPhysicalObject.ConfigureFromFlagDic(Dictionary&lt;string, string&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_GetFlagDic">FVRPhysicalObject.GetFlagDic()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_GetContainedObjects">FVRPhysicalObject.GetContainedObjects()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_GetContainedObjectsRecursively">FVRPhysicalObject.GetContainedObjectsRecursively()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_ContainOtherObject_FistVR_FVRPhysicalObject_">FVRPhysicalObject.ContainOtherObject(FVRPhysicalObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_DecontainOtherObject_FistVR_FVRPhysicalObject_">FVRPhysicalObject.DecontainOtherObject(FVRPhysicalObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_ClearAndDestroyContainedObjects">FVRPhysicalObject.ClearAndDestroyContainedObjects()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_OnDestroy">FVRPhysicalObject.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_TestHandDistance">FVRPhysicalObject.TestHandDistance()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_TestCollidersNegative">FVRPhysicalObject.TestCollidersNegative()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_SetAnimatedComponent_UnityEngine_Transform_System_Single_FistVR_FVRPhysicalObject_InterpStyle_FistVR_FVRPhysicalObject_Axis_">FVRPhysicalObject.SetAnimatedComponent(Transform, float, FVRPhysicalObject.InterpStyle, FVRPhysicalObject.Axis)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_SetAnimatedComponent_UnityEngine_Transform_UnityEngine_Vector3_FistVR_FVRPhysicalObject_InterpStyle_">FVRPhysicalObject.SetAnimatedComponent(Transform, Vector3, FVRPhysicalObject.InterpStyle)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_RootRigidbody">FVRPhysicalObject.RootRigidbody</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_Attachments">FVRPhysicalObject.Attachments</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_TimeSinceInQuickbelt">FVRPhysicalObject.TimeSinceInQuickbelt</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_QuickbeltSlot">FVRPhysicalObject.QuickbeltSlot</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_AltGrip">FVRPhysicalObject.AltGrip</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_Bipod">FVRPhysicalObject.Bipod</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_IsPivotLocked">FVRPhysicalObject.IsPivotLocked</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_PivotLockPos">FVRPhysicalObject.PivotLockPos</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_PivotLockRot">FVRPhysicalObject.PivotLockRot</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_IDSpawnedFrom">FVRPhysicalObject.IDSpawnedFrom</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_DoesDirectParent">FVRPhysicalObject.DoesDirectParent</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_AudioImpactController">FVRPhysicalObject.AudioImpactController</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRPhysicalObject.html#FistVR_FVRPhysicalObject_HasImpactController">FVRPhysicalObject.HasImpactController</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GameObject">FVRInteractiveObject.GameObject</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_Transform">FVRInteractiveObject.Transform</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_All">FVRInteractiveObject.All</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_ControlType">FVRInteractiveObject.ControlType</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_IsSimpleInteract">FVRInteractiveObject.IsSimpleInteract</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_HandlingGrabSound">FVRInteractiveObject.HandlingGrabSound</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_HandlingReleaseSound">FVRInteractiveObject.HandlingReleaseSound</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_PoseOverride">FVRInteractiveObject.PoseOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_QBPoseOverride">FVRInteractiveObject.QBPoseOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_PoseOverride_Touch">FVRInteractiveObject.PoseOverride_Touch</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UseGrabPointChild">FVRInteractiveObject.UseGrabPointChild</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UseGripRotInterp">FVRInteractiveObject.UseGripRotInterp</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_PositionInterpSpeed">FVRInteractiveObject.PositionInterpSpeed</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_RotationInterpSpeed">FVRInteractiveObject.RotationInterpSpeed</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_grabPointTransform">FVRInteractiveObject.m_grabPointTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_pos_interp_tick">FVRInteractiveObject.m_pos_interp_tick</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_rot_interp_tick">FVRInteractiveObject.m_rot_interp_tick</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_EndInteractionIfDistant">FVRInteractiveObject.EndInteractionIfDistant</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_EndInteractionDistance">FVRInteractiveObject.EndInteractionDistance</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_hasTriggeredUpSinceBegin">FVRInteractiveObject.m_hasTriggeredUpSinceBegin</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_triggerCooldown">FVRInteractiveObject.triggerCooldown</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_hand">FVRInteractiveObject.m_hand</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UXGeo_Hover">FVRInteractiveObject.UXGeo_Hover</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UXGeo_Held">FVRInteractiveObject.UXGeo_Held</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UseFilteredHandTransform">FVRInteractiveObject.UseFilteredHandTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UseFilteredHandPosition">FVRInteractiveObject.UseFilteredHandPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UseFilteredHandRotation">FVRInteractiveObject.UseFilteredHandRotation</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UseSecondStepRotationFiltering">FVRInteractiveObject.UseSecondStepRotationFiltering</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SecondStepFilteredRotation">FVRInteractiveObject.SecondStepFilteredRotation</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_colliders">FVRInteractiveObject.m_colliders</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_DoesFunctionAsGrabPoint">FVRInteractiveObject.DoesFunctionAsGrabPoint()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GetLastGrabHandPos">FVRInteractiveObject.GetLastGrabHandPos()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SetLastGrabHandPos_UnityEngine_Vector3_">FVRInteractiveObject.SetLastGrabHandPos(Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GetGrabMoveDelta">FVRInteractiveObject.GetGrabMoveDelta()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_OnHoverStart">FVRInteractiveObject.OnHoverStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_OnHoverEnd">FVRInteractiveObject.OnHoverEnd()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_OnHoverStay">FVRInteractiveObject.OnHoverStay()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SetUXHoverGeoViz_System_Boolean_">FVRInteractiveObject.SetUXHoverGeoViz(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SetUXHeldGeoViz_System_Boolean_">FVRInteractiveObject.SetUXHeldGeoViz(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_UpdateGrabPointTransform">FVRInteractiveObject.UpdateGrabPointTransform()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_PlayGrabSound_System_Boolean_FistVR_FVRViveHand_">FVRInteractiveObject.PlayGrabSound(bool, FVRViveHand)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_PlayReleaseSound_FistVR_FVRViveHand_">FVRInteractiveObject.PlayReleaseSound(FVRViveHand)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SimpleInteraction_FistVR_FVRViveHand_">FVRInteractiveObject.SimpleInteraction(FVRViveHand)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_Poke_FistVR_FVRViveHand_">FVRInteractiveObject.Poke(FVRViveHand)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_Start">FVRInteractiveObject.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GlobalUpdate">FVRInteractiveObject.GlobalUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GlobalFixedUpdate">FVRInteractiveObject.GlobalFixedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SetCollidersToLayer_System_Collections_Generic_List_UnityEngine_Collider__System_Boolean_System_String_">FVRInteractiveObject.SetCollidersToLayer(List&lt;Collider&gt;, bool, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_SetAllCollidersToLayer_System_Boolean_System_String_">FVRInteractiveObject.SetAllCollidersToLayer(bool, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GetClosestValidPoint_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Vector3_">FVRInteractiveObject.GetClosestValidPoint(Vector3, Vector3, Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_GrabPointTransform">FVRInteractiveObject.GrabPointTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_handPos">FVRInteractiveObject.m_handPos</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_handRot">FVRInteractiveObject.m_handRot</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_palmPos">FVRInteractiveObject.m_palmPos</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_m_palmRot">FVRInteractiveObject.m_palmRot</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_IsHovered">FVRInteractiveObject.IsHovered</a>
+    </div>
+    <div>
+      <a class="xref" href="FistVR.FVRInteractiveObject.html#FistVR_FVRInteractiveObject_IsHeld">FVRInteractiveObject.IsHeld</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FistVR_LawnDart__ctor_" data-uid="FistVR.LawnDart.#ctor*"></a>
+
+  <h3 id="FistVR_LawnDart__ctor" data-uid="FistVR.LawnDart.#ctor">
+  LawnDart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LawnDart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FistVR_LawnDart_CastingMask" data-uid="FistVR.LawnDart.CastingMask">
+  CastingMask
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayerMask CastingMask</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">LayerMask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_LawnDart_DartPoint" data-uid="FistVR.LawnDart.DartPoint">
+  DartPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform DartPoint</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_LawnDart_Game" data-uid="FistVR.LawnDart.Game">
+  Game
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LawnDartGame Game</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FistVR.LawnDartGame.html">LawnDartGame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FistVR_LawnDart_TrailSystems" data-uid="FistVR.LawnDart.TrailSystems">
+  TrailSystems
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParticleSystem[] TrailSystems</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ParticleSystem</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FistVR_LawnDart_FVRFixedUpdate_" data-uid="FistVR.LawnDart.FVRFixedUpdate*"></a>
+
+  <h3 id="FistVR_LawnDart_FVRFixedUpdate" data-uid="FistVR.LawnDart.FVRFixedUpdate">
+  FVRFixedUpdate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void FVRFixedUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_LawnDart_OnCollisionEnter_" data-uid="FistVR.LawnDart.OnCollisionEnter*"></a>
+
+  <h3 id="FistVR_LawnDart_OnCollisionEnter_UnityEngine_Collision_" data-uid="FistVR.LawnDart.OnCollisionEnter(UnityEngine.Collision)">
+  OnCollisionEnter(Collision)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnCollisionEnter(Collision col)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col</code> <span class="xref">Collision</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FistVR_LawnDart_SetGame_" data-uid="FistVR.LawnDart.SetGame*"></a>
+
+  <h3 id="FistVR_LawnDart_SetGame_FistVR_LawnDartGame_" data-uid="FistVR.LawnDart.SetGame(FistVR.LawnDartGame)">
+  SetGame(LawnDartGame)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGame(LawnDartGame g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="FistVR.LawnDartGame.html">LawnDartGame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
