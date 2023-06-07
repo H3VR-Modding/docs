@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Assembly-CSharp</name>
+    </assembly>
+    <members>
+        <member name="T:FistVR.FVRObject">
+            <summary>
+            FVRObject is the object that stores the required data for the game to spawn in objects
+            </summary>
+        </member>
+    </members>
+</doc>

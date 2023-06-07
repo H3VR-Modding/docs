@@ -1,0 +1,64 @@
+apiRules:
+- exclude:
+    hasAttribute:
+      uid: System.Runtime.CompilerServices.CompilerGeneratedAttribute
+- exclude:
+    uidRegex: ^Valve\.VR
+    type: Namespace
+- exclude:
+    uidRegex: ^UnityEngine
+    type: Namespace
+- exclude:
+    uidRegex: ^UnityStandardAssets
+    type: Namespace
+- exclude:
+    uidRegex: ^Steamworks
+    type: Namespace
+- exclude:
+    uidRegex: ^RootMotion
+    type: Namespace
+- exclude:
+    uidRegex: ^RenderHeads
+    type: Namespace
+- exclude:
+    uidRegex: ^FMODUnity
+    type: Namespace
+- exclude:
+    uidRegex: ^FMOD
+    type: Namespace
+- exclude:
+    uidRegex: ^FFmpeg
+    type: Namespace
+- exclude:
+    uidRegex: ^LIV
+    type: Namespace
+- exclude:
+    uidRegex: ^Unity\.Labs
+    type: Namespace
+- exclude:
+    uidRegex: ^ErosionBrush
+    type: Namespace
+- exclude:
+    uidRegex: ^ErosionBrushPlugin
+    type: Namespace
+- exclude:
+    uidRegex: ^ECE
+    type: Namespace
+- exclude:
+    uidRegex: ^DinoFracture
+    type: Namespace
+- exclude:
+    uidRegex: ^Bytesized
+    type: Namespace
+- exclude:
+    uidRegex: ^AmplifyColor
+    type: Namespace
+- exclude:
+    uidRegex: ^AmplifyBloom
+    type: Namespace
+- exclude:
+    uidRegex: ^Alloy
+    type: Namespace
+- exclude:
+    uidRegex: ^csDelaunay
+    type: Namespace
