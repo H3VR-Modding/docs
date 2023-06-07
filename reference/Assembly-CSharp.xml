@@ -6,7 +6,235 @@
     <members>
         <member name="T:FistVR.FVRObject">
             <summary>
-            FVRObject is the object that stores the required data for the game to spawn in objects
+            This scriptable object represents a spawnable object within the game and its properties for the purpose of loot tables in TNH and other stuff.
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.ItemID">
+            <summary>
+            The internal ID of this object. This is used as the primary key in dictionaries and as the key used to serialize / deserialize this object.
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.DisplayName">
+            <summary>
+            The user-friendly name for this object. This is what gets shown to the user on the wrist menu when they are holding the object, for example.
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.Family">
+            <summary>
+            The 'family' name this object belongs to. This is used in TNH object pools to limit the frequency of similar guns, such as the MP5s.
+            Objects in the same family will combined receive the same probability in a pool as another object which has no family
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.Category">
+            <summary>
+            The category of this object
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.SpawnedFromId">
+            <summary>
+            The 'ItemID' field of the <see cref="T:FistVR.ItemSpawnerID"/> that spawns this object.
+            <remarks>The ItemId from <see cref="T:FistVR.ItemSpawnerID"/> does not need to match <see cref="F:FistVR.FVRObject.ItemID"/> of this object</remarks>
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.Mass">
+            <summary>
+            The mass of this object.
+            <remarks>Possibly currently unused? No references found in dnSpy</remarks>
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.MagazineCapacity">
+            <summary>
+            FOR MAGAZINE OBJECTS ONLY: the capacity of this magazine
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.RequiresPicatinnySight">
+            <summary>
+            FOR FIREARMS ONLY: if this firearm requires a picatinny sight to be spawned alongside it. Typically this is used for guns that have no built-in irons but do have a top rail.
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.IsModContent">
+            <summary>
+            True if this object has been loaded by a mod loader.
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.TagEra">
+            <summary>
+            FOR FIREARMS ONLY: The Era this firearm belongs in
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.TagSet">
+            <summary>
+            FOR FIREARMS ONLY: The set this firearm belongs in
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.TagFirearmSize">
+            <summary>
+            FOR FIREARMS ONLY: The size of this firearm
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.TagFirearmAction">
+            <summary>
+            FOR FIREARMS ONLY: The action of this firearm
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.TagFirearmRoundPower">
+            <summary>
+            FOR FIREARMS ONLY: The round power of this firearm
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.TagFirearmCountryOfOrigin">
+            <summary>
+            FOR FIREARMS ONLY: The country of origin of this firearm
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.TagFirearmFirstYear">
+            <summary>
+            FOR FIREARMS ONLY: The year this firearm was introduced
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.TagFirearmFiringModes">
+            <summary>
+            FOR FIREARMS ONLY: The firing modes this firearm supports
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.TagFirearmFeedOption">
+            <summary>
+            FOR FIREARMS ONLY: The feed modes this firearm supports
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.TagFirearmMounts">
+            <summary>
+            FOR FIREARMS ONLY: The mount types this firearm has
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.TagAttachmentMount">
+            <summary>
+            FOR ATTACHMENTS ONLY: The mount type this attaches to
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.TagAttachmentFeature">
+            <summary>
+            FOR ATTACHMENTS ONLY: The type of this attachment
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.TagMeleeStyle">
+            <summary>
+            FOR MELEE WEAPONS ONLY: The style of this weapon
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.TagMeleeHandedness">
+            <summary>
+            FOR MELEE WEAPONS ONLY: The handedness of this weapon
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.TagPowerupType">
+            <summary>
+            FOR POWERUPS ONLY: The type of this powerup
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.TagThrownType">
+            <summary>
+            FOR THROWN OBJECTS ONLY: The type of this thrown object
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.TagThrownDamageType">
+            <summary>
+            FOR THROWN OBJECTS ONLY: The damage type this thrown object inflicts
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.MagazineType">
+            <summary>
+            FOR MAGAZINES ONLY: The type of this magazine
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.ClipType">
+            <summary>
+            FOR AMMO CLIPS ONLY: The type of this clip
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.UsesRoundTypeFlag">
+            <summary>
+            FOR FIREARMS ONLY: Not really sure what this does
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.RoundType">
+            <summary>
+            FOR FIREARMS ONLY: The type of round this firearm fires
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.CompatibleMagazines">
+            <summary>
+            FOR FIREARMS ONLY: The list of compatible magazines this gun can use. This is typically used in TNH when deciding what magazines it can spawn with.
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.CompatibleClips">
+            <summary>
+            FOR FIREARMS ONLY: The list of compatible ammo clips this gun can use. This is typically used in TNH when deciding what clips it can spawn with.
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.CompatibleSpeedLoaders">
+            <summary>
+            FOR FIREARMS ONLY: The list of compatible speed loaders this gun can use. This is typically used in TNH when deciding what speed loaders it can spawn with.
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.CompatibleSingleRounds">
+            <summary>
+            FOR FIREARMS ONLY: The list of compatible individual rounds of ammo this gun is compatible with. This is typically used in TNH when deciding what rounds it can spawn with.
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.BespokeAttachments">
+            <summary>
+            A list of attachments made specifically for this gun and won't work on any others.
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.RequiredSecondaryPieces">
+            <summary>
+            A list of secondary objects that are required for this object to function.
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.MinCapacityRelated">
+            <summary>
+            The smallest magazine capacity this gun is capable of having
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.MaxCapacityRelated">
+            <summary>
+            The largest magazine capacity this gun is capable of having
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.CreditCost">
+            <summary>
+            The number of credits this object costs for the purpose of the M.E.A.T.S. gamemode
+            </summary>
+        </member>
+        <member name="F:FistVR.FVRObject.OSple">
+            <summary>
+            Object Spawn Pool Loot Enabled. If false, this item is excluded from TNH loot pools.
+            </summary>
+        </member>
+        <member name="F:FistVR.GM.version_UpdateNumber">
+            <summary>
+            The Major version number of this game build
+            </summary>
+        </member>
+        <member name="F:FistVR.GM.version_AlphaNumber">
+            <summary>
+            The Minor version number of this game build
+            </summary>
+        </member>
+        <member name="F:FistVR.GM.version_PatchNumber">
+            <summary>
+            The Patch version number of this game build
+            </summary>
+        </member>
+        <member name="F:FistVR.GM.version_BuildIndex">
+            <summary>
+            The Build index of this game build
+            </summary>
+        </member>
+        <member name="F:FistVR.GM.version_buildType">
+            <summary>
+            The build type of the game build
             </summary>
         </member>
     </members>
