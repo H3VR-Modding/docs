@@ -1,0 +1,2 @@
+# Stripped Assemblies Notice
+The assemblies included here are stripped of any actual code and contain just class structure. To update this assembly, use a tool like [NStrip](https://github.com/bbepis/NStrip).
