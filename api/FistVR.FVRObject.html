@@ -87,7 +87,7 @@
   <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>FVRObject is the object that stores the required data for the game to spawn in objects</p>
+  <div class="markdown summary"><p>This scriptable object represents a spawnable object within the game and its properties for the purpose of loot tables in TNH and other stuff.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -174,7 +174,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A list of attachments made specifically for this gun and won't work on any others.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -204,7 +205,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The category of this object</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -234,7 +236,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR AMMO CLIPS ONLY: The type of this clip</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -264,7 +267,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR FIREARMS ONLY: The list of compatible ammo clips this gun can use. This is typically used in TNH when deciding what clips it can spawn with.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -294,7 +298,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR FIREARMS ONLY: The list of compatible magazines this gun can use. This is typically used in TNH when deciding what magazines it can spawn with.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -324,7 +329,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR FIREARMS ONLY: The list of compatible individual rounds of ammo this gun is compatible with. This is typically used in TNH when deciding what rounds it can spawn with.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -354,7 +360,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR FIREARMS ONLY: The list of compatible speed loaders this gun can use. This is typically used in TNH when deciding what speed loaders it can spawn with.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -384,7 +391,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The number of credits this object costs for the purpose of the M.E.A.T.S. gamemode</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -414,7 +422,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The user-friendly name for this object. This is what gets shown to the user on the wrist menu when they are holding the object, for example.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -444,7 +453,9 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The 'family' name this object belongs to. This is used in TNH object pools to limit the frequency of similar guns, such as the MP5s.
+Objects in the same family will combined receive the same probability in a pool as another object which has no family</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -474,7 +485,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>True if this object has been loaded by a mod loader.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -504,7 +516,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The internal ID of this object. This is used as the primary key in dictionaries and as the key used to serialize / deserialize this object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -534,7 +547,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR MAGAZINE OBJECTS ONLY: the capacity of this magazine</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -564,7 +578,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR MAGAZINES ONLY: The type of this magazine</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -595,7 +610,9 @@ public FireArmMagazineType MagazineType</code></pre>
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The mass of this object.
+<remarks>Possibly currently unused? No references found in dnSpy</remarks></p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -625,7 +642,8 @@ public FireArmMagazineType MagazineType</code></pre>
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The largest magazine capacity this gun is capable of having</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -655,7 +673,8 @@ public FireArmMagazineType MagazineType</code></pre>
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The smallest magazine capacity this gun is capable of having</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -685,7 +704,8 @@ public FireArmMagazineType MagazineType</code></pre>
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Object Spawn Pool Loot Enabled. If false, this item is excluded from TNH loot pools.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -715,7 +735,8 @@ public FireArmMagazineType MagazineType</code></pre>
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A list of secondary objects that are required for this object to function.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -745,7 +766,8 @@ public FireArmMagazineType MagazineType</code></pre>
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR FIREARMS ONLY: if this firearm requires a picatinny sight to be spawned alongside it. Typically this is used for guns that have no built-in irons but do have a top rail.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -775,7 +797,8 @@ public FireArmMagazineType MagazineType</code></pre>
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR FIREARMS ONLY: The type of round this firearm fires</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -806,7 +829,9 @@ public FireArmRoundType RoundType</code></pre>
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The 'ItemID' field of the <a class="xref" href="FistVR.ItemSpawnerID.html">ItemSpawnerID</a> that spawns this object.
+<remarks>The ItemId from <a class="xref" href="FistVR.ItemSpawnerID.html">ItemSpawnerID</a> does not need to match <a class="xref" href="FistVR.FVRObject.html#FistVR_FVRObject_ItemID">ItemID</a> of this object</remarks></p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -836,7 +861,8 @@ public FireArmRoundType RoundType</code></pre>
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR ATTACHMENTS ONLY: The type of this attachment</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -866,7 +892,8 @@ public FireArmRoundType RoundType</code></pre>
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR ATTACHMENTS ONLY: The mount type this attaches to</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -896,7 +923,8 @@ public FireArmRoundType RoundType</code></pre>
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR FIREARMS ONLY: The Era this firearm belongs in</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -926,7 +954,8 @@ public FireArmRoundType RoundType</code></pre>
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR FIREARMS ONLY: The action of this firearm</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -956,7 +985,8 @@ public FireArmRoundType RoundType</code></pre>
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR FIREARMS ONLY: The country of origin of this firearm</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -987,7 +1017,8 @@ public FVRObject.OTagFirearmCountryOfOrigin TagFirearmCountryOfOrigin</code></pr
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR FIREARMS ONLY: The feed modes this firearm supports</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1017,7 +1048,8 @@ public FVRObject.OTagFirearmCountryOfOrigin TagFirearmCountryOfOrigin</code></pr
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR FIREARMS ONLY: The firing modes this firearm supports</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1047,7 +1079,8 @@ public FVRObject.OTagFirearmCountryOfOrigin TagFirearmCountryOfOrigin</code></pr
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR FIREARMS ONLY: The year this firearm was introduced</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1077,7 +1110,8 @@ public FVRObject.OTagFirearmCountryOfOrigin TagFirearmCountryOfOrigin</code></pr
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR FIREARMS ONLY: The mount types this firearm has</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1107,7 +1141,8 @@ public FVRObject.OTagFirearmCountryOfOrigin TagFirearmCountryOfOrigin</code></pr
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR FIREARMS ONLY: The round power of this firearm</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1137,7 +1172,8 @@ public FVRObject.OTagFirearmCountryOfOrigin TagFirearmCountryOfOrigin</code></pr
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR FIREARMS ONLY: The size of this firearm</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1167,7 +1203,8 @@ public FVRObject.OTagFirearmCountryOfOrigin TagFirearmCountryOfOrigin</code></pr
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR MELEE WEAPONS ONLY: The handedness of this weapon</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1197,7 +1234,8 @@ public FVRObject.OTagFirearmCountryOfOrigin TagFirearmCountryOfOrigin</code></pr
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR MELEE WEAPONS ONLY: The style of this weapon</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1227,7 +1265,8 @@ public FVRObject.OTagFirearmCountryOfOrigin TagFirearmCountryOfOrigin</code></pr
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR POWERUPS ONLY: The type of this powerup</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1257,7 +1296,8 @@ public FVRObject.OTagFirearmCountryOfOrigin TagFirearmCountryOfOrigin</code></pr
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR FIREARMS ONLY: The set this firearm belongs in</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1287,7 +1327,8 @@ public FVRObject.OTagFirearmCountryOfOrigin TagFirearmCountryOfOrigin</code></pr
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR THROWN OBJECTS ONLY: The damage type this thrown object inflicts</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1317,7 +1358,8 @@ public FVRObject.OTagFirearmCountryOfOrigin TagFirearmCountryOfOrigin</code></pr
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR THROWN OBJECTS ONLY: The type of this thrown object</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1347,7 +1389,8 @@ public FVRObject.OTagFirearmCountryOfOrigin TagFirearmCountryOfOrigin</code></pr
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>FOR FIREARMS ONLY: Not really sure what this does</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
